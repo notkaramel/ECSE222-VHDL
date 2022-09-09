@@ -1,0 +1,128 @@
+# do Antoine_Phan_vhdl1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {P:/ECSE 222/Projects/A1/OR_gate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 16:50:17 on Sep 07,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE 222/Projects/A1/OR_gate.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity or_gate
+# -- Compiling architecture rtl of or_gate
+# End time: 16:50:17 on Sep 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {P:/ECSE 222/Projects/A1/OR_gate_testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 16:50:17 on Sep 07,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE 222/Projects/A1/OR_gate_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture tb of testbench
+# End time: 16:50:17 on Sep 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  OR_gate
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" OR_gate 
+# Start time: 16:50:17 on Sep 07,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.or_gate(rtl)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: hphan6  Hostname: 156TR4060-11  ProcessID: 19964
+# 
+#           Attempting to use alternate WLF file "./wlft4x6m36".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft4x6m36
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+run
+force -freeze sim:/or_gate/a 1 0
+force -freeze sim:/or_gate/a 1 0
+force -freeze sim:/or_gate/b 1 0
+run
+add wave -position insertpoint begin
+# (vish-4014) No objects found matching 'begin'.
+force -freeze sim:/or_gate/a 0 0
+run
+add wave -position end  sim:/or_gate/a
+add wave -position end  sim:/or_gate/b
+add wave -position end  sim:/or_gate/q
+add wave -position end  sim:/or_gate/a
+add wave -position end  sim:/or_gate/b
+add wave -position end  sim:/or_gate/q
+add wave -position insertpoint end
+# (vish-4014) No objects found matching 'end'.
+force -freeze sim:/or_gate/a 0 0
+force -freeze sim:/or_gate/b 0 0
+force -freeze sim:/or_gate/b 1 0
+run
+force -freeze sim:/or_gate/b 0 0
+run
+force -freeze sim:/or_gate/a 1 0
+run
+add wave -position insertpoint  \
+sim:/or_gate/a
+wave create -driver freeze -pattern constant -value 1 -starttime 0ns -endtime 4ns sim:/or_gate/a
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+wave create -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 1ns sim:/or_gate/a
+wave create -driver freeze -pattern constant -value 0 -starttime 1ns -endtime 2ns sim:/or_gate/a
+# /or_gate/a already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+wave create -driver freeze -pattern constant -value 1 -starttime 2ns -endtime 3ns sim:/or_gate/a
+# /or_gate/a already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+run
+run
+restart
+wave modify -driver freeze -pattern constant -value 0 -starttime 1ns -endtime 2ns Edit:/or_gate/a
+wave modify -driver freeze -pattern constant -value 1 -starttime 2ns -endtime 3ns Edit:/or_gate/a
+wave modify -driver freeze -pattern constant -value 1 -starttime 3ns -endtime 4ns Edit:/or_gate/a
+wave create -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 1ns sim:/or_gate/b
+wave modify -driver freeze -pattern constant -value 1 -starttime 1ns -endtime 2ns Edit:/or_gate/b
+wave modify -driver freeze -pattern constant -value 1 -starttime 3ns -endtime 4ns Edit:/or_gate/b
+wave modify -driver freeze -pattern constant -value 0 -starttime 2ns -endtime 3ns Edit:/or_gate/b
+add wave -position insertpoint  \
+sim:/or_gate/q
+add wave -position end  sim:/or_gate/q
+wave export -file {} -starttime 0 -endtime 4000 -format force -designunit or_gate
+# errormessage
+# Export file not specified.
+# Usage : wave export -file <name> -starttime <time> -endtime <time> -format  <["force" | "vcd" | "vhdl" | "vlog"]> -designunit <name> [-f]run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# End time: 17:20:28 on Sep 07,2022, Elapsed time: 0:30:11
+# Errors: 5, Warnings: 2
+wave editwrite -file {P:/ECSE 222/Projects/A1/wave.do}

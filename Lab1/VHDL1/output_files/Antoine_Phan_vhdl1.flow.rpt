@@ -1,0 +1,123 @@
+Flow report for Antoine_Phan_vhdl1
+Wed Sep 07 17:30:04 2022
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++-----------------------------+-------------------------------------------------+
+; Flow Status                 ; Flow Failed - Wed Sep 07 17:30:04 2022          ;
+; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
+; Revision Name               ; Antoine_Phan_vhdl1                              ;
+; Top-level Entity Name       ; OR_gate_testbench                               ;
+; Family                      ; Cyclone V                                       ;
+; Device                      ; 5CSEMA5F31C6                                    ;
+; Timing Models               ; Final                                           ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
+; Total registers             ; N/A until Partition Merge                       ;
+; Total pins                  ; N/A until Partition Merge                       ;
+; Total virtual pins          ; N/A until Partition Merge                       ;
+; Total block memory bits     ; N/A until Partition Merge                       ;
+; Total PLLs                  ; N/A until Partition Merge                       ;
+; Total DLLs                  ; N/A until Partition Merge                       ;
++-----------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/07/2022 17:29:56 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Antoine_Phan_vhdl1  ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                       ;
++--------------------------------------+---------------------------------------+--------------------+-------------------+----------------+
+; Assignment Name                      ; Value                                 ; Default Value      ; Entity Name       ; Section Id     ;
++--------------------------------------+---------------------------------------+--------------------+-------------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 194042949840919.166258619621932       ; --                 ; --                ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                ; OR_gate        ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; OR_gate                               ; --                 ; --                ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --                 ; --                ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>             ; --                ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --                 ; --                ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; OR_gate_testbench.vhd                 ; --                 ; --                ; OR_gate        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; OR_gate                               ; --                 ; --                ; OR_gate        ;
+; EDA_TEST_BENCH_NAME                  ; OR_gate                               ; --                 ; --                ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --                 ; --                ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --                 ; --                ; --             ;
+; PARTITION_COLOR                      ; 16764057                              ; --                 ; OR_gate_testbench ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --                 ; OR_gate_testbench ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --                 ; OR_gate_testbench ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --                 ; --                ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --                 ; --                ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --                 ; --                ; --             ;
+; TOP_LEVEL_ENTITY                     ; OR_gate_testbench                     ; Antoine_Phan_vhdl1 ; --                ; --             ;
++--------------------------------------+---------------------------------------+--------------------+-------------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 5036 MB             ; 00:00:19                           ;
+; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:19                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; 156TR5090-04     ; Windows 8 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Antoine_Phan_vhdl1 -c Antoine_Phan_vhdl1
+
+
+
