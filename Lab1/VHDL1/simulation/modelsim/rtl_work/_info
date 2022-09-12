@@ -7,25 +7,25 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dP:/ECSE 222/Projects/A1/simulation/modelsim
+Z0 dP:/ECSE 222/Assignments/Lab1/VHDL1/simulation/modelsim
 Eor_gate
 Z1 w1662491833
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8P:/ECSE 222/Projects/A1/OR_gate.vhd
-Z5 FP:/ECSE 222/Projects/A1/OR_gate.vhd
+Z4 8P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate.vhd
+Z5 FP:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate.vhd
 l0
 L5
 VDcVY_YaK0HImQ_fVLfX]O2
 !s100 bn8HGYm4oj][`EdVab:=m2
-Z6 OV;C;10.4b;61
+Z6 OV;C;10.3d;59
 31
-Z7 !s110 1662583817
+Z7 !s110 1662751035
 !i10b 1
-Z8 !s108 1662583817.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|P:/ECSE 222/Projects/A1/OR_gate.vhd|
-Z10 !s107 P:/ECSE 222/Projects/A1/OR_gate.vhd|
+Z8 !s108 1662751034.136000
+Z9 !s90 -reportprogress|300|-93|-work|work|P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate.vhd|
+Z10 !s107 P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1
@@ -52,19 +52,19 @@ Z13 w1662491845
 R2
 R3
 R0
-Z14 8P:/ECSE 222/Projects/A1/OR_gate_testbench.vhd
-Z15 FP:/ECSE 222/Projects/A1/OR_gate_testbench.vhd
+Z14 8P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate_testbench.vhd
+Z15 FP:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate_testbench.vhd
 l0
 L5
 VAhlDGIf8Y0Ci:`>fj=BRD1
 !s100 AahZUGX>7SfX2f35dGMcG2
 R6
 31
-R7
+Z16 !s110 1662751037
 !i10b 1
-R8
-Z16 !s90 -reportprogress|300|-93|-work|work|P:/ECSE 222/Projects/A1/OR_gate_testbench.vhd|
-Z17 !s107 P:/ECSE 222/Projects/A1/OR_gate_testbench.vhd|
+Z17 !s108 1662751036.546000
+Z18 !s90 -reportprogress|300|-93|-work|work|P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate_testbench.vhd|
+Z19 !s107 P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate_testbench.vhd|
 !i113 1
 R11
 R12
@@ -78,11 +78,11 @@ V?I51O5QGg>bAVN0Z03meE0
 !s100 MMh_@:X7EBT7nc_Sb96>R1
 R6
 31
-R7
-!i10b 1
-R8
 R16
+!i10b 1
 R17
+R18
+R19
 !i113 1
 R11
 R12

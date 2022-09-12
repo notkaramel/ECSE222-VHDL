@@ -1,12 +1,17 @@
-Analysis & Synthesis Status : Failed - Wed Sep 07 17:30:04 2022
-Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Analysis & Synthesis Status : Successful - Fri Sep 09 15:02:29 2022
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : Antoine_Phan_vhdl1
-Top-level Entity Name : OR_gate_testbench
+Top-level Entity Name : or_gate
 Family : Cyclone V
-Logic utilization (in ALMs) : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total block memory bits : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
-Total DLLs : N/A until Partition Merge
+Logic utilization (in ALMs) : N/A
+Total registers : 0
+Total pins : 3
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

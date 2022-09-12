@@ -1,23 +1,23 @@
--- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
--- Your use of Altera Corporation's design tools, logic functions 
+-- Copyright (C) 2016  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
 -- and other software and tools, and its AMPP partner logic 
 -- functions, and any output files from any of the foregoing 
 -- (including device programming or simulation files), and any 
 -- associated documentation or information are expressly subject 
--- to the terms and conditions of the Altera Program License 
--- Subscription Agreement, the Altera Quartus Prime License Agreement,
--- the Altera MegaCore Function License Agreement, or other 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel MegaCore Function License Agreement, or other 
 -- applicable license agreement, including, without limitation, 
 -- that your use is for the sole purpose of programming logic 
--- devices manufactured by Altera and sold by Altera or its 
+-- devices manufactured by Intel and sold by Intel or its 
 -- authorized distributors.  Please refer to the applicable 
 -- agreement for further details.
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus Prime"
--- VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition"
+-- VERSION "Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition"
 
--- DATE "09/07/2022 16:50:04"
+-- DATE "09/09/2022 15:06:41"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -38,7 +38,7 @@ ENTITY 	or_gate IS
     PORT (
 	a : IN std_logic;
 	b : IN std_logic;
-	q : BUFFER std_logic
+	q : OUT std_logic
 	);
 END or_gate;
 
