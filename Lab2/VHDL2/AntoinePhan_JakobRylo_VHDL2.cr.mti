@@ -1,0 +1,18 @@
+{P:/ECSE 222/Assignments/Lab2/VHDL2/simulation/modelsim/AntoinePhan_JakobRylo_comp.vht} {1 {vcom -work work -2002 -explicit {P:/ECSE 222/Assignments/Lab2/VHDL2/simulation/modelsim/AntoinePhan_JakobRylo_comp.vht}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity AntoinePhan_JakobRylo_comp_vhd_tst
+-- Compiling architecture AntoinePhan_JakobRylo_comp_arch of AntoinePhan_JakobRylo_comp_vhd_tst
+
+} {} {}} {P:/ECSE 222/Assignments/Lab2/VHDL2/AntoinePhan_JakobRylo_comp.vhd} {1 {vcom -work work -2002 -explicit {P:\ECSE 222\Assignments\Lab2\VHDL2\AntoinePhan_JakobRylo_comp.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity AntoinePhan_JakobRylo_comp
+-- Compiling architecture bdf_type of AntoinePhan_JakobRylo_comp
+
+} {} {}}

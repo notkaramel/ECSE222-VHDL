@@ -22,7 +22,7 @@ agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 64 104 232 120)
+	(rect 0 200 168 216)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
 	(text "A[3..0]" (rect 5 0 62 14)(font "Arial" ))
 	(pt 168 8)
@@ -38,9 +38,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 64 152 232 168)
+	(rect 0 232 168 248)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "B[3...0]" (rect 5 0 71 14)(font "Intel Clear" ))
+	(text "B[3..0]" (rect 5 0 63 14)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -56,7 +56,7 @@ agreement for further details.
 	(output)
 	(rect 648 216 824 232)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
-	(text "pin_name3" (rect 90 0 164 14)(font "Intel Clear" ))
+	(text "AeqB" (rect 90 0 123 14)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -298,4 +298,48 @@ agreement for further details.
 (connector
 	(pt 440 248)
 	(pt 504 248)
+)
+(connector
+	(text "A[0]" (rect 230 104 263 118)(font "Arial" ))
+	(pt 168 120)
+	(pt 296 120)
+)
+(connector
+	(text "B[0]" (rect 253 120 286 134)(font "Arial" ))
+	(pt 216 136)
+	(pt 296 136)
+)
+(connector
+	(text "B[1]" (rect 234 184 267 198)(font "Arial" ))
+	(pt 216 200)
+	(pt 296 200)
+)
+(connector
+	(pt 200 248)
+	(pt 200 240)
+)
+(connector
+	(text "A[2]" (rect 232 232 265 246)(font "Arial" ))
+	(pt 296 248)
+	(pt 200 248)
+)
+(connector
+	(text "A[3]" (rect 229 296 262 310)(font "Arial" ))
+	(pt 184 312)
+	(pt 296 312)
+)
+(connector
+	(text "A[1]" (rect 224 168 257 182)(font "Arial" ))
+	(pt 296 184)
+	(pt 216 184)
+)
+(connector
+	(text "B[3]" (rect 228 312 261 326)(font "Arial" ))
+	(pt 296 328)
+	(pt 168 328)
+)
+(connector
+	(text "B[2]" (rect 257 248 290 262)(font "Arial" ))
+	(pt 200 264)
+	(pt 296 264)
 )
