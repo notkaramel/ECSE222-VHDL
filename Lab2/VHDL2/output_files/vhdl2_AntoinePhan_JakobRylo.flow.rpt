@@ -1,5 +1,5 @@
 Flow report for vhdl2_AntoinePhan_JakobRylo
-Tue Sep 13 15:25:05 2022
+Mon Sep 19 10:06:14 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Tue Sep 13 15:25:05 2022           ;
+; Flow Status                     ; Successful - Mon Sep 19 10:06:14 2022           ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                   ; vhdl2_AntoinePhan_JakobRylo                     ;
 ; Top-level Entity Name           ; AntoinePhan_JakobRylo_comp                      ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+-----------------------------+
 ; Option            ; Setting                     ;
 +-------------------+-----------------------------+
-; Start date & time ; 09/13/2022 15:23:40         ;
+; Start date & time ; 09/19/2022 10:04:46         ;
 ; Main task         ; Compilation                 ;
 ; Revision Name     ; vhdl2_AntoinePhan_JakobRylo ;
 +-------------------+-----------------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+-----------------------------+----------------------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value               ; Entity Name                ; Section Id     ;
 +-------------------------------------+---------------------------------+-----------------------------+----------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 123926586546477.166309702015708 ; --                          ; --                         ; --             ;
+; COMPILER_SIGNATURE_ID               ; 194042949843442.166359628601144 ; --                          ; --                         ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --                          ; --                         ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (VHDL)                 ; <None>                      ; --                         ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                            ; --                          ; --                         ; eda_simulation ;
@@ -98,12 +98,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 5041 MB             ; 00:00:16                           ;
-; Fitter                    ; 00:00:33     ; 1.0                     ; 7168 MB             ; 00:01:43                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 5019 MB             ; 00:00:07                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 5353 MB             ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4914 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:04     ; --                      ; --                  ; 00:02:11                           ;
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 5042 MB             ; 00:00:22                           ;
+; Fitter                    ; 00:00:34     ; 1.0                     ; 7172 MB             ; 00:02:27                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 5015 MB             ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 5354 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4915 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:07     ; --                      ; --                  ; 00:03:00                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,11 +112,11 @@ agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; 156TR4060-12     ; Windows 8 ; 6.2        ; x86_64         ;
-; Fitter                    ; 156TR4060-12     ; Windows 8 ; 6.2        ; x86_64         ;
-; Assembler                 ; 156TR4060-12     ; Windows 8 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; 156TR4060-12     ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; 156TR4060-12     ; Windows 8 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; 156TR5090-05     ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; 156TR5090-05     ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; 156TR5090-05     ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; 156TR5090-05     ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; 156TR5090-05     ; Windows 8 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

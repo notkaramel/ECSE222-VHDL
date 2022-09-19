@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for vhdl2_AntoinePhan_JakobRylo
-Tue Sep 13 15:24:59 2022
+Mon Sep 19 10:06:09 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -95,7 +95,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
+; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -434,7 +434,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Tue Sep 13 15:24:50 2022
+    Info: Processing started: Mon Sep 19 10:05:58 2022
 Info: Command: quartus_sta vhdl2_AntoinePhan_JakobRylo -c vhdl2_AntoinePhan_JakobRylo
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -493,9 +493,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5353 megabytes
-    Info: Processing ended: Tue Sep 13 15:24:59 2022
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 5354 megabytes
+    Info: Processing ended: Mon Sep 19 10:06:08 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:03
 
 

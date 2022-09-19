@@ -15,7 +15,7 @@ L25
 VKPhI41f>E>aXG]kYLc`XT1
 Z6 OV;C;10.1d;51
 32
-Z7 !s108 1663097208.406000
+Z7 !s108 1663596486.405000
 Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|P:\ECSE 222\Assignments\Lab2\VHDL2\AntoinePhan_JakobRylo_comp.vhd|
 Z9 !s107 P:\ECSE 222\Assignments\Lab2\VHDL2\AntoinePhan_JakobRylo_comp.vhd|
 Z10 o-work work -2002 -explicit -O0
@@ -29,6 +29,7 @@ DEx4 work 26 antoinephan_jakobrylo_comp 0 22 KPhI41f>E>aXG]kYLc`XT1
 l42
 L34
 V;>`9eNfF20aMA?M<L5Dhz0
+!s100 R:LOCV`1Mo9S@8X]VziE22
 R6
 32
 R7
@@ -36,7 +37,6 @@ R8
 R9
 R10
 R11
-!s100 R:LOCV`1Mo9S@8X]VziE22
 !i10b 1
 Eantoinephan_jakobrylo_comp_vhd_tst
 Z12 w1663097227
@@ -53,7 +53,7 @@ Vk[oLH7NO?HC`BNZ<3f:181
 R6
 32
 !i10b 1
-Z16 !s108 1663097230.163000
+Z16 !s108 1663596487.694000
 Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|P:/ECSE 222/Assignments/Lab2/VHDL2/simulation/modelsim/AntoinePhan_JakobRylo_comp.vht|
 Z18 !s107 P:/ECSE 222/Assignments/Lab2/VHDL2/simulation/modelsim/AntoinePhan_JakobRylo_comp.vht|
 R10
@@ -62,11 +62,11 @@ Aantoinephan_jakobrylo_comp_arch
 R13
 R1
 R2
-DEx4 work 34 antoinephan_jakobrylo_comp_vhd_tst 0 22 k[oLH7NO?HC`BNZ<3f:181
+Z19 DEx4 work 34 antoinephan_jakobrylo_comp_vhd_tst 0 22 k[oLH7NO?HC`BNZ<3f:181
 l47
 L34
-V>[l4z8P_W]hTmoh8AVh>E3
-!s100 :VFZbEVnF9TQH]SM;1>:H3
+Z20 V>[l4z8P_W]hTmoh8AVh>E3
+Z21 !s100 :VFZbEVnF9TQH]SM;1>:H3
 R6
 32
 !i10b 1
