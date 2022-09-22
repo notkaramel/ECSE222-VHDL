@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vhdl2_AntoinePhan_JakobRylo
-Mon Sep 19 14:54:42 2022
+Thu Sep 22 16:24:26 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Sep 19 14:54:42 2022               ;
+; Analysis & Synthesis Status ; Failed - Thu Sep 22 16:24:26 2022               ;
 ; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name               ; vhdl2_AntoinePhan_JakobRylo                     ;
 ; Top-level Entity Name       ; AntoinePhan_JakobRylo_MUX2to1                   ;
@@ -162,19 +162,22 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Mon Sep 19 14:54:32 2022
+    Info: Processing started: Thu Sep 22 16:24:19 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vhdl2_AntoinePhan_JakobRylo -c vhdl2_AntoinePhan_JakobRylo
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file antoinephan_jakobrylo_comp.bdf
     Info (12023): Found entity 1: AntoinePhan_JakobRylo_comp
-Info (12021): Found 2 design units, including 2 entities, in source file antoinephan_jakobrylo_mux2to1.vhd
-    Info (12023): Found entity 1: antoine_phan_jakob_rylo_MUX_struct File: P:/ECSE 222/Assignments/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1.vhd Line: 5
-    Info (12023): Found entity 2: antoine_phan_jakob_rylo_MUX_behavioral File: P:/ECSE 222/Assignments/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1.vhd Line: 13
-Error (10482): VHDL error at AntoinePhan_JakobRylo_MUX2to1.vhd(15): object "std_logic" is used but not declared File: P:/ECSE 222/Assignments/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1.vhd Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file antoinephan_jakobrylo_mux2to1_structural.vhd
+    Info (12022): Found design unit 1: antoinephan_jakobrylo_MUX2to1_struct-structural File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd Line: 11
+    Info (12023): Found entity 1: antoinephan_jakobrylo_MUX2to1_structural File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file antoinephan_jakobrylo_mux2to1_behavioral.vhd
+    Info (12022): Found design unit 1: antoinephan_jakobrylo_MUX2to1_struct-behavior File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd Line: 12
+    Info (12023): Found entity 1: antoinephan_jakobrylo_MUX2to1_behavioral File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd Line: 6
+Error (10334): VHDL error at AntoinePhan_JakobRylo_MUX2to1_structural.vhd(11): entity "antoinephan_jakobrylo_MUX2to1_struct" is used but not declared File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd Line: 11
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
-    Error: Peak virtual memory: 5033 megabytes
-    Error: Processing ended: Mon Sep 19 14:54:44 2022
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:19
+    Error: Peak virtual memory: 5031 megabytes
+    Error: Processing ended: Thu Sep 22 16:24:27 2022
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:18
 
 

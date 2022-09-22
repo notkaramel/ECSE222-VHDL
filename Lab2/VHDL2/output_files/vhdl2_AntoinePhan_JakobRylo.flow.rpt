@@ -1,5 +1,5 @@
 Flow report for vhdl2_AntoinePhan_JakobRylo
-Mon Sep 19 14:54:43 2022
+Thu Sep 22 16:24:26 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Flow Failed - Mon Sep 19 14:54:42 2022          ;
+; Flow Status                 ; Flow Failed - Thu Sep 22 16:24:26 2022          ;
 ; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name               ; vhdl2_AntoinePhan_JakobRylo                     ;
 ; Top-level Entity Name       ; AntoinePhan_JakobRylo_MUX2to1                   ;
@@ -63,7 +63,7 @@ agreement for further details.
 +-------------------+-----------------------------+
 ; Option            ; Setting                     ;
 +-------------------+-----------------------------+
-; Start date & time ; 09/19/2022 14:54:33         ;
+; Start date & time ; 09/22/2022 16:24:19         ;
 ; Main task         ; Compilation                 ;
 ; Revision Name     ; vhdl2_AntoinePhan_JakobRylo ;
 +-------------------+-----------------------------+
@@ -74,7 +74,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+-----------------------------+-------------------------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value               ; Entity Name                   ; Section Id     ;
 +-------------------------------------+---------------------------------+-----------------------------+-------------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 194042949842810.166361367312360 ; --                          ; --                            ; --             ;
+; COMPILER_SIGNATURE_ID               ; 194042949843717.166387825907964 ; --                          ; --                            ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --                          ; --                            ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (VHDL)                 ; <None>                      ; --                            ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                            ; --                          ; --                            ; eda_simulation ;
@@ -93,8 +93,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 5033 MB             ; 00:00:19                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 5031 MB             ; 00:00:18                           ;
+; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -103,7 +103,7 @@ agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; 156TR5090-01     ; Windows 8 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; 156TR5090-15     ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
