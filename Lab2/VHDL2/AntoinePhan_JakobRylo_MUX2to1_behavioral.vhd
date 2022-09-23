@@ -9,7 +9,7 @@ entity antoinephan_jakobrylo_MUX2to1_behavioral is
 		Y : out std_logic);
 end antoinephan_jakobrylo_MUX2to1_behavioral;
 
-architecture behavior of antoinephan_jakobrylo_MUX2to1_struct is
+architecture behavior of antoinephan_jakobrylo_MUX2to1_behavioral is
 begin
 	with S select Y <=
 		A when '0',

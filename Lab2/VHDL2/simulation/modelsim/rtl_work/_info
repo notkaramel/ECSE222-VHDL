@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dP:/ECSE222-VHDL/Lab2/VHDL2/simulation/modelsim
+Eantoinephan_jakobrylo_mux2to1_structural
+Z1 w1663893501
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd
+Z6 FP:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd
+l0
+L5
+V::l3OQzAWN7;Zlk=a`XY33
+!s100 3VLN=R5?@YYiR8e_<K8jh1
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1663902851
+!i10b 1
+Z9 !s108 1663902851.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd|
+Z11 !s107 P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Astructural
+R2
+R3
+R4
+DEx4 work 40 antoinephan_jakobrylo_mux2to1_structural 0 22 ::l3OQzAWN7;Zlk=a`XY33
+l12
+L11
+V`UKZbXSe>TK<QP3X6ON^H2
+!s100 HJgco<^[dKhTJVQDRUW3b0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Emux_testbench
+Z14 w1663903576
+R2
+R3
+R4
+R0
+Z15 8P:/ECSE222-VHDL/Lab2/VHDL2/testbench.vhd
+Z16 FP:/ECSE222-VHDL/Lab2/VHDL2/testbench.vhd
+l0
+L5
+VeH0`Q>DjTSnDgL@FAKDMX1
+!s100 zAi<ZC^OEnhOSU2VJoMzO3
+R7
+31
+Z17 !s110 1663903588
+!i10b 1
+Z18 !s108 1663903588.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab2/VHDL2/testbench.vhd|
+Z20 !s107 P:/ECSE222-VHDL/Lab2/VHDL2/testbench.vhd|
+!i113 1
+R12
+R13
+Atb_struct
+R2
+R3
+R4
+Z21 DEx4 work 13 mux_testbench 0 22 eH0`Q>DjTSnDgL@FAKDMX1
+l63
+L53
+Z22 Vb2KMF:NLGC]Y=f5KG9UgU3
+Z23 !s100 oNSJTE8=mHRJCEAcc^g6;3
+R7
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Atb_behave
+R2
+R3
+R4
+R21
+l21
+L11
+Z24 VS]^?W_9f=lO=;5McSk@PC1
+Z25 !s100 I:>2>aTdOn_3nYJWbZ`cj2
+R7
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13

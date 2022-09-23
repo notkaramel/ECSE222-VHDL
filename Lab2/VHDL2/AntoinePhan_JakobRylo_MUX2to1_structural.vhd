@@ -8,9 +8,9 @@ entity antoinephan_jakobrylo_MUX2to1_structural is
 		Y : out std_logic);
 end antoinephan_jakobrylo_MUX2to1_structural;
 
-architecture structural of antoinephan_jakobrylo_MUX2to1_struct is
+architecture structural of antoinephan_jakobrylo_MUX2to1_structural is
 begin
-	Y <= (S and A) or ((not S) and B);
+	Y <= ((not S) and A) or (B and S);
 end structural;
 
 

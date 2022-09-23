@@ -1,0 +1,8 @@
+|AntoinePhan_JakobRylo_MUX2to1_structural
+A => Y.IN0
+B => Y.IN0
+S => Y.IN1
+S => Y.IN1
+Y << Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vhdl2_AntoinePhan_JakobRylo
-Thu Sep 22 16:24:26 2022
+Thu Sep 22 23:11:43 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -10,7 +10,13 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -34,110 +40,115 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Thu Sep 22 16:24:26 2022               ;
-; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
-; Revision Name               ; vhdl2_AntoinePhan_JakobRylo                     ;
-; Top-level Entity Name       ; AntoinePhan_JakobRylo_MUX2to1                   ;
-; Family                      ; Cyclone V                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
-; Total registers             ; N/A until Partition Merge                       ;
-; Total pins                  ; N/A until Partition Merge                       ;
-; Total virtual pins          ; N/A until Partition Merge                       ;
-; Total block memory bits     ; N/A until Partition Merge                       ;
-; Total PLLs                  ; N/A until Partition Merge                       ;
-; Total DLLs                  ; N/A until Partition Merge                       ;
-+-----------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Sep 22 23:11:43 2022           ;
+; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
+; Revision Name                   ; vhdl2_AntoinePhan_JakobRylo                     ;
+; Top-level Entity Name           ; antoinephan_jakobrylo_MUX2to1_structural        ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 0                                               ;
+; Total pins                      ; 4                                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                                                 ;
-+---------------------------------------------------------------------------------+-------------------------------+-----------------------------+
-; Option                                                                          ; Setting                       ; Default Value               ;
-+---------------------------------------------------------------------------------+-------------------------------+-----------------------------+
-; Device                                                                          ; 5CSEMA5F31C6                  ;                             ;
-; Top-level entity name                                                           ; AntoinePhan_JakobRylo_MUX2to1 ; vhdl2_AntoinePhan_JakobRylo ;
-; Family name                                                                     ; Cyclone V                     ; Cyclone V                   ;
-; Use smart compilation                                                           ; Off                           ; Off                         ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                            ; On                          ;
-; Enable compact report table                                                     ; Off                           ; Off                         ;
-; Restructure Multiplexers                                                        ; Auto                          ; Auto                        ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                           ; Off                         ;
-; Create Debugging Nodes for IP Cores                                             ; Off                           ; Off                         ;
-; Preserve fewer node names                                                       ; On                            ; On                          ;
-; Disable OpenCore Plus hardware evaluation                                       ; Off                           ; Off                         ;
-; Verilog Version                                                                 ; Verilog_2001                  ; Verilog_2001                ;
-; VHDL Version                                                                    ; VHDL_1993                     ; VHDL_1993                   ;
-; State Machine Processing                                                        ; Auto                          ; Auto                        ;
-; Safe State Machine                                                              ; Off                           ; Off                         ;
-; Extract Verilog State Machines                                                  ; On                            ; On                          ;
-; Extract VHDL State Machines                                                     ; On                            ; On                          ;
-; Ignore Verilog initial constructs                                               ; Off                           ; Off                         ;
-; Iteration limit for constant Verilog loops                                      ; 5000                          ; 5000                        ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                           ; 250                         ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                            ; On                          ;
-; Infer RAMs from Raw Logic                                                       ; On                            ; On                          ;
-; Parallel Synthesis                                                              ; On                            ; On                          ;
-; DSP Block Balancing                                                             ; Auto                          ; Auto                        ;
-; NOT Gate Push-Back                                                              ; On                            ; On                          ;
-; Power-Up Don't Care                                                             ; On                            ; On                          ;
-; Remove Redundant Logic Cells                                                    ; Off                           ; Off                         ;
-; Remove Duplicate Registers                                                      ; On                            ; On                          ;
-; Ignore CARRY Buffers                                                            ; Off                           ; Off                         ;
-; Ignore CASCADE Buffers                                                          ; Off                           ; Off                         ;
-; Ignore GLOBAL Buffers                                                           ; Off                           ; Off                         ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                           ; Off                         ;
-; Ignore LCELL Buffers                                                            ; Off                           ; Off                         ;
-; Ignore SOFT Buffers                                                             ; On                            ; On                          ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                           ; Off                         ;
-; Optimization Technique                                                          ; Balanced                      ; Balanced                    ;
-; Carry Chain Length                                                              ; 70                            ; 70                          ;
-; Auto Carry Chains                                                               ; On                            ; On                          ;
-; Auto Open-Drain Pins                                                            ; On                            ; On                          ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                           ; Off                         ;
-; Auto ROM Replacement                                                            ; On                            ; On                          ;
-; Auto RAM Replacement                                                            ; On                            ; On                          ;
-; Auto DSP Block Replacement                                                      ; On                            ; On                          ;
-; Auto Shift Register Replacement                                                 ; Auto                          ; Auto                        ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto                          ; Auto                        ;
-; Auto Clock Enable Replacement                                                   ; On                            ; On                          ;
-; Strict RAM Replacement                                                          ; Off                           ; Off                         ;
-; Allow Synchronous Control Signals                                               ; On                            ; On                          ;
-; Force Use of Synchronous Clear Signals                                          ; Off                           ; Off                         ;
-; Auto Resource Sharing                                                           ; Off                           ; Off                         ;
-; Allow Any RAM Size For Recognition                                              ; Off                           ; Off                         ;
-; Allow Any ROM Size For Recognition                                              ; Off                           ; Off                         ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                           ; Off                         ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                            ; On                          ;
-; Ignore translate_off and synthesis_off directives                               ; Off                           ; Off                         ;
-; Timing-Driven Synthesis                                                         ; On                            ; On                          ;
-; Report Parameter Settings                                                       ; On                            ; On                          ;
-; Report Source Assignments                                                       ; On                            ; On                          ;
-; Report Connectivity Checks                                                      ; On                            ; On                          ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                           ; Off                         ;
-; Synchronization Register Chain Length                                           ; 3                             ; 3                           ;
-; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation            ; Normal compilation          ;
-; HDL message level                                                               ; Level2                        ; Level2                      ;
-; Suppress Register Optimization Related Messages                                 ; Off                           ; Off                         ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000                          ; 5000                        ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                          ; 5000                        ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                           ; 100                         ;
-; Clock MUX Protection                                                            ; On                            ; On                          ;
-; Auto Gated Clock Conversion                                                     ; Off                           ; Off                         ;
-; Block Design Naming                                                             ; Auto                          ; Auto                        ;
-; SDC constraint protection                                                       ; Off                           ; Off                         ;
-; Synthesis Effort                                                                ; Auto                          ; Auto                        ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                            ; On                          ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                           ; Off                         ;
-; Analysis & Synthesis Message Level                                              ; Medium                        ; Medium                      ;
-; Disable Register Merging Across Hierarchies                                     ; Auto                          ; Auto                        ;
-; Resource Aware Inference For Block RAM                                          ; On                            ; On                          ;
-; Synthesis Seed                                                                  ; 1                             ; 1                           ;
-; Automatic Parallel Synthesis                                                    ; On                            ; On                          ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                           ; Off                         ;
-+---------------------------------------------------------------------------------+-------------------------------+-----------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                                            ;
++---------------------------------------------------------------------------------+------------------------------------------+-----------------------------+
+; Option                                                                          ; Setting                                  ; Default Value               ;
++---------------------------------------------------------------------------------+------------------------------------------+-----------------------------+
+; Device                                                                          ; 5CSEMA5F31C6                             ;                             ;
+; Top-level entity name                                                           ; AntoinePhan_JakobRylo_MUX2to1_structural ; vhdl2_AntoinePhan_JakobRylo ;
+; Family name                                                                     ; Cyclone V                                ; Cyclone V                   ;
+; Use smart compilation                                                           ; Off                                      ; Off                         ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                                       ; On                          ;
+; Enable compact report table                                                     ; Off                                      ; Off                         ;
+; Restructure Multiplexers                                                        ; Auto                                     ; Auto                        ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                                      ; Off                         ;
+; Create Debugging Nodes for IP Cores                                             ; Off                                      ; Off                         ;
+; Preserve fewer node names                                                       ; On                                       ; On                          ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                                      ; Off                         ;
+; Verilog Version                                                                 ; Verilog_2001                             ; Verilog_2001                ;
+; VHDL Version                                                                    ; VHDL_1993                                ; VHDL_1993                   ;
+; State Machine Processing                                                        ; Auto                                     ; Auto                        ;
+; Safe State Machine                                                              ; Off                                      ; Off                         ;
+; Extract Verilog State Machines                                                  ; On                                       ; On                          ;
+; Extract VHDL State Machines                                                     ; On                                       ; On                          ;
+; Ignore Verilog initial constructs                                               ; Off                                      ; Off                         ;
+; Iteration limit for constant Verilog loops                                      ; 5000                                     ; 5000                        ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                                      ; 250                         ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                                       ; On                          ;
+; Infer RAMs from Raw Logic                                                       ; On                                       ; On                          ;
+; Parallel Synthesis                                                              ; On                                       ; On                          ;
+; DSP Block Balancing                                                             ; Auto                                     ; Auto                        ;
+; NOT Gate Push-Back                                                              ; On                                       ; On                          ;
+; Power-Up Don't Care                                                             ; On                                       ; On                          ;
+; Remove Redundant Logic Cells                                                    ; Off                                      ; Off                         ;
+; Remove Duplicate Registers                                                      ; On                                       ; On                          ;
+; Ignore CARRY Buffers                                                            ; Off                                      ; Off                         ;
+; Ignore CASCADE Buffers                                                          ; Off                                      ; Off                         ;
+; Ignore GLOBAL Buffers                                                           ; Off                                      ; Off                         ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                                      ; Off                         ;
+; Ignore LCELL Buffers                                                            ; Off                                      ; Off                         ;
+; Ignore SOFT Buffers                                                             ; On                                       ; On                          ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                                      ; Off                         ;
+; Optimization Technique                                                          ; Balanced                                 ; Balanced                    ;
+; Carry Chain Length                                                              ; 70                                       ; 70                          ;
+; Auto Carry Chains                                                               ; On                                       ; On                          ;
+; Auto Open-Drain Pins                                                            ; On                                       ; On                          ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                                      ; Off                         ;
+; Auto ROM Replacement                                                            ; On                                       ; On                          ;
+; Auto RAM Replacement                                                            ; On                                       ; On                          ;
+; Auto DSP Block Replacement                                                      ; On                                       ; On                          ;
+; Auto Shift Register Replacement                                                 ; Auto                                     ; Auto                        ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                                     ; Auto                        ;
+; Auto Clock Enable Replacement                                                   ; On                                       ; On                          ;
+; Strict RAM Replacement                                                          ; Off                                      ; Off                         ;
+; Allow Synchronous Control Signals                                               ; On                                       ; On                          ;
+; Force Use of Synchronous Clear Signals                                          ; Off                                      ; Off                         ;
+; Auto Resource Sharing                                                           ; Off                                      ; Off                         ;
+; Allow Any RAM Size For Recognition                                              ; Off                                      ; Off                         ;
+; Allow Any ROM Size For Recognition                                              ; Off                                      ; Off                         ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                                      ; Off                         ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                                       ; On                          ;
+; Ignore translate_off and synthesis_off directives                               ; Off                                      ; Off                         ;
+; Timing-Driven Synthesis                                                         ; On                                       ; On                          ;
+; Report Parameter Settings                                                       ; On                                       ; On                          ;
+; Report Source Assignments                                                       ; On                                       ; On                          ;
+; Report Connectivity Checks                                                      ; On                                       ; On                          ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                                      ; Off                         ;
+; Synchronization Register Chain Length                                           ; 3                                        ; 3                           ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation                       ; Normal compilation          ;
+; HDL message level                                                               ; Level2                                   ; Level2                      ;
+; Suppress Register Optimization Related Messages                                 ; Off                                      ; Off                         ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                                     ; 5000                        ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                                     ; 5000                        ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                                      ; 100                         ;
+; Clock MUX Protection                                                            ; On                                       ; On                          ;
+; Auto Gated Clock Conversion                                                     ; Off                                      ; Off                         ;
+; Block Design Naming                                                             ; Auto                                     ; Auto                        ;
+; SDC constraint protection                                                       ; Off                                      ; Off                         ;
+; Synthesis Effort                                                                ; Auto                                     ; Auto                        ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                                       ; On                          ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                                      ; Off                         ;
+; Analysis & Synthesis Message Level                                              ; Medium                                   ; Medium                      ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                                     ; Auto                        ;
+; Resource Aware Inference For Block RAM                                          ; On                                       ; On                          ;
+; Synthesis Seed                                                                  ; 1                                        ; 1                           ;
+; Automatic Parallel Synthesis                                                    ; On                                       ; On                          ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                                      ; Off                         ;
++---------------------------------------------------------------------------------+------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -156,28 +167,124 @@ agreement for further details.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; AntoinePhan_JakobRylo_MUX2to1_structural.vhd ; yes             ; User VHDL File  ; P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd ;         ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 1     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 1     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 1     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 4     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; Y~0   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 8     ;
+; Average fan-out                             ; 0.89  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
++-------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------+--------------+
+; |antoinephan_jakobrylo_MUX2to1_structural ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 4    ; 0            ; |antoinephan_jakobrylo_MUX2to1_structural ; work         ;
++-------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         3 data inputs ; 1                           ;
+; boundary_port         ; 4                           ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Thu Sep 22 16:24:19 2022
+    Info: Processing started: Thu Sep 22 23:11:33 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vhdl2_AntoinePhan_JakobRylo -c vhdl2_AntoinePhan_JakobRylo
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 3 design units, including 1 entities, in source file testbench.vhd
+    Info (12022): Found design unit 1: MUX_testbench-tb_struct File: P:/ECSE222-VHDL/Lab2/VHDL2/testbench.vhd Line: 10
+    Info (12022): Found design unit 2: MUX_testbench-tb_behave File: P:/ECSE222-VHDL/Lab2/VHDL2/testbench.vhd Line: 52
+    Info (12023): Found entity 1: MUX_testbench File: P:/ECSE222-VHDL/Lab2/VHDL2/testbench.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file antoinephan_jakobrylo_comp.bdf
     Info (12023): Found entity 1: AntoinePhan_JakobRylo_comp
 Info (12021): Found 2 design units, including 1 entities, in source file antoinephan_jakobrylo_mux2to1_structural.vhd
-    Info (12022): Found design unit 1: antoinephan_jakobrylo_MUX2to1_struct-structural File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd Line: 11
+    Info (12022): Found design unit 1: antoinephan_jakobrylo_MUX2to1_structural-structural File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd Line: 11
     Info (12023): Found entity 1: antoinephan_jakobrylo_MUX2to1_structural File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file antoinephan_jakobrylo_mux2to1_behavioral.vhd
-    Info (12022): Found design unit 1: antoinephan_jakobrylo_MUX2to1_struct-behavior File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd Line: 12
+    Info (12022): Found design unit 1: antoinephan_jakobrylo_MUX2to1_behavioral-behavior File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd Line: 12
     Info (12023): Found entity 1: antoinephan_jakobrylo_MUX2to1_behavioral File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd Line: 6
-Error (10334): VHDL error at AntoinePhan_JakobRylo_MUX2to1_structural.vhd(11): entity "antoinephan_jakobrylo_MUX2to1_struct" is used but not declared File: P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_structural.vhd Line: 11
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
-    Error: Peak virtual memory: 5031 megabytes
-    Error: Processing ended: Thu Sep 22 16:24:27 2022
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:18
+Info (12127): Elaborating entity "AntoinePhan_JakobRylo_MUX2to1_structural" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 1 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 5058 megabytes
+    Info: Processing ended: Thu Sep 22 23:11:43 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:18
 
 

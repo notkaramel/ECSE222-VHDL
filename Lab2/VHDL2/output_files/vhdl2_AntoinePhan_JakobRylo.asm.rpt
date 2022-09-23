@@ -1,5 +1,5 @@
 Assembler report for vhdl2_AntoinePhan_JakobRylo
-Mon Sep 19 10:05:54 2022
+Thu Sep 22 23:12:41 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: P:/ECSE 222/Assignments/Lab2/VHDL2/output_files/vhdl2_AntoinePhan_JakobRylo.sof
+  5. Assembler Device Options: P:/ECSE222-VHDL/Lab2/VHDL2/output_files/vhdl2_AntoinePhan_JakobRylo.sof
   6. Assembler Messages
 
 
@@ -35,15 +35,15 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------+
-; Assembler Summary                                             ;
-+-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Sep 19 10:05:54 2022 ;
-; Revision Name         ; vhdl2_AntoinePhan_JakobRylo           ;
-; Top-level Entity Name ; AntoinePhan_JakobRylo_comp            ;
-; Family                ; Cyclone V                             ;
-; Device                ; 5CSEMA5F31C6                          ;
-+-----------------------+---------------------------------------+
++------------------------------------------------------------------+
+; Assembler Summary                                                ;
++-----------------------+------------------------------------------+
+; Assembler Status      ; Successful - Thu Sep 22 23:12:41 2022    ;
+; Revision Name         ; vhdl2_AntoinePhan_JakobRylo              ;
+; Top-level Entity Name ; antoinephan_jakobrylo_MUX2to1_structural ;
+; Family                ; Cyclone V                                ;
+; Device                ; 5CSEMA5F31C6                             ;
++-----------------------+------------------------------------------+
 
 
 +----------------------------------+
@@ -53,24 +53,24 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------------+
-; Assembler Generated Files                                                       ;
-+---------------------------------------------------------------------------------+
-; File Name                                                                       ;
-+---------------------------------------------------------------------------------+
-; P:/ECSE 222/Assignments/Lab2/VHDL2/output_files/vhdl2_AntoinePhan_JakobRylo.sof ;
-+---------------------------------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Generated Files                                               ;
++-------------------------------------------------------------------------+
+; File Name                                                               ;
++-------------------------------------------------------------------------+
+; P:/ECSE222-VHDL/Lab2/VHDL2/output_files/vhdl2_AntoinePhan_JakobRylo.sof ;
++-------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: P:/ECSE 222/Assignments/Lab2/VHDL2/output_files/vhdl2_AntoinePhan_JakobRylo.sof ;
-+----------------+------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                  ;
-+----------------+------------------------------------------------------------------------------------------+
-; Device         ; 5CSEMA5F31C6                                                                             ;
-; JTAG usercode  ; 0x00AF5924                                                                               ;
-; Checksum       ; 0x00AF5924                                                                               ;
-+----------------+------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Assembler Device Options: P:/ECSE222-VHDL/Lab2/VHDL2/output_files/vhdl2_AntoinePhan_JakobRylo.sof ;
++----------------+----------------------------------------------------------------------------------+
+; Option         ; Setting                                                                          ;
++----------------+----------------------------------------------------------------------------------+
+; Device         ; 5CSEMA5F31C6                                                                     ;
+; JTAG usercode  ; 0x00AF4EE0                                                                       ;
+; Checksum       ; 0x00AF4EE0                                                                       ;
++----------------+----------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Mon Sep 19 10:05:44 2022
+    Info: Processing started: Thu Sep 22 23:12:33 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off vhdl2_AntoinePhan_JakobRylo -c vhdl2_AntoinePhan_JakobRylo
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 5015 megabytes
-    Info: Processing ended: Mon Sep 19 10:05:55 2022
-    Info: Elapsed time: 00:00:11
+    Info: Peak virtual memory: 5012 megabytes
+    Info: Processing ended: Thu Sep 22 23:12:42 2022
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:07
 
 
