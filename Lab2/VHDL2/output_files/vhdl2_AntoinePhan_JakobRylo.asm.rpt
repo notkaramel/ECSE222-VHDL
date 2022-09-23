@@ -1,6 +1,6 @@
 Assembler report for vhdl2_AntoinePhan_JakobRylo
-Thu Sep 22 23:12:41 2022
-Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Fri Sep 23 14:36:15 2022
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -18,18 +18,18 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera MegaCore Function License Agreement, or other 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
+devices manufactured by Intel and sold by Intel or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
@@ -38,9 +38,9 @@ agreement for further details.
 +------------------------------------------------------------------+
 ; Assembler Summary                                                ;
 +-----------------------+------------------------------------------+
-; Assembler Status      ; Successful - Thu Sep 22 23:12:41 2022    ;
+; Assembler Status      ; Successful - Fri Sep 23 14:36:15 2022    ;
 ; Revision Name         ; vhdl2_AntoinePhan_JakobRylo              ;
-; Top-level Entity Name ; antoinephan_jakobrylo_MUX2to1_structural ;
+; Top-level Entity Name ; antoinephan_jakobrylo_MUX2to1_behavioral ;
 ; Family                ; Cyclone V                                ;
 ; Device                ; 5CSEMA5F31C6                             ;
 +-----------------------+------------------------------------------+
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                                          ;
 +----------------+----------------------------------------------------------------------------------+
 ; Device         ; 5CSEMA5F31C6                                                                     ;
-; JTAG usercode  ; 0x00AF4EE0                                                                       ;
-; Checksum       ; 0x00AF4EE0                                                                       ;
+; JTAG usercode  ; 0x00AF4E2C                                                                       ;
+; Checksum       ; 0x00AF4E2C                                                                       ;
 +----------------+----------------------------------------------------------------------------------+
 
 
@@ -78,14 +78,15 @@ agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Thu Sep 22 23:12:33 2022
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Fri Sep 23 14:36:06 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off vhdl2_AntoinePhan_JakobRylo -c vhdl2_AntoinePhan_JakobRylo
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
-Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 5012 megabytes
-    Info: Processing ended: Thu Sep 22 23:12:42 2022
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Fri Sep 23 14:36:16 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:08
 
 

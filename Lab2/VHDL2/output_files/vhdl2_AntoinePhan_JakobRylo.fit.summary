@@ -1,7 +1,7 @@
-Fitter Status : Successful - Thu Sep 22 23:12:26 2022
-Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Fitter Status : Successful - Fri Sep 23 14:36:01 2022
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : vhdl2_AntoinePhan_JakobRylo
-Top-level Entity Name : antoinephan_jakobrylo_MUX2to1_structural
+Top-level Entity Name : antoinephan_jakobrylo_MUX2to1_behavioral
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final

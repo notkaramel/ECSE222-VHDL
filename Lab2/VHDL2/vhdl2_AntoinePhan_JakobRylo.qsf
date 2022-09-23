@@ -39,10 +39,10 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY AntoinePhan_JakobRylo_MUX2to1_structural
+set_global_assignment -name TOP_LEVEL_ENTITY AntoinePhan_JakobRylo_MUX2to1_behavioral
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:44:26  SEPTEMBER 09, 2022"
-set_global_assignment -name LAST_QUARTUS_VERSION 15.1.0
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -53,16 +53,21 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testbench -section_id eda_simulation
-set_global_assignment -name VHDL_FILE testbench.vhd
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH behave_tb -section_id eda_simulation
 set_global_assignment -name BDF_FILE AntoinePhan_JakobRylo_comp.bdf
 set_global_assignment -name VHDL_FILE AntoinePhan_JakobRylo_MUX2to1_structural.vhd
 set_global_assignment -name VHDL_FILE AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd
-set_global_assignment -name EDA_TEST_BENCH_NAME testbench -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench
-set_global_assignment -name EDA_TEST_BENCH_FILE testbench.vhd -section_id testbench
+set_global_assignment -name VHDL_FILE structural_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME struct_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id struct_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME struct_tb -section_id struct_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME behave_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id behave_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME behave_tb -section_id behave_tb
+set_global_assignment -name VHDL_FILE behavioral_tb.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE structural_tb.vhd -section_id struct_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE behavioral_tb.vhd -section_id behave_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

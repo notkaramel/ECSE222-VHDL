@@ -1,6 +1,6 @@
 Flow report for vhdl2_AntoinePhan_JakobRylo
-Thu Sep 22 23:12:58 2022
-Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Fri Sep 23 14:36:29 2022
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -21,46 +21,46 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera MegaCore Function License Agreement, or other 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
+devices manufactured by Intel and sold by Intel or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Flow Summary                                                                      ;
-+---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Thu Sep 22 23:12:58 2022           ;
-; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
-; Revision Name                   ; vhdl2_AntoinePhan_JakobRylo                     ;
-; Top-level Entity Name           ; antoinephan_jakobrylo_MUX2to1_structural        ;
-; Family                          ; Cyclone V                                       ;
-; Device                          ; 5CSEMA5F31C6                                    ;
-; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 1 / 32,070 ( < 1 % )                            ;
-; Total registers                 ; 0                                               ;
-; Total pins                      ; 4 / 457 ( < 1 % )                               ;
-; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
-; Total HSSI RX PCSs              ; 0                                               ;
-; Total HSSI PMA RX Deserializers ; 0                                               ;
-; Total HSSI TX PCSs              ; 0                                               ;
-; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                                   ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
-+---------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Fri Sep 23 14:36:29 2022       ;
+; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                   ; vhdl2_AntoinePhan_JakobRylo                 ;
+; Top-level Entity Name           ; antoinephan_jakobrylo_MUX2to1_behavioral    ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 1 / 32,070 ( < 1 % )                        ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 4 / 457 ( < 1 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-------------------------------------------------+
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+-----------------------------+
 ; Option            ; Setting                     ;
 +-------------------+-----------------------------+
-; Start date & time ; 09/22/2022 23:11:34         ;
+; Start date & time ; 09/23/2022 14:34:48         ;
 ; Main task         ; Compilation                 ;
 ; Revision Name     ; vhdl2_AntoinePhan_JakobRylo ;
 +-------------------+-----------------------------+
@@ -79,25 +79,29 @@ agreement for further details.
 +--------------------------------------+------------------------------------------+-----------------------------+------------------------------------------+----------------+
 ; Assignment Name                      ; Value                                    ; Default Value               ; Entity Name                              ; Section Id     ;
 +--------------------------------------+------------------------------------------+-----------------------------+------------------------------------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 194042949843717.166390269419220          ; --                          ; --                                       ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                       ; --                          ; --                                       ; testbench      ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                                ; --                          ; --                                       ; eda_simulation ;
+; COMPILER_SIGNATURE_ID                ; 194042948756938.166395808818224          ; --                          ; --                                       ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                       ; --                          ; --                                       ; struct_tb      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                       ; --                          ; --                                       ; behave_tb      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; behave_tb                                ; --                          ; --                                       ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                     ; --                          ; --                                       ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                   ; <None>                      ; --                                       ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                          ; --                          ; --                                       ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; testbench.vhd                            ; --                          ; --                                       ; testbench      ;
-; EDA_TEST_BENCH_MODULE_NAME           ; testbench                                ; --                          ; --                                       ; testbench      ;
-; EDA_TEST_BENCH_NAME                  ; testbench                                ; --                          ; --                                       ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; structural_tb.vhd                        ; --                          ; --                                       ; struct_tb      ;
+; EDA_TEST_BENCH_FILE                  ; behavioral_tb.vhd                        ; --                          ; --                                       ; behave_tb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; struct_tb                                ; --                          ; --                                       ; struct_tb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; behave_tb                                ; --                          ; --                                       ; behave_tb      ;
+; EDA_TEST_BENCH_NAME                  ; struct_tb                                ; --                          ; --                                       ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; behave_tb                                ; --                          ; --                                       ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                                     ; --                          ; --                                       ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                       ; --                          ; --                                       ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                        ; --                          ; --                                       ; --             ;
-; PARTITION_COLOR                      ; 16764057                                 ; --                          ; AntoinePhan_JakobRylo_MUX2to1_structural ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                    ; --                          ; AntoinePhan_JakobRylo_MUX2to1_structural ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                   ; --                          ; AntoinePhan_JakobRylo_MUX2to1_structural ; Top            ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)   ; --                          ; AntoinePhan_JakobRylo_MUX2to1_behavioral ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)   ; --                          ; AntoinePhan_JakobRylo_MUX2to1_behavioral ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)   ; --                          ; AntoinePhan_JakobRylo_MUX2to1_behavioral ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                      ; --                          ; --                                       ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW    ; --                          ; --                                       ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                             ; --                          ; --                                       ; --             ;
-; TOP_LEVEL_ENTITY                     ; AntoinePhan_JakobRylo_MUX2to1_structural ; vhdl2_AntoinePhan_JakobRylo ; --                                       ; --             ;
+; TOP_LEVEL_ENTITY                     ; AntoinePhan_JakobRylo_MUX2to1_behavioral ; vhdl2_AntoinePhan_JakobRylo ; --                                       ; --             ;
 +--------------------------------------+------------------------------------------+-----------------------------+------------------------------------------+----------------+
 
 
@@ -106,26 +110,26 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 5058 MB             ; 00:00:18                           ;
-; Fitter                    ; 00:00:39     ; 1.0                     ; 7173 MB             ; 00:03:59                           ;
-; Assembler                 ; 00:00:08     ; 1.0                     ; 5012 MB             ; 00:00:07                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 5347 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4915 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:05     ; --                      ; --                  ; 00:04:28                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4858 MB             ; 00:00:26                           ;
+; Fitter                    ; 00:00:56     ; 1.0                     ; 6980 MB             ; 00:04:37                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 4825 MB             ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 5149 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4727 MB             ; 00:00:02                           ;
+; Total                     ; 00:01:31     ; --                      ; --                  ; 00:05:18                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; 156TR5090-15     ; Windows 8 ; 6.2        ; x86_64         ;
-; Fitter                    ; 156TR5090-15     ; Windows 8 ; 6.2        ; x86_64         ;
-; Assembler                 ; 156TR5090-15     ; Windows 8 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; 156TR5090-15     ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; 156TR5090-15     ; Windows 8 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; 025TR4D2A        ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; 025TR4D2A        ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; 025TR4D2A        ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; 025TR4D2A        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; 025TR4D2A        ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
