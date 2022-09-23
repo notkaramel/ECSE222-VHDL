@@ -1,5 +1,5 @@
 Assembler report for vhdl2_AntoinePhan_JakobRylo
-Fri Sep 23 14:36:15 2022
+Fri Sep 23 17:48:57 2022
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +------------------------------------------------------------------+
 ; Assembler Summary                                                ;
 +-----------------------+------------------------------------------+
-; Assembler Status      ; Successful - Fri Sep 23 14:36:15 2022    ;
+; Assembler Status      ; Successful - Fri Sep 23 17:48:57 2022    ;
 ; Revision Name         ; vhdl2_AntoinePhan_JakobRylo              ;
 ; Top-level Entity Name ; antoinephan_jakobrylo_MUX2to1_behavioral ;
 ; Family                ; Cyclone V                                ;
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Fri Sep 23 14:36:06 2022
+    Info: Processing started: Fri Sep 23 17:48:47 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off vhdl2_AntoinePhan_JakobRylo -c vhdl2_AntoinePhan_JakobRylo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Fri Sep 23 14:36:16 2022
+    Info: Processing ended: Fri Sep 23 17:48:57 2022
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:08
 

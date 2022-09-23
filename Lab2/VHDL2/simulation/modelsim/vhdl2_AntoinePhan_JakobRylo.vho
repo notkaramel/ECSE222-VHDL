@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition"
 
--- DATE "09/23/2022 14:36:29"
+-- DATE "09/23/2022 17:53:16"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -34,14 +34,14 @@ USE ALTERA_LNSIM.ALTERA_LNSIM_COMPONENTS.ALL;
 USE CYCLONEV.CYCLONEV_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	antoinephan_jakobrylo_MUX2to1_behavioral IS
+ENTITY 	antoinephan_jakobrylo_MUX2to1_structural IS
     PORT (
 	A : IN std_logic;
 	B : IN std_logic;
 	S : IN std_logic;
 	Y : BUFFER std_logic
 	);
-END antoinephan_jakobrylo_MUX2to1_behavioral;
+END antoinephan_jakobrylo_MUX2to1_structural;
 
 -- Design Ports Information
 -- Y	=>  Location: PIN_AC28,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -50,7 +50,7 @@ END antoinephan_jakobrylo_MUX2to1_behavioral;
 -- A	=>  Location: PIN_W25,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF antoinephan_jakobrylo_MUX2to1_behavioral IS
+ARCHITECTURE structure OF antoinephan_jakobrylo_MUX2to1_structural IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -68,7 +68,7 @@ SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 SIGNAL \S~input_o\ : std_logic;
 SIGNAL \A~input_o\ : std_logic;
 SIGNAL \B~input_o\ : std_logic;
-SIGNAL \Selector0~0_combout\ : std_logic;
+SIGNAL \Y~0_combout\ : std_logic;
 SIGNAL \ALT_INV_A~input_o\ : std_logic;
 SIGNAL \ALT_INV_S~input_o\ : std_logic;
 SIGNAL \ALT_INV_B~input_o\ : std_logic;
@@ -95,7 +95,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Selector0~0_combout\,
+	i => \Y~0_combout\,
 	devoe => ww_devoe,
 	o => ww_Y);
 
@@ -133,9 +133,9 @@ PORT MAP (
 	o => \B~input_o\);
 
 -- Location: LABCELL_X88_Y20_N0
-\Selector0~0\ : cyclonev_lcell_comb
+\Y~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Selector0~0_combout\ = ( \B~input_o\ & ( (\A~input_o\) # (\S~input_o\) ) ) # ( !\B~input_o\ & ( (!\S~input_o\ & \A~input_o\) ) )
+-- \Y~0_combout\ = ( \B~input_o\ & ( (\A~input_o\) # (\S~input_o\) ) ) # ( !\B~input_o\ & ( (!\S~input_o\ & \A~input_o\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -147,7 +147,7 @@ PORT MAP (
 	dataa => \ALT_INV_S~input_o\,
 	datac => \ALT_INV_A~input_o\,
 	datae => \ALT_INV_B~input_o\,
-	combout => \Selector0~0_combout\);
+	combout => \Y~0_combout\);
 
 -- Location: LABCELL_X61_Y31_N0
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb

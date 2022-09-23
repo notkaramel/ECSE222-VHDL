@@ -22,9 +22,9 @@ VbFJ]?f1>@ELH0VPRcf[NW0
 !s100 l@NzDR@`B^QkGbdmW@[7W2
 Z7 OV;C;10.3d;59
 31
-Z8 !s110 1663958293
+Z8 !s110 1663970661
 !i10b 1
-Z9 !s108 1663958293.467000
+Z9 !s108 1663970661.419000
 Z10 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd|
 Z11 !s107 P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd|
 !i113 1
@@ -50,7 +50,7 @@ R11
 R12
 R13
 Emux_testbench_behavioral
-Z14 w1663958067
+Z14 w1663969630
 R2
 R3
 R4
@@ -63,9 +63,9 @@ VZ9CGz`4EYOEh]lGjA^FLW2
 !s100 K2lD0RnX57kMdZi>V61i:3
 R7
 31
-Z17 !s110 1663958294
+Z17 !s110 1663970662
 !i10b 1
-Z18 !s108 1663958294.135000
+Z18 !s108 1663970662.136000
 Z19 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab2/VHDL2/behavioral_tb.vhd|
 Z20 !s107 P:/ECSE222-VHDL/Lab2/VHDL2/behavioral_tb.vhd|
 !i113 1
@@ -76,10 +76,10 @@ R2
 R3
 R4
 DEx4 work 24 mux_testbench_behavioral 0 22 Z9CGz`4EYOEh]lGjA^FLW2
-l21
+l30
 L10
-VJB?nmnRPRi8:mckBP=adV0
-!s100 6Zn9J5aCX[d=@:TD]SHfh3
+V>ge@0WMf76?_<PVaRKK=M0
+!s100 :ZVV26zC^?ozC03e4N5AM3
 R7
 31
 R17

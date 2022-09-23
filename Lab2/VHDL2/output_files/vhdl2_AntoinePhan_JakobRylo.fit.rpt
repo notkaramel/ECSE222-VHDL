@@ -1,5 +1,5 @@
 Fitter report for vhdl2_AntoinePhan_JakobRylo
-Fri Sep 23 14:36:01 2022
+Fri Sep 23 17:53:09 2022
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -58,10 +58,10 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Fri Sep 23 14:36:01 2022       ;
+; Fitter Status                   ; Successful - Fri Sep 23 17:53:09 2022       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; vhdl2_AntoinePhan_JakobRylo                 ;
-; Top-level Entity Name           ; antoinephan_jakobrylo_MUX2to1_behavioral    ;
+; Top-level Entity Name           ; antoinephan_jakobrylo_MUX2to1_structural    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
@@ -1356,7 +1356,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------+------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name                              ; Library Name ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------+------------------------------------------+--------------+
-; |antoinephan_jakobrylo_MUX2to1_behavioral ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 4    ; 0            ; |antoinephan_jakobrylo_MUX2to1_behavioral ; antoinephan_jakobrylo_MUX2to1_behavioral ; work         ;
+; |antoinephan_jakobrylo_MUX2to1_structural ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 4    ; 0            ; |antoinephan_jakobrylo_MUX2to1_structural ; antoinephan_jakobrylo_MUX2to1_structural ; work         ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1379,11 +1379,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
 ; B                   ;                   ;         ;
-;      - Selector0~0  ; 1                 ; 0       ;
+;      - Y~0          ; 1                 ; 0       ;
 ; S                   ;                   ;         ;
-;      - Selector0~0  ; 1                 ; 0       ;
+;      - Y~0          ; 1                 ; 0       ;
 ; A                   ;                   ;         ;
-;      - Selector0~0  ; 1                 ; 0       ;
+;      - Y~0          ; 1                 ; 0       ;
 +---------------------+-------------------+---------+
 
 
@@ -1613,18 +1613,18 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.18 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file P:/ECSE222-VHDL/Lab2/VHDL2/output_files/vhdl2_AntoinePhan_JakobRylo.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 6980 megabytes
-    Info: Processing ended: Fri Sep 23 14:36:04 2022
-    Info: Elapsed time: 00:00:59
-    Info: Total CPU time (on all processors): 00:04:38
+    Info: Processing ended: Fri Sep 23 17:53:11 2022
+    Info: Elapsed time: 00:00:58
+    Info: Total CPU time (on all processors): 00:04:40
 
 
 +----------------------------+

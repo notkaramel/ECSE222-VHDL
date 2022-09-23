@@ -14,6 +14,15 @@ architecture tb of MUX_testbench_behavioral is
               	Y : out std_logic);
     end component;
 	 
+	  -- Function that takes in i as integer, return std_logic value
+		function to_std_logic(i : integer) return std_logic is
+		begin
+			if i = 0 then return '0';
+			elsif (i = 1) then return '1';
+			end if;
+			return 'X';
+		end function;
+		
 	 --setting up signals
     signal A_in,B_in,S_in : std_logic;
     signal Y_out : std_logic;
@@ -28,17 +37,18 @@ begin
 
     stimulate : process
     begin
-		for i in std_logic range '0' to '1' loop
-			S_in <= i;
-			for j in std_logic range '0' to '1' loop
-				A_in <= j;
-				for k in std_logic range '0' to '1' loop
-					B_in <= k;
+	-- S as logical 0 and 1, and then 'X'
+		for i in 0 to 2 loop
+			S_in <= to_std_logic(i);
+			for j in 0 to 2 loop
+				A_in <= to_std_logic(j);
+				for k in 0 to 2 loop
+					B_in <= to_std_logic(k);
 					wait for 10 ns;
 				end loop;
 			end loop;
-		end loop;
-		report "Behavioral Test Complete";
+		end loop;		
+		report "Behavioral Test Complete"; -- print complete to terminal
 
       wait;  
     end process;
