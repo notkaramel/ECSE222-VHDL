@@ -13,9 +13,9 @@ Assignments for ECSE 222 - Digital Logic
 	- ModelSim-Altera xx.xx
 
 ### Lab's topic:
-- LAB 1: Getting Started with Quartus CAD Software
-- LAB 2: Design and Simulation of Digital Circuits
-- LAB 3:
+- LAB 1: Getting Started: Quartus Prime, ModelSim-Altera, Testbench
+- LAB 2: CAD tools, Schematic Design, 2-to-1 Multiplexer (MUX)
+- LAB 3: 4-bit circular barrel shifter, Ripple-Carry Adder (RCA), One-digit BCD Adder
 - LAB 4:
 - LAB 5:
 - LAB 6 (demo):
