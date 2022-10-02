@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate.vhd
+source_file = 1, P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate_testbench.vhd
+source_file = 1, c:/programfolder/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/programfolder/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/programfolder/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/programfolder/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, P:/ECSE 222/Assignments/Lab1/VHDL1/db/Antoine_Phan_vhdl1.cbx.xml
+design_name = or_gate
+instance = comp, \q~output\, q~output, or_gate, 1
+instance = comp, \b~input\, b~input, or_gate, 1
+instance = comp, \a~input\, a~input, or_gate, 1
+instance = comp, \q~0\, q~0, or_gate, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, or_gate, 1
