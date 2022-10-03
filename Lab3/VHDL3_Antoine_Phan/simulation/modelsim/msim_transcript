@@ -11,139 +11,73 @@
 # ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_behavioral.vhd}
+# vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_structural.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 22:11:16 on Oct 02,2022
-# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_behavioral.vhd 
+# Start time: 23:46:28 on Oct 02,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_structural.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity antoine_phan_barrel_shifter_behavioral
-# -- Compiling architecture behavioral of antoine_phan_barrel_shifter_behavioral
-# End time: 22:11:16 on Oct 02,2022, Elapsed time: 0:00:00
+# -- Compiling entity antoine_phan_barrel_shifter_structural
+# -- Compiling architecture structural of antoine_phan_barrel_shifter_structural
+# End time: 23:46:29 on Oct 02,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd}
+# vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 22:11:16 on Oct 02,2022
-# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd 
+# Start time: 23:46:29 on Oct 02,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity BS_behavioral_TB
-# -- Compiling architecture tb of BS_behavioral_TB
-# End time: 22:11:17 on Oct 02,2022, Elapsed time: 0:00:01
+# -- Compiling entity BS_structural_TB
+# -- Compiling architecture tb of BS_structural_TB
+# End time: 23:46:29 on Oct 02,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Antoine_Phan_barrel_shifter_behavioral
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" Antoine_Phan_barrel_shifter_behavioral 
-# Start time: 22:11:17 on Oct 02,2022
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  BS_structural_TB
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" BS_structural_TB 
+# Start time: 23:46:29 on Oct 02,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.antoine_phan_barrel_shifter_behavioral(behavioral)
+# Loading work.bs_structural_tb(tb)
+# Loading work.antoine_phan_barrel_shifter_structural(structural)
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: hphan6  Hostname: 156TR5090-06  ProcessID: 17632
 # 
-#           Attempting to use alternate WLF file "./wlftsc2nh8".
+#           Attempting to use alternate WLF file "./wlftx8nqfv".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftsc2nh8
+#           Using alternate file: ./wlftx8nqfv
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-run
-vsim work.bs_behavioral_tb
-# End time: 22:12:48 on Oct 02,2022, Elapsed time: 0:01:31
-# Errors: 0, Warnings: 2
-# vsim work.bs_behavioral_tb 
-# Start time: 22:12:48 on Oct 02,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.bs_behavioral_tb(tb)
-# Loading work.antoine_phan_barrel_shifter_behavioral(behavioral)
-add wave -position end  sim:/bs_behavioral_tb/sel_in
-add wave -position end  sim:/bs_behavioral_tb/x_in
-add wave -position end  sim:/bs_behavioral_tb/y_out
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: hphan6  Hostname: 156TR5090-06  ProcessID: 17632
-# 
-#           Attempting to use alternate WLF file "./wlftrr5n6n".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftrr5n6n
-# 
-run
-add wave -position end  sim:/bs_behavioral_tb/sel_in
-add wave -position end  sim:/bs_behavioral_tb/x_in
-add wave -position end  sim:/bs_behavioral_tb/y_out
-run
-run
-run
-run
-run -all
 # ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 320 ns  Iteration: 0  Instance: /bs_behavioral_tb
+#    Time: 320 ns  Iteration: 0  Instance: /bs_structural_tb
 # ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 660 ns  Iteration: 0  Instance: /bs_behavioral_tb
+#    Time: 660 ns  Iteration: 0  Instance: /bs_structural_tb
 # ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1 us  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1340 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1360 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1680 ns  Iteration: 0  Instance: /bs_behavioral_tb
-run -all
-run -all
-run -all
-run -all
-run -all
-run
+#    Time: 1 us  Iteration: 0  Instance: /bs_structural_tb
 restart
 run
-run
+run -continue
+# Break key hit
 run -all
 # ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 320 ns  Iteration: 0  Instance: /bs_behavioral_tb
+#    Time: 320 ns  Iteration: 0  Instance: /bs_structural_tb
 # ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 660 ns  Iteration: 0  Instance: /bs_behavioral_tb
+#    Time: 660 ns  Iteration: 0  Instance: /bs_structural_tb
 # ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1 us  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1340 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1360 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1680 ns  Iteration: 0  Instance: /bs_behavioral_tb
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 320 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 660 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1 us  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1340 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1360 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1680 ns  Iteration: 0  Instance: /bs_behavioral_tb
-# End time: 22:17:22 on Oct 02,2022, Elapsed time: 0:04:34
-# Errors: 0, Warnings: 20
+#    Time: 1 us  Iteration: 0  Instance: /bs_structural_tb
+# End time: 00:10:05 on Oct 03,2022, Elapsed time: 0:23:36
+# Errors: 0, Warnings: 8

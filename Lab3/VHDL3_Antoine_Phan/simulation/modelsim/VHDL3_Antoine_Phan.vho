@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition"
 
--- DATE "10/02/2022 22:10:55"
+-- DATE "10/02/2022 23:59:20"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -38,7 +38,7 @@ ENTITY 	antoine_phan_barrel_shifter_behavioral IS
     PORT (
 	x : IN std_logic_vector(3 DOWNTO 0);
 	sel : IN std_logic_vector(1 DOWNTO 0);
-	y : BUFFER std_logic_vector(3 DOWNTO 0)
+	y : OUT std_logic_vector(3 DOWNTO 0)
 	);
 END antoine_phan_barrel_shifter_behavioral;
 

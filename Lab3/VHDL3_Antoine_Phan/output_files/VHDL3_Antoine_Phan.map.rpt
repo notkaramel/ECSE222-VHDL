@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VHDL3_Antoine_Phan
-Sun Oct 02 22:17:50 2022
+Sun Oct 02 23:58:03 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 02 22:17:50 2022           ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 02 23:58:02 2022           ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                   ; VHDL3_Antoine_Phan                              ;
 ; Top-level Entity Name           ; antoine_phan_barrel_shifter_behavioral          ;
@@ -268,7 +268,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Sun Oct 02 22:17:40 2022
+    Info: Processing started: Sun Oct 02 23:57:52 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL3_Antoine_Phan -c VHDL3_Antoine_Phan
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file antoine_phan_barrel_shifter_structural.vhd
@@ -280,6 +280,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file antoine
 Info (12021): Found 2 design units, including 1 entities, in source file barrel_shifter_behavioral_tb.vhd
     Info (12022): Found design unit 1: BS_behavioral_TB-tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd Line: 9
     Info (12023): Found entity 1: BS_behavioral_TB File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file barrel_shifter_structural_tb.vhd
+    Info (12022): Found design unit 1: BS_structural_TB-tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd Line: 9
+    Info (12023): Found entity 1: BS_structural_TB File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd Line: 5
 Info (12127): Elaborating entity "Antoine_Phan_barrel_shifter_behavioral" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -289,9 +292,9 @@ Info (21057): Implemented 14 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 5058 megabytes
-    Info: Processing ended: Sun Oct 02 22:17:50 2022
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 5063 megabytes
+    Info: Processing ended: Sun Oct 02 23:58:03 2022
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:18
 
 

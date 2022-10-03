@@ -8,37 +8,37 @@ z2
 !i10f 100
 cModel Technology
 Z0 dP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/simulation/modelsim
-Eantoine_phan_barrel_shifter_behavioral
-Z1 w1664759605
+Eantoine_phan_barrel_shifter_structural
+Z1 w1664768347
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_behavioral.vhd
-Z6 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_behavioral.vhd
+Z5 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_structural.vhd
+Z6 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_structural.vhd
 l0
 L5
-V:E8N8SZ_C4m1zn8Uo]kCY0
-!s100 >Kc;^D^IcV0CUCK]mim663
+VfRVMann1n>@H`kl1V<dl]0
+!s100 ?B38LMLZBcK1UPcYW`i^]3
 Z7 OV;C;10.4b;61
 31
-Z8 !s110 1664763076
+Z8 !s110 1664768789
 !i10b 1
-Z9 !s108 1664763076.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_behavioral.vhd|
-Z11 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_behavioral.vhd|
+Z9 !s108 1664768788.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_structural.vhd|
+Z11 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_structural.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1
-Abehavioral
+Astructural
 R2
 R3
 R4
-DEx4 work 38 antoine_phan_barrel_shifter_behavioral 0 22 :E8N8SZ_C4m1zn8Uo]kCY0
-l28
+DEx4 work 38 antoine_phan_barrel_shifter_structural 0 22 fRVMann1n>@H`kl1V<dl]0
+l23
 L12
-Vh604HH<mk5fdS=>1cgP2k0
-!s100 1o?46eg>lK_Vml`^U2gBX0
+V2VJWmY8iVW10hHKUdUm@=2
+!s100 4nm5`A:KcIVQTHAfd6;^I0
 R7
 31
 R8
@@ -49,25 +49,25 @@ R11
 !i113 1
 R12
 R13
-Ebs_behavioral_tb
-Z14 w1664762951
+Ebs_structural_tb
+Z14 w1664766176
 R2
 R3
 R4
 R0
-Z15 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd
-Z16 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd
+Z15 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd
+Z16 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd
 l0
 L5
-VTGQH]S>>L24ka702>Z3g40
-!s100 SFjUZBY><U8FaKl?^;A0b0
+Vg@CK1=jgXB@i6nK27FJP_1
+!s100 m:a6OBVfijWVTklWOhLiI0
 R7
 31
-Z17 !s110 1664763077
+R8
 !i10b 1
-R9
-Z18 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd|
-Z19 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd|
+Z17 !s108 1664768789.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd|
+Z19 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd|
 !i113 1
 R12
 R13
@@ -75,16 +75,16 @@ Atb
 R2
 R3
 R4
-DEx4 work 16 bs_behavioral_tb 0 22 TGQH]S>>L24ka702>Z3g40
+DEx4 work 16 bs_structural_tb 0 22 g@CK1=jgXB@i6nK27FJP_1
 l22
 L9
-VHK:8dY;b>UPXQ=:jZ8XM_0
-!s100 zL5bM=idY]AhM>@EFmkK11
+Vb`m^Dm]V]8mFgUkfaTnoe0
+!s100 fSM<94WfYC586B7aP=]an0
 R7
 31
-R17
+R8
 !i10b 1
-R9
+R17
 R18
 R19
 !i113 1

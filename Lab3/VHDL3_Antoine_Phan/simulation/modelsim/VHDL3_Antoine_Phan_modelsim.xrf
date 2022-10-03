@@ -2,6 +2,7 @@ vendor_name = ModelSim
 source_file = 1, P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_structural.vhd
 source_file = 1, P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Antoine_Phan_barrel_shifter_behavioral.vhd
 source_file = 1, P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_behavioral_TB.vhd
+source_file = 1, P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Barrel_Shifter_structural_TB.vhd
 source_file = 1, c:/altera/15.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/15.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/15.1/quartus/libraries/vhdl/ieee/timing_b.vhd

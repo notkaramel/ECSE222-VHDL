@@ -26,26 +26,28 @@ architecture behavioral of antoine_phan_barrel_shifter_behavioral is
 	signal p: std_logic_vector(3 downto 0);
 
 begin
-	p(0) <= MUX(x(0), x(2), sel(1));
-	p(1) <= MUX(x(1), x(3), sel(1));
-	p(2) <= MUX(x(2), x(0), sel(1));
-	p(3) <= MUX(x(3), x(1), sel(1));
+--	p(0) <= MUX(x(0), x(2), sel(1));
+--	p(1) <= MUX(x(1), x(3), sel(1));
+--	p(2) <= MUX(x(2), x(0), sel(1));
+--	p(3) <= MUX(x(3), x(1), sel(1));
 	
-	-- use a loop instead
---	for i in 0 to 3 loop
---		p(i) <= MUX(x(i), x((i+2) mod 4), sel(1));
---	end loop;
+--	y(0) <= MUX(p(0), p(3), sel(0));
+--	y(1) <= MUX(p(1), p(0), sel(0));
+--	y(2) <= MUX(p(2), p(1), sel(0));
+--	y(3) <= MUX(p(3), p(2), sel(0));
 	
-	-- Process signals of P as input to the second layer of MUXes
-	--and send them to Y
-
-	y(0) <= MUX(p(0), p(3), sel(0));
-	y(1) <= MUX(p(1), p(0), sel(0));
-	y(2) <= MUX(p(2), p(1), sel(0));
-	y(3) <= MUX(p(3), p(2), sel(0));
-	
---	for i in 0 to 3 loop
---		y(i) <= MUX(p(i), p((i+3) mod 4), sel(0));
---	end loop;
+	process(x, sel, p)
+	begin
+		-- use a loop instead
+		for i in 0 to 3 loop
+			p(i) <= MUX(x(i), x((i+2) mod 4), sel(1));
+		end loop;
+			
+		-- Process signals of P as input to the second layer of MUXes
+		--and send them to Y
+		for i in 0 to 3 loop
+			y(i) <= MUX(p(i), p((i+3) mod 4), sel(0));
+		end loop;
+	end process;
 end;
 		
