@@ -9,13 +9,13 @@ entity antoine_phan_barrel_shifter_structural is
 		y: out std_logic_vector (3 downto 0));
 end antoine_phan_barrel_shifter_structural;
 
-
 architecture structural of antoine_phan_barrel_shifter_structural is
-	function MUX(A: std_logic, B: std_logic, S: std_logic) return std_logic is
+	function MUX(  A: std_logic;
+						B: std_logic; 
+						S: std_logic) return std_logic is
 		begin
 			return ((not S) and A) or (S and B);
 		end function;
 	
 begin
-	y <= 
 end;

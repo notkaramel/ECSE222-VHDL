@@ -1,0 +1,23 @@
+|Antoine_Phan_barrel_shifter_behavioral
+x[0] => p[0].DATAB
+x[0] => p[2].DATAA
+x[1] => p[1].DATAB
+x[1] => p[3].DATAA
+x[2] => p[0].DATAA
+x[2] => p[2].DATAB
+x[3] => p[1].DATAA
+x[3] => p[3].DATAB
+sel[0] => MUX.OUTPUTSELECT
+sel[0] => MUX.OUTPUTSELECT
+sel[0] => MUX.OUTPUTSELECT
+sel[0] => MUX.OUTPUTSELECT
+sel[1] => p[2].OUTPUTSELECT
+sel[1] => p[3].OUTPUTSELECT
+sel[1] => p[1].OUTPUTSELECT
+sel[1] => p[0].OUTPUTSELECT
+y[0] << MUX.DB_MAX_OUTPUT_PORT_TYPE
+y[1] << MUX.DB_MAX_OUTPUT_PORT_TYPE
+y[2] << MUX.DB_MAX_OUTPUT_PORT_TYPE
+y[3] << MUX.DB_MAX_OUTPUT_PORT_TYPE
+
+
