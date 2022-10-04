@@ -1,5 +1,5 @@
 Assembler report for VHDL3_Antoine_Phan
-Sun Oct 02 23:59:03 2022
+Mon Oct 03 21:18:01 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -35,15 +35,15 @@ agreement for further details.
 
 
 
-+----------------------------------------------------------------+
-; Assembler Summary                                              ;
-+-----------------------+----------------------------------------+
-; Assembler Status      ; Successful - Sun Oct 02 23:59:03 2022  ;
-; Revision Name         ; VHDL3_Antoine_Phan                     ;
-; Top-level Entity Name ; antoine_phan_barrel_shifter_behavioral ;
-; Family                ; Cyclone V                              ;
-; Device                ; 5CSEMA5F31C6                           ;
-+-----------------------+----------------------------------------+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Mon Oct 03 21:18:01 2022 ;
+; Revision Name         ; VHDL3_Antoine_Phan                    ;
+; Top-level Entity Name ; rca_structural                        ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CSEMA5F31C6                          ;
++-----------------------+---------------------------------------+
 
 
 +----------------------------------+
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                                              ;
 +----------------+--------------------------------------------------------------------------------------+
 ; Device         ; 5CSEMA5F31C6                                                                         ;
-; JTAG usercode  ; 0x00AF6FE3                                                                           ;
-; Checksum       ; 0x00AF6FE3                                                                           ;
+; JTAG usercode  ; 0x00AF6B0C                                                                           ;
+; Checksum       ; 0x00AF6B0C                                                                           ;
 +----------------+--------------------------------------------------------------------------------------+
 
 
@@ -79,12 +79,12 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Sun Oct 02 23:58:54 2022
+    Info: Processing started: Mon Oct 03 21:17:53 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off VHDL3_Antoine_Phan -c VHDL3_Antoine_Phan
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 5018 megabytes
-    Info: Processing ended: Sun Oct 02 23:59:03 2022
+    Info: Peak virtual memory: 5020 megabytes
+    Info: Processing ended: Mon Oct 03 21:18:02 2022
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:07
 

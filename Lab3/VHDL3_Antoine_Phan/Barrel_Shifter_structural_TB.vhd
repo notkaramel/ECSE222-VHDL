@@ -29,13 +29,15 @@ begin
 				
 	stimulate: process
 		begin
-		for i_sel in 0 to 2 loop
-			sel_in <= std_logic_vector(to_unsigned(i_sel, 2));
-			for i_x in 0 to 16 loop
+		report "Barrel Shifter STRUCTURAL exhaustive test STARTS";
+		for i_sel in 0 to 3 loop
+			sel_in <= std_logic_vector(to_unsigned(i_sel,2));
+			for i_x in 0 to 15 loop
 				x_in <= std_logic_vector(to_unsigned(i_x,4));
 				wait for 20 ns;
 			end loop;
 		end loop;
+		report "Barrel Shifter STRUCTURAL exhaustive test FINISHED";
 		wait;
 	end process;
 end;

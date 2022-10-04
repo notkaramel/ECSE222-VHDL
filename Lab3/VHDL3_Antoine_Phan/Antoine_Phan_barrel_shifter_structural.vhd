@@ -10,30 +10,124 @@ entity antoine_phan_barrel_shifter_structural is
 end antoine_phan_barrel_shifter_structural;
 
 architecture structural of antoine_phan_barrel_shifter_structural is
-	-- Subfunction MUX
-	function MUX(  A: std_logic;
-						B: std_logic; 
-						S: std_logic) return std_logic is
-		begin
-			return ((not S) and A) or (S and B);
-		end function;
-	-- Intermediate signal P between X and sel[0] MUXes
-	signal P: std_logic_vector(3 downto 0);
-
-begin
---using loops (in processes) to reduce code repetitions
+	component MUX_struct 
+		port(
+			A, B, S: in std_logic;
+			Y: out std_logic);
+	end component;
 	
-	process(x, sel, p)
-	begin
-		for i in 0 to 3 loop
-			p(i) <= MUX(x(i), x((i+2) mod 4), sel(1));
-		end loop;
+-- Intermediate signal P between sel[1] and sel[0] MUXes
+	signal P: std_logic_vector(3 downto 0);
+	
+begin
+	-- first layer of MUXes
+	mux1: MUX_struct
+		port map(
+			A => x(0),
+			B => x(2),
+			S => sel(1),
+			Y => P(0)
+			);
 			
-		-- Process signals of P as input to the second layer of MUXes
-		--and send them to Y
-		for i in 0 to 3 loop
-			y(i) <= MUX(p(i), p((i+3) mod 4), sel(0));
-		end loop;
-	end process;
-end;
+	mux2: MUX_struct
+		port map(
+			A => x(1),
+			B => x(3),
+			S => sel(1),
+			Y => P(1)
+			);
+			
+	mux3: MUX_struct
+		port map(
+			A => x(2),
+			B => x(0),
+			S => sel(1),
+			Y => P(2)
+			);
+			
+	mux4: MUX_struct
+		port map(
+			A => x(3),
+			B => x(1),
+			S => sel(1),
+			Y => P(3)
+			);
+			
+	-- Second layer of MUXes
+	mux5: MUX_struct
+		port map(
+			A => P(0),
+			B => P(3),
+			S => sel(0),
+			Y => Y(0)
+			);
+			
+	mux6: MUX_struct
+		port map(
+			A => P(1),
+			B => P(0),
+			S => sel(0),
+			Y => Y(1)
+			);
+			
+	mux7: MUX_struct
+		port map(
+			A => P(2),
+			B => P(1),
+			S => sel(0),
+			Y => Y(2)
+			);
+			
+	mux8: MUX_struct
+		port map(
+			A => P(3),
+			B => P(2),
+			S => sel(0),
+			Y => Y(3)
+			);
+	--	process(x, sel, p)
+--	begin
+--		for i in 0 to 3 loop
+--			mux: MUX_struct
+--				port map(
+--					A => x(i),
+--					B => x((i+2) mod 4),
+--					S => sel(1),
+--					Y => P(i)
+--					);
+--		end loop;
+--	end process;
+end structural;
+
+
+
+--- OLD CODE: (Ctrl + '/' to see) ---
+
+--architecture structural of antoine_phan_barrel_shifter_structural is
+--	-- Subfunction MUX
+--	function MUX(  A: std_logic;
+--						B: std_logic; 
+--						S: std_logic) return std_logic is
+--		begin
+--			return ((not S) and A) or (S and B);
+--		end function;
+--	-- Intermediate signal P between X and sel[0] MUXes
+--	signal P: std_logic_vector(3 downto 0);
+--
+--begin
+----using loops (in processes) to reduce code repetitions
+--	
+--	process(x, sel, p)
+--	begin
+--		for i in 0 to 3 loop
+--			p(i) <= MUX(x(i), x((i+2) mod 4), sel(1));
+--		end loop;
+--			
+--		-- Process signals of P as input to the second layer of MUXes
+--		--and send them to Y
+--		for i in 0 to 3 loop
+--			y(i) <= MUX(p(i), p((i+3) mod 4), sel(0));
+--		end loop;
+--	end process;
+--end;
 	

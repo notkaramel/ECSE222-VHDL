@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sun Oct 02 23:58:47 2022
+Fitter Status : Successful - Mon Oct 03 21:17:45 2022
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 Revision Name : VHDL3_Antoine_Phan
-Top-level Entity Name : antoine_phan_barrel_shifter_behavioral
+Top-level Entity Name : rca_structural
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 5 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 4 / 32,070 ( < 1 % )
 Total registers : 0
-Total pins : 10 / 457 ( 2 % )
+Total pins : 13 / 457 ( 3 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
 Total RAM Blocks : 0 / 397 ( 0 % )
