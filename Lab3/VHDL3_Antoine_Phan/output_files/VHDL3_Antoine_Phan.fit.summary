@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Oct 03 21:17:45 2022
+Fitter Status : Successful - Tue Oct 04 15:01:27 2022
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 Revision Name : VHDL3_Antoine_Phan
-Top-level Entity Name : rca_structural
+Top-level Entity Name : rca_behavioral
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 4 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 1 / 32,070 ( < 1 % )
 Total registers : 0
 Total pins : 13 / 457 ( 3 % )
 Total virtual pins : 0

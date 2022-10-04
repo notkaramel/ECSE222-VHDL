@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VHDL3_Antoine_Phan
-Mon Oct 03 21:17:02 2022
+Tue Oct 04 15:08:08 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -10,14 +10,7 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "full_adder:FA1"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -41,27 +34,22 @@ agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                      ;
-+---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 03 21:17:02 2022           ;
-; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
-; Revision Name                   ; VHDL3_Antoine_Phan                              ;
-; Top-level Entity Name           ; rca_structural                                  ;
-; Family                          ; Cyclone V                                       ;
-; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 0                                               ;
-; Total pins                      ; 13                                              ;
-; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0                                               ;
-; Total DSP Blocks                ; 0                                               ;
-; Total HSSI RX PCSs              ; 0                                               ;
-; Total HSSI PMA RX Deserializers ; 0                                               ;
-; Total HSSI TX PCSs              ; 0                                               ;
-; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0                                               ;
-; Total DLLs                      ; 0                                               ;
-+---------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Tue Oct 04 15:08:08 2022               ;
+; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
+; Revision Name               ; VHDL3_Antoine_Phan                              ;
+; Top-level Entity Name       ; RCA_Behavioral                                  ;
+; Family                      ; Cyclone V                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
+; Total registers             ; N/A until Partition Merge                       ;
+; Total pins                  ; N/A until Partition Merge                       ;
+; Total virtual pins          ; N/A until Partition Merge                       ;
+; Total block memory bits     ; N/A until Partition Merge                       ;
+; Total PLLs                  ; N/A until Partition Merge                       ;
+; Total DLLs                  ; N/A until Partition Merge                       ;
++-----------------------------+-------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -70,7 +58,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; RCA_Structural     ; VHDL3_Antoine_Phan ;
+; Top-level entity name                                                           ; RCA_Behavioral     ; VHDL3_Antoine_Phan ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -157,7 +145,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -168,120 +156,13 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; Half_Adder.vhd                   ; yes             ; User VHDL File  ; P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd     ;         ;
-; Full_adder.vhd                   ; yes             ; User VHDL File  ; P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd     ;         ;
-; RCA_Structural.vhd               ; yes             ; User VHDL File  ; P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 4          ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 6          ;
-;     -- 7 input functions                    ; 0          ;
-;     -- 6 input functions                    ; 1          ;
-;     -- 5 input functions                    ; 2          ;
-;     -- 4 input functions                    ; 2          ;
-;     -- <=3 input functions                  ; 1          ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 13         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; A[0]~input ;
-; Maximum fan-out                             ; 4          ;
-; Total fan-out                               ; 44         ;
-; Average fan-out                             ; 1.38       ;
-+---------------------------------------------+------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                 ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
-; |rca_structural            ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 13   ; 0            ; |rca_structural                               ; work         ;
-;    |full_adder:FA1|        ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |rca_structural|full_adder:FA1                ; work         ;
-;       |half_adder:HA1|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |rca_structural|full_adder:FA1|half_adder:HA1 ; work         ;
-;    |full_adder:FA2|        ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |rca_structural|full_adder:FA2                ; work         ;
-;       |half_adder:HA2|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |rca_structural|full_adder:FA2|half_adder:HA2 ; work         ;
-;    |full_adder:FA3|        ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |rca_structural|full_adder:FA3                ; work         ;
-;       |half_adder:HA2|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |rca_structural|full_adder:FA3|half_adder:HA2 ; work         ;
-;    |full_adder:FA4|        ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |rca_structural|full_adder:FA4                ; work         ;
-;       |half_adder:HA2|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |rca_structural|full_adder:FA4|half_adder:HA2 ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------+
-; Port Connectivity Checks: "full_adder:FA1" ;
-+------+-------+----------+------------------+
-; Port ; Type  ; Severity ; Details          ;
-+------+-------+----------+------------------+
-; c_in ; Input ; Info     ; Stuck at GND     ;
-+------+-------+----------+------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 6                           ;
-;     normal            ; 6                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 1                           ;
-; boundary_port         ; 13                          ;
-;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.50                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Mon Oct 03 21:16:52 2022
+    Info: Processing started: Tue Oct 04 15:08:01 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL3_Antoine_Phan -c VHDL3_Antoine_Phan
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file antoine_phan_barrel_shifter_structural.vhd
@@ -321,28 +202,30 @@ Info (12021): Found 2 design units, including 1 entities, in source file rca_str
     Info (12022): Found design unit 1: rca_structural_tb-tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural_TB.vhd Line: 10
     Info (12023): Found entity 1: rca_structural_tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural_TB.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rca_behavioral.vhd
-    Info (12022): Found design unit 1: rca_behavioral-rca_behave File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Behavioral.vhd Line: 12
-    Info (12023): Found entity 1: rca_behavioral File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Behavioral.vhd Line: 5
+    Info (12022): Found design unit 1: rca_behavioral-rca_behave File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Behavioral.vhd Line: 15
+    Info (12023): Found entity 1: rca_behavioral File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Behavioral.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file rca_behavioral_tb.vhd
     Info (12022): Found design unit 1: rca_behavioral_tb-tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Behavioral_TB.vhd Line: 10
     Info (12023): Found entity 1: rca_behavioral_tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Behavioral_TB.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_adder_structural.vhd
     Info (12022): Found design unit 1: bcd_adder_structural-bcd_struct File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd Line: 13
     Info (12023): Found entity 1: bcd_adder_structural File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd Line: 5
-Info (12127): Elaborating entity "RCA_Structural" for the top level hierarchy
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:FA1" File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd Line: 28
-Info (12128): Elaborating entity "half_adder" for hierarchy "full_adder:FA1|half_adder:HA1" File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd Line: 26
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 6 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 5064 megabytes
-    Info: Processing ended: Mon Oct 03 21:17:02 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:18
+Info (12021): Found 2 design units, including 1 entities, in source file bcd_adder_structural_tb.vhd
+    Info (12022): Found design unit 1: bcd_adder_structural-tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural_TB.vhd Line: 9
+    Info (12023): Found entity 1: bcd_adder_structural_tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural_TB.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file bcd_adder_behavioral.vhd
+    Info (12022): Found design unit 1: bcd_adder_behavioral-bcd_behave File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Behavioral.vhd Line: 13
+    Info (12023): Found entity 1: bcd_adder_behavioral File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Behavioral.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file bcd_adder_behavioral_tb.vhd
+    Info (12022): Found design unit 1: bcd_adder_behavioral_tb-tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Behavioral_TB.vhd Line: 9
+    Info (12023): Found entity 1: bcd_adder_behavioral_tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Behavioral_TB.vhd Line: 5
+Info (12127): Elaborating entity "RCA_Behavioral" for the top level hierarchy
+Error (10344): VHDL expression error at RCA_Behavioral.vhd(21): expression has 4 elements, but must have 5 elements File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Behavioral.vhd Line: 21
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 0 warnings
+    Error: Peak virtual memory: 5036 megabytes
+    Error: Processing ended: Tue Oct 04 15:08:09 2022
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:15
 
 
