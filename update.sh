@@ -3,5 +3,5 @@
 git add .
 git commit -m "update!"
 git push
-
-sleep 10s
+echo "Closing window in 7s"
+sleep 7s

@@ -1,3 +1,5 @@
 #!/usr/bin/bash
 git pull
-sleep 10s
+
+echo "Closing in 7s"
+sleep 7s
