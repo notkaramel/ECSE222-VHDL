@@ -20,72 +20,75 @@ architecture behavioral of antoine_phan_barrel_shifter_behavioral is
 	-- Intermediate signal P between sel[1] and sel[0] MUXes
 	signal P: std_logic_vector(3 downto 0);
 begin
--- first layer of MUXes
-	mux1: MUX_behave
+	-- Mapping variables of MUXes: A, B, S, Y
+	-- Mapping variables of Barrel Shifter: x, sel, p, y
+	
+	-- first layer of MUXes
+	mux1: MUX_struct
 		port map(
 			A => x(0),
 			B => x(2),
 			S => sel(1),
-			Y => P(0)
+			Y => p(0)
 			);
 			
-	mux2: MUX_behave
+	mux2: MUX_struct
 		port map(
 			A => x(1),
 			B => x(3),
 			S => sel(1),
-			Y => P(1)
+			Y => p(1)
 			);
 			
-	mux3: MUX_behave
+	mux3: MUX_struct
 		port map(
 			A => x(2),
 			B => x(0),
 			S => sel(1),
-			Y => P(2)
+			Y => p(2)
 			);
 			
-	mux4: MUX_behave
+	mux4: MUX_struct
 		port map(
 			A => x(3),
 			B => x(1),
 			S => sel(1),
-			Y => P(3)
+			Y => p(3)
 			);
 			
 	-- Second layer of MUXes
-	mux5: MUX_behave
+	mux5: MUX_struct
 		port map(
-			A => P(0),
-			B => P(3),
+			A => p(0),
+			B => p(3),
 			S => sel(0),
-			Y => Y(0)
+			Y => y(0)
 			);
 			
-	mux6: MUX_behave
+	mux6: MUX_struct
 		port map(
-			A => P(1),
-			B => P(0),
+			A => p(1),
+			B => p(0),
 			S => sel(0),
-			Y => Y(1)
+			Y => y(1)
 			);
 			
-	mux7: MUX_behave
+	mux7: MUX_struct
 		port map(
-			A => P(2),
-			B => P(1),
+			A => p(2),
+			B => p(1),
 			S => sel(0),
-			Y => Y(2)
+			Y => y(2)
 			);
 			
-	mux8: MUX_behave
+	mux8: MUX_struct
 		port map(
-			A => P(3),
-			B => P(2),
+			A => p(3),
+			B => p(2),
 			S => sel(0),
-			Y => Y(3)
+			Y => y(3)
 			);
-end;
+end behavioral;
 
 
 --- OLD CODEs ---
