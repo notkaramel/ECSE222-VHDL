@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/simulation/modelsim
 Ebcd_adder_structural
-Z1 w1665205872
+Z1 w1665212909
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VMQ2Xa?:NdD=@JinlI]^eD0
 !s100 MK2VEoLP6CMe8`j]FJN>a1
 Z7 OV;C;10.4b;61
 31
-Z8 !s110 1665205922
+Z8 !s110 1665214004
 !i10b 1
-Z9 !s108 1665205922.000000
+Z9 !s108 1665214004.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd|
 Z11 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd|
 !i113 1
@@ -35,10 +35,10 @@ R2
 R3
 R4
 DEx4 work 20 bcd_adder_structural 0 22 MQ2Xa?:NdD=@JinlI]^eD0
-l22
+l37
 L13
-VL=zlgWB3ROBnWB=38AAiB1
-!s100 Y9U>gRj4:4g@12bDW4Mjh0
+V@R2XPe158k:OH]Yk100GU1
+!s100 SRZ]2ef1bJ`fSAQD2kj=62
 R7
 31
 R8
@@ -50,7 +50,7 @@ R11
 R12
 R13
 Ebcd_adder_structural_tb
-Z14 w1665204032
+Z14 w1665213791
 R2
 R3
 R4
@@ -78,8 +78,8 @@ R4
 DEx4 work 23 bcd_adder_structural_tb 0 22 SDLf9IG?:@]j8CY67Be7A0
 l21
 L9
-V=LimfRNLiAe;9GCb`:Toz0
-!s100 PEfk9oJC9Y6?CBE@J4daE1
+VfJ2:Y;aVdnPBmKhJ0BZi`3
+!s100 zaL92^Ra=LP38bYICkk4_2
 R7
 31
 R8
@@ -106,9 +106,9 @@ R7
 31
 R8
 !i10b 1
-Z22 !s108 1665205921.000000
-Z23 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd|
-Z24 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd|
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd|
+Z23 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd|
 !i113 1
 R12
 R13
@@ -125,29 +125,29 @@ R7
 31
 R8
 !i10b 1
+R9
 R22
 R23
-R24
 !i113 1
 R12
 R13
 Ehalf_adder
-Z25 w1664829575
+Z24 w1664829575
 R2
 R3
 R4
 R0
-Z26 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd
-Z27 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd
+Z25 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd
+Z26 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd
 l0
 L5
 V:zd>e8P8@1f?P07`XBP3S1
 !s100 ag`3:czhQalfJOUh[YW6A3
 R7
 31
-Z28 !s110 1665205921
+Z27 !s110 1665214003
 !i10b 1
-R22
+Z28 !s108 1665214003.000000
 Z29 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd|
 Z30 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd|
 !i113 1
@@ -164,9 +164,9 @@ V5a9X89c]K5nHM6WKdP5dY1
 !s100 :A^3Wd@MO^3H6gaDY13M72
 R7
 31
-R28
+R27
 !i10b 1
-R22
+R28
 R29
 R30
 !i113 1

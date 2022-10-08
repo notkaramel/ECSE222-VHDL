@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VHDL3_Antoine_Phan
-Sat Oct 08 01:11:30 2022
+Sat Oct 08 03:23:37 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Oct 08 01:11:30 2022           ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 08 03:23:36 2022           ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                   ; VHDL3_Antoine_Phan                              ;
 ; Top-level Entity Name           ; bcd_adder_structural                            ;
@@ -185,13 +185,13 @@ agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 4          ;
+; Estimate of Logic utilization (ALMs needed) ; 6          ;
 ;                                             ;            ;
-; Combinational ALUT usage for logic          ; 6          ;
+; Combinational ALUT usage for logic          ; 9          ;
 ;     -- 7 input functions                    ; 0          ;
-;     -- 6 input functions                    ; 1          ;
-;     -- 5 input functions                    ; 2          ;
-;     -- 4 input functions                    ; 2          ;
+;     -- 6 input functions                    ; 3          ;
+;     -- 5 input functions                    ; 1          ;
+;     -- 4 input functions                    ; 4          ;
 ;     -- <=3 input functions                  ; 1          ;
 ;                                             ;            ;
 ; Dedicated logic registers                   ; 0          ;
@@ -201,9 +201,9 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; A[0]~input ;
-; Maximum fan-out                             ; 4          ;
-; Total fan-out                               ; 44         ;
-; Average fan-out                             ; 1.38       ;
+; Maximum fan-out                             ; 5          ;
+; Total fan-out                               ; 59         ;
+; Average fan-out                             ; 1.69       ;
 +---------------------------------------------+------------+
 
 
@@ -212,16 +212,16 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+--------------+
-; |bcd_adder_structural      ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 13   ; 0            ; |bcd_adder_structural                                                   ; work         ;
-;    |rca_structural:RCA1|   ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1                               ; work         ;
+; |bcd_adder_structural      ; 9 (3)             ; 0 (0)        ; 0                 ; 0          ; 13   ; 0            ; |bcd_adder_structural                                                   ; work         ;
+;    |full_adder:FA|         ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|full_adder:FA                                     ; work         ;
+;       |half_adder:HA2|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|full_adder:FA|half_adder:HA2                      ; work         ;
+;    |half_adder:HA|         ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|half_adder:HA                                     ; work         ;
+;    |rca_structural:RCA1|   ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1                               ; work         ;
 ;       |full_adder:FA1|     ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA1                ; work         ;
 ;          |half_adder:HA1|  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA1|half_adder:HA1 ; work         ;
 ;       |full_adder:FA2|     ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA2                ; work         ;
 ;          |half_adder:HA2|  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA2|half_adder:HA2 ; work         ;
-;       |full_adder:FA3|     ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA3                ; work         ;
-;          |half_adder:HA2|  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA3|half_adder:HA2 ; work         ;
-;       |full_adder:FA4|     ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA4                ; work         ;
-;          |half_adder:HA2|  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA4|half_adder:HA2 ; work         ;
+;       |full_adder:FA3|     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |bcd_adder_structural|rca_structural:RCA1|full_adder:FA3                ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -255,16 +255,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 6                           ;
-;     normal            ; 6                           ;
+; arriav_lcell_comb     ; 9                           ;
+;     normal            ; 9                           ;
 ;         2 data inputs ; 1                           ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 3                           ;
 ; boundary_port         ; 13                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.50                        ;
+; Average LUT depth     ; 1.82                        ;
 +-----------------------+-----------------------------+
 
 
@@ -283,7 +283,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Sat Oct 08 01:11:19 2022
+    Info: Processing started: Sat Oct 08 03:23:25 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL3_Antoine_Phan -c VHDL3_Antoine_Phan
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file antoine_phan_barrel_shifter_structural.vhd
@@ -341,20 +341,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file bcd_add
     Info (12022): Found design unit 1: bcd_adder_behavioral_tb-tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Behavioral_TB.vhd Line: 9
     Info (12023): Found entity 1: bcd_adder_behavioral_tb File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Behavioral_TB.vhd Line: 5
 Info (12127): Elaborating entity "BCD_Adder_Structural" for the top level hierarchy
-Info (12128): Elaborating entity "rca_structural" for hierarchy "rca_structural:RCA1" File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd Line: 28
+Info (12128): Elaborating entity "rca_structural" for hierarchy "rca_structural:RCA1" File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd Line: 43
 Info (12128): Elaborating entity "full_adder" for hierarchy "rca_structural:RCA1|full_adder:FA1" File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd Line: 29
 Info (12128): Elaborating entity "half_adder" for hierarchy "rca_structural:RCA1|full_adder:FA1|half_adder:HA1" File: P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd Line: 26
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 6 logic cells
+    Info (21061): Implemented 9 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 5063 megabytes
-    Info: Processing ended: Sat Oct 08 01:11:30 2022
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 5057 megabytes
+    Info: Processing ended: Sat Oct 08 03:23:37 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:18
 
 

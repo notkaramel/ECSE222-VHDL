@@ -5,5 +5,5 @@ echo "Your update message: "
 read -r message
 git commit -m "$message"
 git push
-echo "Closing window in 7s"
-sleep 7s
+echo "Closing window in 3s"
+sleep 3s

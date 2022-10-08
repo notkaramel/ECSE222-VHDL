@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sat Oct 08 00:57:38 2022
+Fitter Status : Successful - Sat Oct 08 03:24:27 2022
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 Revision Name : VHDL3_Antoine_Phan
-Top-level Entity Name : bcd_adder_behavioral
+Top-level Entity Name : bcd_adder_structural
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 9 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 7 / 32,070 ( < 1 % )
 Total registers : 0
 Total pins : 13 / 457 ( 3 % )
 Total virtual pins : 0

@@ -30,9 +30,9 @@ begin
 	simulate: process	
 	begin
 		report "STRUCTURAL One-digit BCD adder Exhaustive Test";
-		for i in 0 to 15 loop
+		for i in 0 to 9 loop
 			A_in <= std_logic_vector(to_unsigned(i,4));
-			for j in 0 to 15 loop
+			for j in 0 to 9 loop
 				B_in <= std_logic_vector(to_unsigned(j,4));
 				wait for 10 ns;
 			end loop;
