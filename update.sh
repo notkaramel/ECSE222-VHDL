@@ -1,7 +1,9 @@
 #!/usr/bin/bash
 
 git add .
-git commit -m "update from bash script!"
+echo "Your update message: "
+read -a message
+git commit -m $message
 git push
 echo "Closing window in 7s"
 sleep 7s
