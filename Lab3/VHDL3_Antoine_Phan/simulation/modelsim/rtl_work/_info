@@ -8,28 +8,110 @@ z2
 !i10f 100
 cModel Technology
 Z0 dP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/simulation/modelsim
-Efull_adder
-Z1 w1664841115
+Ebcd_adder_structural
+Z1 w1665205872
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd
-Z6 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd
+Z5 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd
+Z6 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd
+l0
+L5
+VMQ2Xa?:NdD=@JinlI]^eD0
+!s100 MK2VEoLP6CMe8`j]FJN>a1
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1665205922
+!i10b 1
+Z9 !s108 1665205922.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd|
+Z11 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Abcd_struct
+R2
+R3
+R4
+DEx4 work 20 bcd_adder_structural 0 22 MQ2Xa?:NdD=@JinlI]^eD0
+l22
+L13
+VL=zlgWB3ROBnWB=38AAiB1
+!s100 Y9U>gRj4:4g@12bDW4Mjh0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebcd_adder_structural_tb
+Z14 w1665204032
+R2
+R3
+R4
+R0
+Z15 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural_TB.vhd
+Z16 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural_TB.vhd
+l0
+L5
+VSDLf9IG?:@]j8CY67Be7A0
+!s100 Bc^f>UJUSPgZT6_<XOalk1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural_TB.vhd|
+Z18 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural_TB.vhd|
+!i113 1
+R12
+R13
+Atb
+R2
+R3
+R4
+DEx4 work 23 bcd_adder_structural_tb 0 22 SDLf9IG?:@]j8CY67Be7A0
+l21
+L9
+V=LimfRNLiAe;9GCb`:Toz0
+!s100 PEfk9oJC9Y6?CBE@J4daE1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Efull_adder
+Z19 w1664841115
+R2
+R3
+R4
+R0
+Z20 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd
+Z21 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd
 l0
 L5
 VeKH69ae_]N^15lB?LdM`l3
 !s100 HldeO?;XIlH9Tn;Zc^4lX0
-Z7 OV;C;10.4b;61
+R7
 31
-Z8 !s110 1664844232
+R8
 !i10b 1
-Z9 !s108 1664844232.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd|
-Z11 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd|
+Z22 !s108 1665205921.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd|
+Z24 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1
+R12
+R13
 Astruct
 R2
 R3
@@ -43,31 +125,31 @@ R7
 31
 R8
 !i10b 1
-R9
-R10
-R11
+R22
+R23
+R24
 !i113 1
 R12
 R13
 Ehalf_adder
-Z14 w1664829575
+Z25 w1664829575
 R2
 R3
 R4
 R0
-Z15 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd
-Z16 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd
+Z26 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd
+Z27 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd
 l0
 L5
 V:zd>e8P8@1f?P07`XBP3S1
 !s100 ag`3:czhQalfJOUh[YW6A3
 R7
 31
-Z17 !s110 1664844231
+Z28 !s110 1665205921
 !i10b 1
-Z18 !s108 1664844231.000000
-Z19 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd|
-Z20 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd|
+R22
+Z29 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd|
+Z30 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd|
 !i113 1
 R12
 R13
@@ -82,22 +164,22 @@ V5a9X89c]K5nHM6WKdP5dY1
 !s100 :A^3Wd@MO^3H6gaDY13M72
 R7
 31
-R17
+R28
 !i10b 1
-R18
-R19
-R20
+R22
+R29
+R30
 !i113 1
 R12
 R13
 Erca_structural
-Z21 w1664844135
+Z31 w1665194568
 R2
 R3
 R4
 R0
-Z22 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd
-Z23 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd
+Z32 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd
+Z33 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd
 l0
 L5
 Vg:<;h`Y5f=2<C4THidj4Q0
@@ -107,8 +189,8 @@ R7
 R8
 !i10b 1
 R9
-Z24 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd|
-Z25 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd|
+Z34 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd|
+Z35 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd|
 !i113 1
 R12
 R13
@@ -119,56 +201,15 @@ R4
 DEx4 work 14 rca_structural 0 22 g:<;h`Y5f=2<C4THidj4Q0
 l23
 L12
-VGiSJgZSdJFMYUl`bSJF8H0
-!s100 idggaii`27^`b8zR=Az652
+VQ0?4WCI:ZGAhC4aa_1iD31
+!s100 ic2^01VoXe]im43dCJ<nc3
 R7
 31
 R8
 !i10b 1
 R9
-R24
-R25
-!i113 1
-R12
-R13
-Erca_structural_tb
-Z26 w1664843614
-R2
-R3
-R4
-R0
-Z27 8P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural_TB.vhd
-Z28 FP:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural_TB.vhd
-l0
-L5
-VmCF^Pee3f>3eVgKT<zHmT3
-!s100 g8T50^RX1HdXXRP>hEL;<1
-R7
-31
-R8
-!i10b 1
-R9
-Z29 !s90 -reportprogress|300|-93|-work|work|P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural_TB.vhd|
-Z30 !s107 P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural_TB.vhd|
-!i113 1
-R12
-R13
-Atb
-R2
-R3
-R4
-DEx4 work 17 rca_structural_tb 0 22 mCF^Pee3f>3eVgKT<zHmT3
-l21
-L10
-VXC]^zFeOjzVl3T08SN9aC2
-!s100 HM^J?1GLUI`=66XhV0F^D0
-R7
-31
-R8
-!i10b 1
-R9
-R29
-R30
+R34
+R35
 !i113 1
 R12
 R13

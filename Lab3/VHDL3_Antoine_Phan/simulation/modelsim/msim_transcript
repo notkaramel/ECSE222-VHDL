@@ -13,7 +13,7 @@
 # 
 # vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:43:51 on Oct 03,2022
+# Start time: 01:12:01 on Oct 08,2022
 # vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Half_Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -21,11 +21,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity half_adder
 # -- Compiling architecture struct of half_adder
-# End time: 20:43:52 on Oct 03,2022, Elapsed time: 0:00:01
+# End time: 01:12:01 on Oct 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:43:52 on Oct 03,2022
+# Start time: 01:12:01 on Oct 08,2022
 # vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/Full_adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -33,11 +33,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity full_adder
 # -- Compiling architecture struct of full_adder
-# End time: 20:43:52 on Oct 03,2022, Elapsed time: 0:00:00
+# End time: 01:12:02 on Oct 08,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:43:52 on Oct 03,2022
+# Start time: 01:12:02 on Oct 08,2022
 # vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -45,30 +45,43 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity rca_structural
 # -- Compiling architecture rca_struct of rca_structural
-# End time: 20:43:52 on Oct 03,2022, Elapsed time: 0:00:00
+# End time: 01:12:02 on Oct 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural_TB.vhd}
+# vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 20:43:52 on Oct 03,2022
-# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/RCA_Structural_TB.vhd 
+# Start time: 01:12:02 on Oct 08,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity rca_structural_tb
-# -- Compiling architecture tb of rca_structural_tb
-# End time: 20:43:52 on Oct 03,2022, Elapsed time: 0:00:00
+# -- Compiling entity bcd_adder_structural
+# -- Compiling architecture bcd_struct of bcd_adder_structural
+# End time: 01:12:02 on Oct 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  rca_structural_tb
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" rca_structural_tb 
-# Start time: 20:43:52 on Oct 03,2022
+# vcom -93 -work work {P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural_TB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 01:12:02 on Oct 08,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab3/VHDL3_Antoine_Phan/BCD_Adder_Structural_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity bcd_adder_structural_tb
+# -- Compiling architecture tb of bcd_adder_structural_tb
+# End time: 01:12:02 on Oct 08,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  BCD_adder_Structural_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" BCD_adder_Structural_tb 
+# Start time: 01:12:03 on Oct 08,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.rca_structural_tb(tb)
+# Loading work.bcd_adder_structural_tb(tb)
+# Loading work.bcd_adder_structural(bcd_struct)
 # Loading work.rca_structural(rca_struct)
 # Loading work.full_adder(struct)
 # Loading work.half_adder(struct)
@@ -78,19 +91,17 @@
 # 
 #           File in use by: hphan6  Hostname: 156TR5090-06  ProcessID: 17632
 # 
-#           Attempting to use alternate WLF file "./wlftt92vfr".
+#           Attempting to use alternate WLF file "./wlft5h5mir".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftt92vfr
+#           Using alternate file: ./wlft5h5mir
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: STRUCTURAL RCA using 4 Full-Adders test
-#    Time: 0 ps  Iteration: 0  Instance: /rca_structural_tb
-# ** Note: FINISHED!
-#    Time: 2560 ns  Iteration: 0  Instance: /rca_structural_tb
-# End time: 20:44:14 on Oct 03,2022, Elapsed time: 0:00:22
+# ** Note: STRUCTURAL One-digit BCD adder Exhaustive Test
+#    Time: 0 ps  Iteration: 0  Instance: /bcd_adder_structural_tb
+# End time: 01:15:21 on Oct 08,2022, Elapsed time: 0:03:18
 # Errors: 0, Warnings: 2

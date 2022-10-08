@@ -24,7 +24,7 @@ begin
 	-- Mapping variables of Barrel Shifter: x, sel, p, y
 	
 	-- first layer of MUXes
-	mux1: MUX_struct
+	mux1: MUX_behave
 		port map(
 			A => x(0),
 			B => x(2),
@@ -32,7 +32,7 @@ begin
 			Y => p(0)
 			);
 			
-	mux2: MUX_struct
+	mux2: MUX_behave
 		port map(
 			A => x(1),
 			B => x(3),
@@ -40,7 +40,7 @@ begin
 			Y => p(1)
 			);
 			
-	mux3: MUX_struct
+	mux3: MUX_behave
 		port map(
 			A => x(2),
 			B => x(0),
@@ -48,7 +48,7 @@ begin
 			Y => p(2)
 			);
 			
-	mux4: MUX_struct
+	mux4: MUX_behave
 		port map(
 			A => x(3),
 			B => x(1),
@@ -57,7 +57,7 @@ begin
 			);
 			
 	-- Second layer of MUXes
-	mux5: MUX_struct
+	mux5: MUX_behave
 		port map(
 			A => p(0),
 			B => p(3),
@@ -65,7 +65,7 @@ begin
 			Y => y(0)
 			);
 			
-	mux6: MUX_struct
+	mux6: MUX_behave
 		port map(
 			A => p(1),
 			B => p(0),
@@ -73,7 +73,7 @@ begin
 			Y => y(1)
 			);
 			
-	mux7: MUX_struct
+	mux7: MUX_behave
 		port map(
 			A => p(2),
 			B => p(1),
@@ -81,7 +81,7 @@ begin
 			Y => y(2)
 			);
 			
-	mux8: MUX_struct
+	mux8: MUX_behave
 		port map(
 			A => p(3),
 			B => p(2),

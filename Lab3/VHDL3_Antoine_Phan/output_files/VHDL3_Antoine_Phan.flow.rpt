@@ -1,5 +1,5 @@
 Flow report for VHDL3_Antoine_Phan
-Tue Oct 04 15:08:08 2022
+Sat Oct 08 01:11:30 2022
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -38,24 +38,29 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Flow Failed - Tue Oct 04 15:08:08 2022          ;
-; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
-; Revision Name               ; VHDL3_Antoine_Phan                              ;
-; Top-level Entity Name       ; RCA_Behavioral                                  ;
-; Family                      ; Cyclone V                                       ;
-; Device                      ; 5CSEMA5F31C6                                    ;
-; Timing Models               ; Final                                           ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
-; Total registers             ; N/A until Partition Merge                       ;
-; Total pins                  ; N/A until Partition Merge                       ;
-; Total virtual pins          ; N/A until Partition Merge                       ;
-; Total block memory bits     ; N/A until Partition Merge                       ;
-; Total PLLs                  ; N/A until Partition Merge                       ;
-; Total DLLs                  ; N/A until Partition Merge                       ;
-+-----------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Sat Oct 08 01:11:30 2022           ;
+; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
+; Revision Name                   ; VHDL3_Antoine_Phan                              ;
+; Top-level Entity Name           ; bcd_adder_structural                            ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 0                                               ;
+; Total pins                      ; 13                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,56 +68,64 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/04/2022 15:08:02 ;
+; Start date & time ; 10/08/2022 01:11:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VHDL3_Antoine_Phan  ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                               ;
-+--------------------------------------+---------------------------------------+--------------------+----------------+---------------------------+
-; Assignment Name                      ; Value                                 ; Default Value      ; Entity Name    ; Section Id                ;
-+--------------------------------------+---------------------------------------+--------------------+----------------+---------------------------+
-; COMPILER_SIGNATURE_ID                ; 123926586546340.166491048117912       ; --                 ; --             ; --                        ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --             ; RCA_behavioral_tb         ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --             ; barrel_shifter_behavioral ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --             ; RCA_structural_tb         ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --             ; barrel_shifter_structural ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --             ; full_adder_tb             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --             ; half_adder_tb             ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; RCA_behavioral_tb                     ; --                 ; --             ; eda_simulation            ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --                 ; --             ; eda_simulation            ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>             ; --             ; --                        ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --                 ; --             ; eda_simulation            ;
-; EDA_TEST_BENCH_FILE                  ; RCA_Behavioral_TB.vhd                 ; --                 ; --             ; RCA_behavioral_tb         ;
-; EDA_TEST_BENCH_FILE                  ; Barrel_Shifter_behavioral_TB.vhd      ; --                 ; --             ; barrel_shifter_behavioral ;
-; EDA_TEST_BENCH_FILE                  ; RCA_Structural_TB.vhd                 ; --                 ; --             ; RCA_structural_tb         ;
-; EDA_TEST_BENCH_FILE                  ; Barrel_Shifter_structural_TB.vhd      ; --                 ; --             ; barrel_shifter_structural ;
-; EDA_TEST_BENCH_FILE                  ; Full_adder_TB.vhd                     ; --                 ; --             ; full_adder_tb             ;
-; EDA_TEST_BENCH_FILE                  ; Half_Adder_TB.vhd                     ; --                 ; --             ; half_adder_tb             ;
-; EDA_TEST_BENCH_MODULE_NAME           ; RCA_behavioral_tb                     ; --                 ; --             ; RCA_behavioral_tb         ;
-; EDA_TEST_BENCH_MODULE_NAME           ; BS_behavioral_TB                      ; --                 ; --             ; barrel_shifter_behavioral ;
-; EDA_TEST_BENCH_MODULE_NAME           ; rca_structural_tb                     ; --                 ; --             ; RCA_structural_tb         ;
-; EDA_TEST_BENCH_MODULE_NAME           ; BS_structural_TB                      ; --                 ; --             ; barrel_shifter_structural ;
-; EDA_TEST_BENCH_MODULE_NAME           ; full_adder_tb                         ; --                 ; --             ; full_adder_tb             ;
-; EDA_TEST_BENCH_MODULE_NAME           ; half_adder_tb                         ; --                 ; --             ; half_adder_tb             ;
-; EDA_TEST_BENCH_NAME                  ; barrel_shifter_behavioral             ; --                 ; --             ; eda_simulation            ;
-; EDA_TEST_BENCH_NAME                  ; barrel_shifter_structural             ; --                 ; --             ; eda_simulation            ;
-; EDA_TEST_BENCH_NAME                  ; half_adder_tb                         ; --                 ; --             ; eda_simulation            ;
-; EDA_TEST_BENCH_NAME                  ; full_adder_tb                         ; --                 ; --             ; eda_simulation            ;
-; EDA_TEST_BENCH_NAME                  ; RCA_structural_tb                     ; --                 ; --             ; eda_simulation            ;
-; EDA_TEST_BENCH_NAME                  ; RCA_behavioral_tb                     ; --                 ; --             ; eda_simulation            ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --                 ; --             ; --                        ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --                 ; --             ; --                        ;
-; PARTITION_COLOR                      ; 16764057                              ; --                 ; RCA_Behavioral ; Top                       ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --                 ; RCA_Behavioral ; Top                       ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --                 ; RCA_Behavioral ; Top                       ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --                 ; --             ; --                        ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --                 ; --             ; --                        ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --                 ; --             ; --                        ;
-; TOP_LEVEL_ENTITY                     ; RCA_Behavioral                        ; VHDL3_Antoine_Phan ; --             ; --                        ;
-+--------------------------------------+---------------------------------------+--------------------+----------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                     ;
++--------------------------------------+---------------------------------------+--------------------+----------------------+---------------------------+
+; Assignment Name                      ; Value                                 ; Default Value      ; Entity Name          ; Section Id                ;
++--------------------------------------+---------------------------------------+--------------------+----------------------+---------------------------+
+; COMPILER_SIGNATURE_ID                ; 123926586546501.166520588001732       ; --                 ; --                   ; --                        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                   ; RCA_behavioral_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                   ; barrel_shifter_behavioral ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                   ; RCA_structural_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                   ; barrel_shifter_structural ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                   ; BCD_adder_Behavioral_tb   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                   ; BCD_adder_Structural_tb   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                   ; full_adder_tb             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --                 ; --                   ; half_adder_tb             ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; BCD_adder_Structural_tb               ; --                 ; --                   ; eda_simulation            ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --                 ; --                   ; eda_simulation            ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>             ; --                   ; --                        ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --                 ; --                   ; eda_simulation            ;
+; EDA_TEST_BENCH_FILE                  ; RCA_Behavioral_TB.vhd                 ; --                 ; --                   ; RCA_behavioral_tb         ;
+; EDA_TEST_BENCH_FILE                  ; Barrel_Shifter_behavioral_TB.vhd      ; --                 ; --                   ; barrel_shifter_behavioral ;
+; EDA_TEST_BENCH_FILE                  ; RCA_Structural_TB.vhd                 ; --                 ; --                   ; RCA_structural_tb         ;
+; EDA_TEST_BENCH_FILE                  ; Barrel_Shifter_structural_TB.vhd      ; --                 ; --                   ; barrel_shifter_structural ;
+; EDA_TEST_BENCH_FILE                  ; BCD_Adder_Behavioral_TB.vhd           ; --                 ; --                   ; BCD_adder_Behavioral_tb   ;
+; EDA_TEST_BENCH_FILE                  ; BCD_Adder_Structural_TB.vhd           ; --                 ; --                   ; BCD_adder_Structural_tb   ;
+; EDA_TEST_BENCH_FILE                  ; Full_adder_TB.vhd                     ; --                 ; --                   ; full_adder_tb             ;
+; EDA_TEST_BENCH_FILE                  ; Half_Adder_TB.vhd                     ; --                 ; --                   ; half_adder_tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; RCA_behavioral_tb                     ; --                 ; --                   ; RCA_behavioral_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; BS_behavioral_TB                      ; --                 ; --                   ; barrel_shifter_behavioral ;
+; EDA_TEST_BENCH_MODULE_NAME           ; rca_structural_tb                     ; --                 ; --                   ; RCA_structural_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; BS_structural_TB                      ; --                 ; --                   ; barrel_shifter_structural ;
+; EDA_TEST_BENCH_MODULE_NAME           ; BCD_adder_Behavioral_tb               ; --                 ; --                   ; BCD_adder_Behavioral_tb   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; BCD_adder_Structural_tb               ; --                 ; --                   ; BCD_adder_Structural_tb   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; full_adder_tb                         ; --                 ; --                   ; full_adder_tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; half_adder_tb                         ; --                 ; --                   ; half_adder_tb             ;
+; EDA_TEST_BENCH_NAME                  ; barrel_shifter_behavioral             ; --                 ; --                   ; eda_simulation            ;
+; EDA_TEST_BENCH_NAME                  ; barrel_shifter_structural             ; --                 ; --                   ; eda_simulation            ;
+; EDA_TEST_BENCH_NAME                  ; half_adder_tb                         ; --                 ; --                   ; eda_simulation            ;
+; EDA_TEST_BENCH_NAME                  ; full_adder_tb                         ; --                 ; --                   ; eda_simulation            ;
+; EDA_TEST_BENCH_NAME                  ; RCA_structural_tb                     ; --                 ; --                   ; eda_simulation            ;
+; EDA_TEST_BENCH_NAME                  ; RCA_behavioral_tb                     ; --                 ; --                   ; eda_simulation            ;
+; EDA_TEST_BENCH_NAME                  ; BCD_adder_Structural_tb               ; --                 ; --                   ; eda_simulation            ;
+; EDA_TEST_BENCH_NAME                  ; BCD_adder_Behavioral_tb               ; --                 ; --                   ; eda_simulation            ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --                 ; --                   ; --                        ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --                 ; --                   ; --                        ;
+; PARTITION_COLOR                      ; 16764057                              ; --                 ; BCD_Adder_Structural ; Top                       ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --                 ; BCD_Adder_Structural ; Top                       ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --                 ; BCD_Adder_Structural ; Top                       ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --                 ; --                   ; --                        ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --                 ; --                   ; --                        ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --                 ; --                   ; --                        ;
+; TOP_LEVEL_ENTITY                     ; BCD_Adder_Structural                  ; VHDL3_Antoine_Phan ; --                   ; --                        ;
++--------------------------------------+---------------------------------------+--------------------+----------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -120,8 +133,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 5036 MB             ; 00:00:15                           ;
-; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:15                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 5063 MB             ; 00:00:17                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -130,7 +143,7 @@ agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; 156TR4060-15     ; Windows 8 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; 156TR4060-16     ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

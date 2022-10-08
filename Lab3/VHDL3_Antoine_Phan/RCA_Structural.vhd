@@ -25,7 +25,7 @@ begin
 	-- pattern of mapping:
 	-- FA_i --> A(i), B(i), c_FA(i-1), S(i), c_FA(i)
 	
-	-- Could have used half_adder ;)
+	-- Could have used a half_adder ;)
 	FA1: full_adder
 		port map(A(0), B(0), '0', S(0), c_FA1);
 		 -- c_in of FA1 is '0'
