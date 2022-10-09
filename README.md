@@ -26,7 +26,7 @@ Assignments for ECSE 222 - Digital Logic
 #### Deisgn circuits || VHDL/Verilog codes
 - Use Quartus Prime
 - Draw/Design/Write code
-- Synthesize & Analysis
+- ```Synthesize & Analysis```
 - Obtain circuit (Netlist Viewer) & Flow Summary
 
 #### VHDL/Verilog Codes & simulation
@@ -36,7 +36,7 @@ Assignments for ECSE 222 - Digital Logic
 - Open ModelSim-Altera
 - Create new Project
 - "Add existing files" -> Add all files (circuits && its testbench)
-- Check Project, find *work* directory
+- Check Project, find ***work*** directory
 - *Double-click* or *Simulate* the testbench file
 - ```run -all``` to run all processes in testbench
 - ```restart``` if want to restart simulation
