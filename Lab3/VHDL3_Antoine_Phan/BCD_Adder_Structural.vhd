@@ -47,14 +47,14 @@ begin
 	-- Z(4) (the carry out) = true: s_temp > 15
 	-- 2 other conditions: 9 < s_temp < 16
 	C_temp <= 	Z(4) OR (Z(3) and (Z(2) or Z(1)));
-	
+
 	-- Two-bit adder, yields temporary variable S(1) and S(2)
 	HA: Half_Adder -- map(a,b,s,c)
 		port map(C_temp, Z(1), S(1), HA_c);
 	
 	FA: Full_Adder -- map(a, b, c_in, s, c_out)
 		port map(C_temp, Z(2), HA_c, S(2), FA_c);
-		
+
 	-- Getting S(3)
 	S(3) <= Z(3) xor FA_c;
 	
