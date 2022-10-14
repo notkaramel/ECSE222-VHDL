@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VHDL4_Antoine_Phan
-Fri Oct 14 16:31:08 2022
+Fri Oct 14 18:52:18 2022
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 14 16:31:08 2022       ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 14 18:52:18 2022       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; VHDL4_Antoine_Phan                          ;
 ; Top-level Entity Name           ; Antoine_Phan_Wrapper                        ;
@@ -286,7 +286,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -296,7 +296,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Oct 14 16:30:54 2022
+    Info: Processing started: Fri Oct 14 18:52:07 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL4_Antoine_Phan -c VHDL4_Antoine_Phan
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -343,9 +343,9 @@ Info (21057): Implemented 71 device resources after synthesis - the final resour
     Info (21059): Implemented 28 output pins
     Info (21061): Implemented 35 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4848 megabytes
-    Info: Processing ended: Fri Oct 14 16:31:08 2022
-    Info: Elapsed time: 00:00:14
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Fri Oct 14 18:52:18 2022
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:25
 
 
