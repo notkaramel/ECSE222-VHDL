@@ -1,0 +1,8 @@
+|AntoinePhan_JakobRylo_MUX2to1_behavioral
+A => Selector0.IN3
+B => Selector0.IN4
+S => Selector0.IN5
+S => Selector0.IN1
+Y << Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+
