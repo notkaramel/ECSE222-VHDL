@@ -18,7 +18,7 @@ Assignments for ECSE 222 - Digital Logic
 - LAB 1: Getting Started: Quartus Prime, ModelSim-Altera, Testbench
 - LAB 2: CAD tools, Schematic Design, 2-to-1 Multiplexer (MUX)
 - LAB 3: 4-bit circular barrel shifter, Ripple-Carry Adder (RCA), One-digit BCD Adder
-- LAB 4: Critial Path, Working with FPGA (DE1-SOC, ARMv7)
+- LAB 4: Critial Path, BCD 7-segment encoding with FPGA (DE1-SOC)
 - LAB 5:
 - LAB 6 (demo):
 
