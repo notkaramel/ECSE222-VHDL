@@ -1,0 +1,65 @@
+# Reading C:/ProgramFolder/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do vhdl2_AntoinePhan_JakobRylo_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/ProgramFolder/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/ProgramFolder/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:04:21 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab2/VHDL2/AntoinePhan_JakobRylo_MUX2to1_behavioral.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity antoinephan_jakobrylo_MUX2to1_behavioral
+# -- Compiling architecture behavior of antoinephan_jakobrylo_MUX2to1_behavioral
+# End time: 18:04:22 on Sep 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {P:/ECSE222-VHDL/Lab2/VHDL2/behavioral_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:04:22 on Sep 23,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE222-VHDL/Lab2/VHDL2/behavioral_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MUX_testbench_behavioral
+# -- Compiling architecture tb of MUX_testbench_behavioral
+# End time: 18:04:22 on Sep 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  behave_tb
+# vsim -gui -l msim_transcript -do "vhdl2_AntoinePhan_JakobRylo_run_msim_rtl_vhdl.do" 
+# Start time: 18:04:22 on Sep 23,2022
+# ** Error: (vsim-3170) Could not find 'P:/ECSE222-VHDL/Lab2/VHDL2/simulation/modelsim/rtl_work.behave_tb'.
+# 
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./vhdl2_AntoinePhan_JakobRylo_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.mux_testbench_behavioral
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mux_testbench_behavioral(tb)
+# Loading work.antoinephan_jakobrylo_mux2to1_behavioral(behavior)
+add wave -position end  sim:/mux_testbench_behavioral/A_in
+add wave -position end  sim:/mux_testbench_behavioral/B_in
+add wave -position end  sim:/mux_testbench_behavioral/S_in
+add wave -position end  sim:/mux_testbench_behavioral/Y_out
+run -all
+# ** Note: Behavioral Test Complete
+#    Time: 270 ns  Iteration: 0  Instance: /mux_testbench_behavioral
+# End time: 18:13:31 on Sep 23,2022, Elapsed time: 0:09:09
+# Errors: 1, Warnings: 0

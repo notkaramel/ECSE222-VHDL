@@ -1,0 +1,105 @@
+# Reading C:/ProgramFolder/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Antoine_Phan_vhdl1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/ProgramFolder/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/ProgramFolder/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:17:14 on Sep 09,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity or_gate
+# -- Compiling architecture rtl of or_gate
+# End time: 15:17:16 on Sep 09,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate_testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:17:16 on Sep 09,2022
+# vcom -reportprogress 300 -93 -work work P:/ECSE 222/Assignments/Lab1/VHDL1/OR_gate_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture tb of testbench
+# End time: 15:17:18 on Sep 09,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  OR_gate
+# vsim -gui -l msim_transcript -do "Antoine_Phan_vhdl1_run_msim_rtl_vhdl.do" 
+# Start time: 15:17:18 on Sep 09,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.or_gate(rtl)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: hphan6  Hostname: 156TR4060-11  ProcessID: 19964
+# 
+#           Attempting to use alternate WLF file "./wlftgjwsew".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftgjwsew
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+vsim work.testbench
+# vsim 
+# Start time: 15:17:51 on Sep 09,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(tb)
+# Loading work.or_gate(rtl)
+vsim work.testbench
+# vsim 
+# Start time: 15:18:07 on Sep 09,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(tb)
+# Loading work.or_gate(rtl)
+add wave -position end  sim:/testbench/a_in
+add wave -position end  sim:/testbench/b_in
+add wave -position end  sim:/testbench/q_out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: hphan6  Hostname: 156TR4060-11  ProcessID: 19964
+# 
+#           Attempting to use alternate WLF file "./wlftiz5s9i".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftiz5s9i
+# 
+run
+run
+# ** Note: Test done.
+#    Time: 4 ns  Iteration: 0  Instance: /testbench
+run
+restart
+run
+run
+run
+run
+# ** Note: Test done.
+#    Time: 4 ns  Iteration: 0  Instance: /testbench
+run
+run
+# End time: 15:32:02 on Sep 09,2022, Elapsed time: 0:13:55
+# Errors: 0, Warnings: 2
