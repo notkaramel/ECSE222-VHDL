@@ -1,6 +1,6 @@
 Flow report for VHDL4_Antoine_Phan
-Fri Oct 14 18:53:07 2022
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Wed Oct 26 22:08:38 2022
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,15 +33,16 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Oct 14 18:53:07 2022       ;
-; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Flow Status                     ; Successful - Wed Oct 26 22:08:38 2022       ;
+; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; VHDL4_Antoine_Phan                          ;
 ; Top-level Entity Name           ; Antoine_Phan_Wrapper                        ;
 ; Family                          ; Cyclone V                                   ;
@@ -67,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/14/2022 18:52:07 ;
+; Start date & time ; 10/26/2022 22:07:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VHDL4_Antoine_Phan  ;
 +-------------------+---------------------+
@@ -78,9 +79,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+--------------------+----------------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value      ; Entity Name          ; Section Id     ;
 +-------------------------------------+----------------------------------------+--------------------+----------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 256017921607661.166578792707380        ; --                 ; --                   ; --             ;
+; COMPILER_SIGNATURE_ID               ; 106594150217876.166683646830115        ; --                 ; --                   ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                 ; --                   ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>             ; --                   ; --             ;
+; EDA_SIMULATION_TOOL                 ; Questa Intel FPGA (VHDL)               ; <None>             ; --                   ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --                 ; --                   ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                 ; --                   ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                 ; --                   ; --             ;
@@ -103,12 +104,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4851 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:28     ; 1.0                     ; 6535 MB             ; 00:00:52                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 4822 MB             ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 5126 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4735 MB             ; 00:00:01                           ;
-; Total                ; 00:00:54     ; --                      ; --                  ; 00:01:32                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 499 MB              ; 00:00:21                           ;
+; Fitter               ; 00:00:26     ; 1.0                     ; 1875 MB             ; 00:00:47                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 522 MB              ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 847 MB              ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 700 MB              ; 00:00:01                           ;
+; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,11 +118,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; AntoineWindows   ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; AntoineWindows   ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; AntoineWindows   ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; AntoineWindows   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; AntoineWindows   ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; archiee          ; Arch Linux ; Arch Linux ; x86_64         ;
+; Fitter               ; archiee          ; Arch Linux ; Arch Linux ; x86_64         ;
+; Assembler            ; archiee          ; Arch Linux ; Arch Linux ; x86_64         ;
+; Timing Analyzer      ; archiee          ; Arch Linux ; Arch Linux ; x86_64         ;
+; EDA Netlist Writer   ; archiee          ; Arch Linux ; Arch Linux ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

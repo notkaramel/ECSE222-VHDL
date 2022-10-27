@@ -1,6 +1,6 @@
 Analysis & Synthesis report for VHDL4_Antoine_Phan
-Fri Oct 14 18:52:18 2022
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Wed Oct 26 22:07:56 2022
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -25,9 +25,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -37,15 +37,16 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 14 18:52:18 2022       ;
-; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 26 22:07:56 2022       ;
+; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; VHDL4_Antoine_Phan                          ;
 ; Top-level Entity Name           ; Antoine_Phan_Wrapper                        ;
 ; Family                          ; Cyclone V                                   ;
@@ -168,15 +169,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
-; Antoine_Phan_BCD_Adder.vhd             ; yes             ; User VHDL File  ; D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd             ;         ;
-; Seven_Segment_Decoder_Antoine_Phan.vhd ; yes             ; User VHDL File  ; D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Seven_Segment_Decoder_Antoine_Phan.vhd ;         ;
-; Antoine_Phan_Wrapper.vhd               ; yes             ; User VHDL File  ; D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd               ;         ;
-+----------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
++----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                  ; Library ;
++----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
+; Antoine_Phan_BCD_Adder.vhd             ; yes             ; User VHDL File  ; /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd             ;         ;
+; Seven_Segment_Decoder_Antoine_Phan.vhd ; yes             ; User VHDL File  ; /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Seven_Segment_Decoder_Antoine_Phan.vhd ;         ;
+; Antoine_Phan_Wrapper.vhd               ; yes             ; User VHDL File  ; /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd               ;         ;
++----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -295,46 +296,46 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Oct 14 18:52:07 2022
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Wed Oct 26 22:07:48 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL4_Antoine_Phan -c VHDL4_Antoine_Phan
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file antoine_phan_bcd_adder.vhd
-    Info (12022): Found design unit 1: bcd_adder-arch File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 16
-    Info (12023): Found entity 1: bcd_adder File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file seven_segment_decoder_antoine_phan.vhd
-    Info (12022): Found design unit 1: seven_segment_decoder-decoder File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Seven_Segment_Decoder_Antoine_Phan.vhd Line: 12
-    Info (12023): Found entity 1: seven_segment_decoder File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Seven_Segment_Decoder_Antoine_Phan.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file antoine_phan_wrapper.vhd
-    Info (12022): Found design unit 1: Antoine_Phan_Wrapper-arch File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 14
-    Info (12023): Found entity 1: Antoine_Phan_Wrapper File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file Antoine_Phan_BCD_Adder.vhd
+    Info (12022): Found design unit 1: bcd_adder-arch File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 16
+    Info (12023): Found entity 1: bcd_adder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file Seven_Segment_Decoder_Antoine_Phan.vhd
+    Info (12022): Found design unit 1: seven_segment_decoder-decoder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Seven_Segment_Decoder_Antoine_Phan.vhd Line: 12
+    Info (12023): Found entity 1: seven_segment_decoder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Seven_Segment_Decoder_Antoine_Phan.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file Antoine_Phan_Wrapper.vhd
+    Info (12022): Found design unit 1: Antoine_Phan_Wrapper-arch File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 14
+    Info (12023): Found entity 1: Antoine_Phan_Wrapper File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 6
 Info (12127): Elaborating entity "Antoine_Phan_Wrapper" for the top level hierarchy
-Info (12128): Elaborating entity "seven_segment_decoder" for hierarchy "seven_segment_decoder:Display_A" File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 36
-Info (12128): Elaborating entity "bcd_adder" for hierarchy "bcd_adder:BCD" File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 43
-Warning (10540): VHDL Signal Declaration warning at Antoine_Phan_BCD_Adder.vhd(18): used explicit default value for signal "dont_care" because signal was never assigned a value File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 18
-Warning (10492): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(23): signal "dont_care" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 23
-Warning (10631): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(20): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (10631): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(20): inferring latch(es) for signal or variable "C", which holds its previous value in one or more paths through the process File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (10631): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(20): inferring latch(es) for signal or variable "temp", which holds its previous value in one or more paths through the process File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "temp[0]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "temp[1]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "temp[2]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "temp[3]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "temp[4]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "C" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "S[0]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "S[1]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "S[2]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Info (10041): Inferred latch for "S[3]" at Antoine_Phan_BCD_Adder.vhd(20) File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (14026): LATCH primitive "bcd_adder:BCD|S[3]" is permanently enabled File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (14026): LATCH primitive "bcd_adder:BCD|S[2]" is permanently enabled File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (14026): LATCH primitive "bcd_adder:BCD|S[1]" is permanently enabled File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (14026): LATCH primitive "bcd_adder:BCD|S[0]" is permanently enabled File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (12128): Elaborating entity "seven_segment_decoder" for hierarchy "seven_segment_decoder:Display_A" File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 36
+Info (12128): Elaborating entity "bcd_adder" for hierarchy "bcd_adder:BCD" File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 43
+Warning (10540): VHDL Signal Declaration warning at Antoine_Phan_BCD_Adder.vhd(18): used explicit default value for signal "dont_care" because signal was never assigned a value File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 18
+Warning (10492): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(23): signal "dont_care" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(20): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(20): inferring latch(es) for signal or variable "C", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(20): inferring latch(es) for signal or variable "temp", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "temp[0]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "temp[1]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "temp[2]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "temp[3]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "temp[4]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "C" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "S[0]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "S[1]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "S[2]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Info (10041): Inferred latch for "S[3]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (14026): LATCH primitive "bcd_adder:BCD|S[3]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (14026): LATCH primitive "bcd_adder:BCD|S[2]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (14026): LATCH primitive "bcd_adder:BCD|S[1]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (14026): LATCH primitive "bcd_adder:BCD|S[0]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "decoded_AplusB[8]" is stuck at GND File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 10
-    Warning (13410): Pin "decoded_AplusB[9]" is stuck at GND File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 10
-    Warning (13410): Pin "decoded_AplusB[13]" is stuck at VCC File: D:/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 10
+    Warning (13410): Pin "decoded_AplusB[8]" is stuck at GND File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 10
+    Warning (13410): Pin "decoded_AplusB[9]" is stuck at GND File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 10
+    Warning (13410): Pin "decoded_AplusB[13]" is stuck at VCC File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -343,9 +344,9 @@ Info (21057): Implemented 71 device resources after synthesis - the final resour
     Info (21059): Implemented 28 output pins
     Info (21061): Implemented 35 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Fri Oct 14 18:52:18 2022
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 504 megabytes
+    Info: Processing ended: Wed Oct 26 22:07:56 2022
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:21
 
 
