@@ -13,6 +13,9 @@ Assignments for ECSE 222 - Digital Logic
 - Personal Machine (Windows/Linux (Debian-based or Red Hat))
 	- Quartus Prime Lite 18.0
 	- ModelSim-Altera 10.5b (for Quartus Prime Lite 18.0)
+- Personal Machine (ArchLinux)
+	- Quartus Prime Lite 21.1.1
+	- ModelSim Intel - Starter Edition 2020.2
 
 ### Lab's topic:
 - LAB 1: Getting Started: Quartus Prime, ModelSim-Altera, Testbench
