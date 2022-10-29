@@ -22,7 +22,7 @@ Assignments for ECSE 222 - Digital Logic
 - LAB 2: CAD tools, Schematic Design, 2-to-1 Multiplexer (MUX)
 - LAB 3: 4-bit circular barrel shifter, Ripple-Carry Adder (RCA), One-digit BCD Adder
 - LAB 4: Critial Path, BCD 7-segment encoding with FPGA (DE1-SOC)
-- LAB 5:
+- LAB 5: Sequential Statements and a 4-Bit Comparator
 - LAB 6 (demo):
 
 ### Workflow suggestion
