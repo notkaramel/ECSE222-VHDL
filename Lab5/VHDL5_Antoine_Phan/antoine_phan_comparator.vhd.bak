@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity antoine_phan_comparator is
+port(
+	A, B: 	in std_logic_vector(3 downto 0);
+	AgtBplusOne, AgteBplusOne,
+	AltBplusOne, AlteBplusOne,
+	AeqBplusOne, overflow:	out std_logic);
+end antoine_phan_comparator;
+
+architecture arch of antoine_phan_comparator is
+begin
+	-- Comparing A and B
+	process(A, B)
+	begin
+		
+	end process;
+end arch;

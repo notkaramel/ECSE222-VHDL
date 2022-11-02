@@ -1,5 +1,5 @@
 Fitter report for VHDL4_Antoine_Phan
-Wed Oct 26 22:08:23 2022
+Tue Nov  1 22:54:36 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Oct 26 22:08:23 2022       ;
+; Fitter Status                   ; Successful - Tue Nov  1 22:54:36 2022       ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; VHDL4_Antoine_Phan                          ;
 ; Top-level Entity Name           ; Antoine_Phan_Wrapper                        ;
@@ -225,8 +225,8 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 4 / 3,207          ; < 1 % ;
-;     -- Logic LABs                                           ; 4                  ;       ;
+; Total LABs:  partially or completely used                   ; 5 / 3,207          ; < 1 % ;
+;     -- Logic LABs                                           ; 5                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 36                 ;       ;
@@ -247,7 +247,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 36 / 457           ; 8 %   ;
-;     -- Clock pins                                           ; 0 / 8              ; 0 %   ;
+;     -- Clock pins                                           ; 1 / 8              ; 13 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 21             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; Hard processor system peripheral utilization                ;                    ;       ;
@@ -299,7 +299,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.7% / 0.5% / 1.2% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.6% / 0.5% / 0.9% ;       ;
 ; Maximum fan-out                                             ; 9                  ;       ;
 ; Highest non-global fan-out                                  ; 9                  ;       ;
 ; Total fan-out                                               ; 194                ;       ;
@@ -328,8 +328,8 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 4 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
-;     -- Logic LABs                                           ; 4                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 5 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
+;     -- Logic LABs                                           ; 5                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Combinational ALUT usage for logic                          ; 36                   ; 0                              ;
@@ -435,7 +435,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; decoded_AplusB[7]  ; AJ29  ; 5A       ; 89           ; 6            ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; decoded_AplusB[8]  ; AH29  ; 5A       ; 89           ; 6            ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; decoded_AplusB[9]  ; AH30  ; 5A       ; 89           ; 16           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
-; decoded_B[0]       ; AB23  ; 5A       ; 89           ; 9            ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; decoded_B[0]       ; AC18  ; 4A       ; 64           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 3.0-V LVCMOS ; 16mA             ; Off                               ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; decoded_B[1]       ; AE29  ; 5B       ; 89           ; 23           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; decoded_B[2]       ; AD29  ; 5B       ; 89           ; 23           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; decoded_B[3]       ; AC28  ; 5B       ; 89           ; 20           ; 77           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
@@ -453,9 +453,9 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; B2L      ; 0 / 0 ( -- )     ; --            ; --           ; --            ;
 ; B1L      ; 0 / 0 ( -- )     ; --            ; --           ; --            ;
 ; 3A       ; 8 / 32 ( 25 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 21 / 32 ( 66 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 0 / 48 ( 0 % )   ; 3.0V          ; --           ; 3.0V          ;
+; 4A       ; 1 / 80 ( 1 % )   ; 3.0V          ; --           ; 3.0V          ;
+; 5A       ; 20 / 32 ( 63 % ) ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 7 / 16 ( 44 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 6B       ; 0 / 44 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 6A       ; 0 / 56 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -516,7 +516,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AA14     ; 122        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AA15     ; 120        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AA16     ; 146        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AA17     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AA17     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AA18     ; 168        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AA19     ; 176        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AA20     ; 200        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -543,16 +543,16 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AB11     ;            ; --             ; VCC_AUX                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; AB12     ; 72         ; 3A             ; B[3]                            ; input  ; 2.5 V        ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB13     ; 88         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AB14     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AB14     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AB15     ; 106        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AB16     ;            ; --             ; VCC_AUX                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; AB17     ; 144        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AB18     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AB18     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AB19     ;            ;                ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
-; AB20     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AB20     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AB21     ; 208        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AB22     ; 225        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
-; AB23     ; 227        ; 5A             ; decoded_B[0]                    ; output ; 2.5 V        ;           ; Row I/O      ; Y               ; no       ; Off          ;
+; AB23     ; 227        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; AB24     ;            ; 5A             ; VCCIO5A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; AB25     ; 230        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
 ; AB26     ; 226        ; 5A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Row I/O      ;                 ; no       ; On           ;
@@ -572,15 +572,15 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AC10     ;            ; 3A             ; VCCPD3A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; AC11     ;            ; 3A             ; VCCIO3A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
 ; AC12     ; 82         ; 3A             ; B[2]                            ; input  ; 2.5 V        ;           ; Column I/O   ; Y               ; no       ; Off          ;
-; AC13     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AC13     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AC14     ; 104        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AC15     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AC15     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AC16     ;            ;                ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
-; AC17     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
-; AC18     ; 162        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AC19     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AC17     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
+; AC18     ; 162        ; 4A             ; decoded_B[0]                    ; output ; 3.0-V LVCMOS ;           ; Column I/O   ; Y               ; no       ; Off          ;
+; AC19     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AC20     ; 186        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AC21     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AC21     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AC22     ; 207        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AC23     ; 205        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AC24     ;            ; 5A             ; VREFB5AN0                       ; power  ;              ;           ; --           ;                 ; --       ; --           ;
@@ -602,12 +602,12 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AD10     ; 56         ; 3A             ; A[2]                            ; input  ; 2.5 V        ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; AD11     ; 54         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AD12     ; 80         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AD13     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AD13     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AD14     ; 98         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AD15     ;            ;                ; DNU                             ;        ;              ;           ; --           ;                 ; --       ; --           ;
-; AD16     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AD16     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AD17     ; 160        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AD18     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AD18     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AD19     ; 184        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AD20     ; 199        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AD21     ; 197        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -634,17 +634,17 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AE12     ; 52         ; 3A             ; A[3]                            ; input  ; 2.5 V        ;           ; Column I/O   ; Y               ; no       ; Off          ;
 ; AE13     ; 95         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AE14     ; 96         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AE15     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AE15     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AE16     ; 139        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AE17     ; 135        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AE18     ; 167        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AE19     ; 165        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AE20     ;            ;                ; GND                             ; gnd    ;              ;           ; --           ;                 ; --       ; --           ;
-; AE21     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AE21     ;            ; 3B, 4A         ; VCCPD3B4A                       ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AE22     ; 191        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AE23     ; 189        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AE24     ; 209        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AE25     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AE25     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AE26     ; 220        ; 5A             ; decoded_AplusB[0]               ; output ; 2.5 V        ;           ; Row I/O      ; Y               ; no       ; Off          ;
 ; AE27     ; 229        ; 5A             ; decoded_AplusB[1]               ; output ; 2.5 V        ;           ; Row I/O      ; Y               ; no       ; Off          ;
 ; AE28     ; 231        ; 5A             ; decoded_AplusB[2]               ; output ; 2.5 V        ;           ; Row I/O      ; Y               ; no       ; Off          ;
@@ -671,7 +671,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AF19     ; 159        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AF20     ; 175        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AF21     ; 173        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AF22     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AF22     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AF23     ; 183        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AF24     ; 181        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AF25     ; 206        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -698,7 +698,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AG16     ; 134        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AG17     ; 132        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AG18     ; 150        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AG19     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AG19     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AG20     ; 157        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AG21     ; 143        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AG22     ; 166        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -725,7 +725,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AH13     ; 111        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AH14     ; 109        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AH15     ; 125        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AH16     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AH16     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AH17     ; 147        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AH18     ; 145        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AH19     ; 148        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -735,7 +735,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AH23     ; 174        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AH24     ; 161        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AH25     ; 188        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AH26     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AH26     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AH27     ; 201        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AH28     ; 214        ; 5A             ; decoded_AplusB[6]               ; output ; 2.5 V        ;           ; Row I/O      ; Y               ; no       ; Off          ;
 ; AH29     ; 218        ; 5A             ; decoded_AplusB[8]               ; output ; 2.5 V        ;           ; Row I/O      ; Y               ; no       ; Off          ;
@@ -747,12 +747,12 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AJ5      ; 99         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ6      ; 102        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ7      ; 100        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AJ8      ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AJ8      ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AJ9      ; 110        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ10     ; 116        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ11     ; 119        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ12     ; 124        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AJ13     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AJ13     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AJ14     ; 131        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ15     ;            ; 3B             ; VREFB3BN0                       ; power  ;              ;           ; --           ;                 ; --       ; --           ;
 ; AJ16     ; 142        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -762,7 +762,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AJ20     ; 158        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ21     ; 156        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ22     ; 172        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AJ23     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AJ23     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AJ24     ; 182        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ25     ; 180        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AJ26     ; 187        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -778,7 +778,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AK7      ; 107        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AK8      ; 105        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AK9      ; 108        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AK10     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AK10     ;            ; 3B             ; VCCIO3B                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AK11     ; 117        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AK12     ; 123        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AK13     ; 121        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -788,7 +788,7 @@ The pin-out file can be found in /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/
 ; AK17     ;            ; 4A             ; VREFB4AN0                       ; power  ;              ;           ; --           ;                 ; --       ; --           ;
 ; AK18     ; 149        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AK19     ; 153        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
-; AK20     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V      ; --           ;                 ; --       ; --           ;
+; AK20     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 3.0V      ; --           ;                 ; --       ; --           ;
 ; AK21     ; 171        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AK22     ; 169        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
 ; AK23     ; 179        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;           ; Column I/O   ;                 ; no       ; On           ;
@@ -1384,7 +1384,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; decoded_A[4]       ; Incomplete set of assignments ;
 ; decoded_A[5]       ; Incomplete set of assignments ;
 ; decoded_A[6]       ; Incomplete set of assignments ;
-; decoded_B[0]       ; Incomplete set of assignments ;
+; decoded_B[0]       ; Missing slew rate             ;
 ; decoded_B[1]       ; Incomplete set of assignments ;
 ; decoded_B[2]       ; Incomplete set of assignments ;
 ; decoded_B[3]       ; Incomplete set of assignments ;
@@ -1416,17 +1416,17 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +--------------------+-------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                            ;
-+------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node                     ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name           ; Library Name ;
-+------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------------------------------------+-----------------------+--------------+
-; |Antoine_Phan_Wrapper                          ; 19.0 (0.5)           ; 19.0 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 36   ; 0            ; |Antoine_Phan_Wrapper                                           ; Antoine_Phan_Wrapper  ; work         ;
-;    |bcd_adder:BCD|                             ; 8.0 (8.0)            ; 8.0 (8.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|bcd_adder:BCD                             ; bcd_adder             ; work         ;
-;    |seven_segment_decoder:Display_A|           ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_A           ; seven_segment_decoder ; work         ;
-;    |seven_segment_decoder:Display_AplusB_6to0| ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_AplusB_6to0 ; seven_segment_decoder ; work         ;
-;    |seven_segment_decoder:Display_B|           ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_B           ; seven_segment_decoder ; work         ;
-+------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------------------------------------+-----------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                     ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name            ; Library Name ;
++------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
+; |Antoine_Phan_Wrapper                          ; 19.0 (0.5)           ; 19.0 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 36   ; 0            ; |Antoine_Phan_Wrapper                                           ; Antoine_Phan_Wrapper   ; work         ;
+;    |antoine_phan_bcd_adder:BCD|                ; 8.0 (8.0)            ; 8.0 (8.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (14)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|antoine_phan_bcd_adder:BCD                ; antoine_phan_bcd_adder ; work         ;
+;    |seven_segment_decoder:Display_A|           ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_A           ; seven_segment_decoder  ; work         ;
+;    |seven_segment_decoder:Display_AplusB_6to0| ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_AplusB_6to0 ; seven_segment_decoder  ; work         ;
+;    |seven_segment_decoder:Display_B|           ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_B           ; seven_segment_decoder  ; work         ;
++------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1480,7 +1480,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                           ; Pad To Core Index ; Setting ;
 +-----------------------------------------------+-------------------+---------+
 ; A[0]                                          ;                   ;         ;
-;      - bcd_adder:BCD|Add0~1                   ; 0                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|Add0~1      ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux6~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux5~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux4~0 ; 0                 ; 0       ;
@@ -1489,7 +1489,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seven_segment_decoder:Display_A|Mux1~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux0~0 ; 0                 ; 0       ;
 ; A[1]                                          ;                   ;         ;
-;      - bcd_adder:BCD|Add0~5                   ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|Add0~5      ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux6~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux5~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux4~0 ; 1                 ; 0       ;
@@ -1497,9 +1497,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seven_segment_decoder:Display_A|Mux2~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux1~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux0~0 ; 1                 ; 0       ;
-;      - bcd_adder:BCD|process_0~0              ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|process_0~0 ; 1                 ; 0       ;
 ; A[2]                                          ;                   ;         ;
-;      - bcd_adder:BCD|Add0~9                   ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|Add0~9      ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux6~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux5~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux4~0 ; 1                 ; 0       ;
@@ -1507,9 +1507,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seven_segment_decoder:Display_A|Mux2~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux1~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux0~0 ; 1                 ; 0       ;
-;      - bcd_adder:BCD|process_0~0              ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|process_0~0 ; 1                 ; 0       ;
 ; A[3]                                          ;                   ;         ;
-;      - bcd_adder:BCD|Add0~13                  ; 0                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|Add0~13     ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux6~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux5~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux4~0 ; 0                 ; 0       ;
@@ -1517,9 +1517,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seven_segment_decoder:Display_A|Mux2~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux1~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_A|Mux0~0 ; 0                 ; 0       ;
-;      - bcd_adder:BCD|process_0~0              ; 0                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|process_0~0 ; 0                 ; 0       ;
 ; B[0]                                          ;                   ;         ;
-;      - bcd_adder:BCD|Add0~1                   ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|Add0~1      ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux6~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux5~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux4~0 ; 1                 ; 0       ;
@@ -1528,7 +1528,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seven_segment_decoder:Display_B|Mux1~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux0~0 ; 1                 ; 0       ;
 ; B[1]                                          ;                   ;         ;
-;      - bcd_adder:BCD|Add0~5                   ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|Add0~5      ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux6~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux5~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux4~0 ; 1                 ; 0       ;
@@ -1536,9 +1536,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seven_segment_decoder:Display_B|Mux2~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux1~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux0~0 ; 1                 ; 0       ;
-;      - bcd_adder:BCD|process_0~0              ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|process_0~0 ; 1                 ; 0       ;
 ; B[2]                                          ;                   ;         ;
-;      - bcd_adder:BCD|Add0~9                   ; 0                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|Add0~9      ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux6~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux5~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux4~0 ; 0                 ; 0       ;
@@ -1546,9 +1546,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seven_segment_decoder:Display_B|Mux2~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux1~0 ; 0                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux0~0 ; 0                 ; 0       ;
-;      - bcd_adder:BCD|process_0~0              ; 0                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|process_0~0 ; 0                 ; 0       ;
 ; B[3]                                          ;                   ;         ;
-;      - bcd_adder:BCD|Add0~13                  ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|Add0~13     ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux6~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux5~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux4~0 ; 1                 ; 0       ;
@@ -1556,17 +1556,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seven_segment_decoder:Display_B|Mux2~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux1~0 ; 1                 ; 0       ;
 ;      - seven_segment_decoder:Display_B|Mux0~0 ; 1                 ; 0       ;
-;      - bcd_adder:BCD|process_0~0              ; 1                 ; 0       ;
+;      - antoine_phan_bcd_adder:BCD|process_0~0 ; 1                 ; 0       ;
 +-----------------------------------------------+-------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                        ;
-+---------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                      ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; bcd_adder:BCD|process_0~0 ; MLABCELL_X3_Y1_N54 ; 4       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-+---------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                     ;
++----------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                   ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; antoine_phan_bcd_adder:BCD|process_0~0 ; MLABCELL_X3_Y1_N54 ; 4       ; Latch enable ; no     ; --                   ; --               ; --                        ;
++----------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -1574,14 +1574,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Block interconnects                         ; 57 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 16 / 13,420 ( < 1 % )  ;
-; C2 interconnects                            ; 37 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 46 / 56,300 ( < 1 % )  ;
+; Block interconnects                         ; 63 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 15 / 13,420 ( < 1 % )  ;
+; C2 interconnects                            ; 30 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 51 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
-; Direct links                                ; 4 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 1 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 0 / 16 ( 0 % )         ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )          ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )          ;
@@ -1639,10 +1639,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
 ; Local interconnects                         ; 8 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
-; R14 interconnects                           ; 80 / 12,676 ( < 1 % )  ;
-; R14/C12 interconnect drivers                ; 85 / 20,720 ( < 1 % )  ;
-; R3 interconnects                            ; 27 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 39 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 81 / 12,676 ( < 1 % )  ;
+; R14/C12 interconnect drivers                ; 86 / 20,720 ( < 1 % )  ;
+; R3 interconnects                            ; 35 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 50 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 0 / 360 ( 0 % )        ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1654,10 +1654,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; I/O Rules Statistic              ; Total ;
 +----------------------------------+-------+
 ; Total I/O Rules                  ; 28    ;
-; Number of I/O Rules Passed       ; 9     ;
+; Number of I/O Rules Passed       ; 12    ;
 ; Number of I/O Rules Failed       ; 0     ;
 ; Number of I/O Rules Unchecked    ; 0     ;
-; Number of I/O Rules Inapplicable ; 19    ;
+; Number of I/O Rules Inapplicable ; 16    ;
 +----------------------------------+-------+
 
 
@@ -1678,19 +1678,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Inapplicable ; IO_000046 ; I/O Properties Checks for One I/O ; The location should support the requested Slew Rate value.                         ; Critical ; No Slew Rate assignments found.                                          ; I/O                 ;                   ;
 ; Inapplicable ; IO_000045 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Slew Rate value.                     ; Critical ; No Slew Rate assignments found.                                          ; I/O                 ;                   ;
 ; Inapplicable ; IO_000027 ; I/O Properties Checks for One I/O ; Weak Pull Up and Bus Hold should not be used at the same time.                     ; Critical ; No Enable Bus-Hold Circuitry or Weak Pull-Up Resistor assignments found. ; I/O                 ;                   ;
-; Inapplicable ; IO_000026 ; I/O Properties Checks for One I/O ; On Chip Termination and Current Strength should not be used at the same time.      ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
+; Pass         ; IO_000026 ; I/O Properties Checks for One I/O ; On Chip Termination and Current Strength should not be used at the same time.      ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000024 ; I/O Properties Checks for One I/O ; The I/O direction should support the On Chip Termination value.                    ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000023 ; I/O Properties Checks for One I/O ; The I/O standard should support the Open Drain value.                              ; Critical ; No open drain assignments found.                                         ; I/O                 ;                   ;
 ; Inapplicable ; IO_000022 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Bus Hold value.                      ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O                 ;                   ;
 ; Inapplicable ; IO_000021 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Weak Pull Up value.                  ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O                 ;                   ;
 ; Inapplicable ; IO_000020 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested PCI Clamp Diode.                     ; Critical ; No Clamping Diode assignments found.                                     ; I/O                 ;                   ;
 ; Pass         ; IO_000019 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested On Chip Termination value.           ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000018 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Current Strength.                    ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
+; Pass         ; IO_000018 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Current Strength.                    ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000015 ; I/O Properties Checks for One I/O ; The location should support the requested PCI Clamp Diode.                         ; Critical ; No Clamping Diode assignments found.                                     ; I/O                 ;                   ;
 ; Inapplicable ; IO_000014 ; I/O Properties Checks for One I/O ; The location should support the requested Weak Pull Up value.                      ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O                 ;                   ;
 ; Inapplicable ; IO_000013 ; I/O Properties Checks for One I/O ; The location should support the requested Bus Hold value.                          ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O                 ;                   ;
 ; Pass         ; IO_000012 ; I/O Properties Checks for One I/O ; The location should support the requested On Chip Termination value.               ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000011 ; I/O Properties Checks for One I/O ; The location should support the requested Current Strength.                        ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
+; Pass         ; IO_000011 ; I/O Properties Checks for One I/O ; The location should support the requested Current Strength.                        ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000010 ; I/O Properties Checks for One I/O ; The location should support the requested I/O direction.                           ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000009 ; I/O Properties Checks for One I/O ; The location should support the requested I/O standard.                            ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000034 ; SI Related Distance Checks        ; Single-ended outputs should be 0 LAB row(s) away from a differential I/O.          ; High     ; No Differential I/O Standard assignments found.                          ; I/O                 ;                   ;
@@ -1703,38 +1703,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
 ; Pin/Rules          ; IO_000002    ; IO_000001 ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000047    ; IO_000046    ; IO_000045    ; IO_000027    ; IO_000026    ; IO_000024    ; IO_000023    ; IO_000022    ; IO_000021    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000034    ;
 +--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
-; Total Pass         ; 0            ; 36        ; 36        ; 0            ; 0            ; 36        ; 36        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 36        ; 36        ; 0            ;
+; Total Pass         ; 0            ; 36        ; 36        ; 0            ; 0            ; 36        ; 36        ; 0            ; 0            ; 0            ; 0            ; 0            ; 28           ; 27           ; 0            ; 0            ; 0            ; 0            ; 27           ; 1            ; 0            ; 0            ; 0            ; 27           ; 1            ; 36        ; 36        ; 0            ;
 ; Total Unchecked    ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
-; Total Inapplicable ; 36           ; 0         ; 0         ; 36           ; 36           ; 0         ; 0         ; 36           ; 36           ; 36           ; 36           ; 36           ; 36           ; 8            ; 36           ; 36           ; 36           ; 36           ; 8            ; 36           ; 36           ; 36           ; 36           ; 8            ; 36           ; 0         ; 0         ; 36           ;
+; Total Inapplicable ; 36           ; 0         ; 0         ; 36           ; 36           ; 0         ; 0         ; 36           ; 36           ; 36           ; 36           ; 36           ; 8            ; 9            ; 36           ; 36           ; 36           ; 36           ; 9            ; 35           ; 36           ; 36           ; 36           ; 9            ; 35           ; 0         ; 0         ; 36           ;
 ; Total Fail         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
-; decoded_A[0]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_A[1]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_A[2]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_A[3]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_A[4]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_A[5]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_A[6]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_B[0]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_B[1]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_B[2]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_B[3]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_B[4]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_B[5]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_B[6]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[0]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[1]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[2]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[3]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[4]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[5]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[6]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[7]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[8]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[9]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[10] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[11] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[12] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; decoded_AplusB[13] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_A[0]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_A[1]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_A[2]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_A[3]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_A[4]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_A[5]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_A[6]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_B[0]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Pass      ; Inapplicable ;
+; decoded_B[1]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_B[2]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_B[3]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_B[4]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_B[5]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_B[6]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[0]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[1]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[2]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[3]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[4]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[5]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[6]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[7]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[8]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[9]  ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[10] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[11] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[12] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; decoded_AplusB[13] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; A[0]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; A[1]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; A[2]               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
@@ -1794,27 +1794,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; I/O             ; A[1]                 ; 4.7               ;
+; I/O             ; A[1]                 ; 4.8               ;
 ; I/O             ; A[1],I/O             ; 1.1               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details               ;
-+-----------------+-----------------------+-------------------+
-; Source Register ; Destination Register  ; Delay Added in ns ;
-+-----------------+-----------------------+-------------------+
-; A[1]            ; bcd_adder:BCD|temp[1] ; 2.516             ;
-; B[1]            ; bcd_adder:BCD|temp[1] ; 1.404             ;
-; B[0]            ; bcd_adder:BCD|temp[1] ; 1.404             ;
-; A[0]            ; bcd_adder:BCD|temp[1] ; 1.404             ;
-; B[2]            ; bcd_adder:BCD|temp[2] ; 1.187             ;
-; A[2]            ; bcd_adder:BCD|temp[2] ; 1.187             ;
-; B[3]            ; bcd_adder:BCD|temp[3] ; 1.112             ;
-; A[3]            ; bcd_adder:BCD|temp[3] ; 1.112             ;
-+-----------------+-----------------------+-------------------+
++--------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                            ;
++-----------------+------------------------------------+-------------------+
+; Source Register ; Destination Register               ; Delay Added in ns ;
++-----------------+------------------------------------+-------------------+
+; A[1]            ; antoine_phan_bcd_adder:BCD|temp[1] ; 2.592             ;
+; B[1]            ; antoine_phan_bcd_adder:BCD|temp[1] ; 1.480             ;
+; B[0]            ; antoine_phan_bcd_adder:BCD|temp[1] ; 1.480             ;
+; A[0]            ; antoine_phan_bcd_adder:BCD|temp[1] ; 1.480             ;
+; B[2]            ; antoine_phan_bcd_adder:BCD|temp[2] ; 1.164             ;
+; A[2]            ; antoine_phan_bcd_adder:BCD|temp[2] ; 1.164             ;
+; B[3]            ; antoine_phan_bcd_adder:BCD|temp[3] ; 1.112             ;
+; A[3]            ; antoine_phan_bcd_adder:BCD|temp[3] ; 1.112             ;
++-----------------+------------------------------------+-------------------+
 Note: This table only shows the top 8 path(s) that have the largest delay added for hold.
 
 
@@ -1835,14 +1835,14 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:09
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:08
 Warning (335093): The Timing Analyzer is analyzing 4 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332104): Reading SDC File: 'Antoine_Phan_SDC.sdc'
 Warning (332174): Ignored filter at Antoine_Phan_SDC.sdc(1): S[*] could not be matched with a port File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 1
 Warning (332049): Ignored set_max_delay at Antoine_Phan_SDC.sdc(1): Argument <to> is an empty collection File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 1
-    Info (332050): set_max_delay -from [get_ports A[*]] -to [get_ports S[*]] 12 File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 1
+    Info (332050): set_max_delay -from [get_ports A[*]] -to [get_ports S[*]] 5 File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 1
 Warning (332049): Ignored set_max_delay at Antoine_Phan_SDC.sdc(2): Argument <to> is an empty collection File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 2
-    Info (332050): set_max_delay -from [get_ports B[*]] -to [get_ports S[*]] 12 File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 2
+    Info (332050): set_max_delay -from [get_ports B[*]] -to [get_ports S[*]] 5 File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 2
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
@@ -1859,7 +1859,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1867,10 +1867,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/output_files/VHDL4_Antoine_Phan.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 1875 megabytes
-    Info: Processing ended: Wed Oct 26 22:08:23 2022
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Peak virtual memory: 1869 megabytes
+    Info: Processing ended: Tue Nov  1 22:54:36 2022
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:48
 
 
 +----------------------------+

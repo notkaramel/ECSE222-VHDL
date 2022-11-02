@@ -19,7 +19,7 @@ architecture arch of Antoine_Phan_Wrapper is
         );
     end component;
 
-    component bcd_adder is
+    component antoine_phan_bcd_adder is
         port(
             A, B:   in std_logic_vector(3 downto 0);
             S:      out std_logic_vector(3 downto 0);
@@ -40,7 +40,7 @@ begin
 		port map(B, decoded_B);
 -- 7-bit display code for A+B
 	-- adding A and B
-    BCD: bcd_adder
+    BCD: antoine_phan_bcd_adder
         port map(A, B, AplusB, C);
 
     -- Displaying A+B, the first 4-bits (from LSB)

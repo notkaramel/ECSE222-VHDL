@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VHDL4_Antoine_Phan
-Wed Oct 26 22:07:56 2022
+Tue Nov  1 22:38:39 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 26 22:07:56 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov  1 22:38:39 2022       ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; VHDL4_Antoine_Phan                          ;
 ; Top-level Entity Name           ; Antoine_Phan_Wrapper                        ;
@@ -165,7 +165,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -207,31 +208,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                              ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name           ; Library Name ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+-----------------------+--------------+
-; |Antoine_Phan_Wrapper                          ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 36   ; 0            ; |Antoine_Phan_Wrapper                                           ; Antoine_Phan_Wrapper  ; work         ;
-;    |bcd_adder:BCD|                             ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|bcd_adder:BCD                             ; bcd_adder             ; work         ;
-;    |seven_segment_decoder:Display_AplusB_6to0| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_AplusB_6to0 ; seven_segment_decoder ; work         ;
-;    |seven_segment_decoder:Display_A|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_A           ; seven_segment_decoder ; work         ;
-;    |seven_segment_decoder:Display_B|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_B           ; seven_segment_decoder ; work         ;
-+------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+-----------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                               ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name            ; Library Name ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
+; |Antoine_Phan_Wrapper                          ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 36   ; 0            ; |Antoine_Phan_Wrapper                                           ; Antoine_Phan_Wrapper   ; work         ;
+;    |antoine_phan_bcd_adder:BCD|                ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|antoine_phan_bcd_adder:BCD                ; antoine_phan_bcd_adder ; work         ;
+;    |seven_segment_decoder:Display_AplusB_6to0| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_AplusB_6to0 ; seven_segment_decoder  ; work         ;
+;    |seven_segment_decoder:Display_A|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_A           ; seven_segment_decoder  ; work         ;
+;    |seven_segment_decoder:Display_B|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Antoine_Phan_Wrapper|seven_segment_decoder:Display_B           ; seven_segment_decoder  ; work         ;
++------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                   ;
-+----------------------------------------------------+-------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal     ; Free of Timing Hazards ;
-+----------------------------------------------------+-------------------------+------------------------+
-; bcd_adder:BCD|temp[4]                              ; bcd_adder:BCD|process_0 ; yes                    ;
-; bcd_adder:BCD|temp[3]                              ; bcd_adder:BCD|process_0 ; yes                    ;
-; bcd_adder:BCD|temp[1]                              ; bcd_adder:BCD|process_0 ; yes                    ;
-; bcd_adder:BCD|temp[2]                              ; bcd_adder:BCD|process_0 ; yes                    ;
-; Number of user-specified and inferred latches = 4  ;                         ;                        ;
-+----------------------------------------------------+-------------------------+------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                ;
++----------------------------------------------------+--------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                  ; Free of Timing Hazards ;
++----------------------------------------------------+--------------------------------------+------------------------+
+; antoine_phan_bcd_adder:BCD|temp[4]                 ; antoine_phan_bcd_adder:BCD|process_0 ; yes                    ;
+; antoine_phan_bcd_adder:BCD|temp[3]                 ; antoine_phan_bcd_adder:BCD|process_0 ; yes                    ;
+; antoine_phan_bcd_adder:BCD|temp[1]                 ; antoine_phan_bcd_adder:BCD|process_0 ; yes                    ;
+; antoine_phan_bcd_adder:BCD|temp[2]                 ; antoine_phan_bcd_adder:BCD|process_0 ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                                      ;                        ;
++----------------------------------------------------+--------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -297,13 +298,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Wed Oct 26 22:07:48 2022
+    Info: Processing started: Tue Nov  1 22:38:32 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL4_Antoine_Phan -c VHDL4_Antoine_Phan
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file Antoine_Phan_BCD_Adder.vhd
-    Info (12022): Found design unit 1: bcd_adder-arch File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 16
-    Info (12023): Found entity 1: bcd_adder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 6
+    Info (12022): Found design unit 1: antoine_phan_bcd_adder-arch File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 16
+    Info (12023): Found entity 1: antoine_phan_bcd_adder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file Seven_Segment_Decoder_Antoine_Phan.vhd
     Info (12022): Found design unit 1: seven_segment_decoder-decoder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Seven_Segment_Decoder_Antoine_Phan.vhd Line: 12
     Info (12023): Found entity 1: seven_segment_decoder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Seven_Segment_Decoder_Antoine_Phan.vhd Line: 5
@@ -312,7 +313,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file Antoine
     Info (12023): Found entity 1: Antoine_Phan_Wrapper File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 6
 Info (12127): Elaborating entity "Antoine_Phan_Wrapper" for the top level hierarchy
 Info (12128): Elaborating entity "seven_segment_decoder" for hierarchy "seven_segment_decoder:Display_A" File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 36
-Info (12128): Elaborating entity "bcd_adder" for hierarchy "bcd_adder:BCD" File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 43
+Info (12128): Elaborating entity "antoine_phan_bcd_adder" for hierarchy "antoine_phan_bcd_adder:BCD" File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 43
 Warning (10540): VHDL Signal Declaration warning at Antoine_Phan_BCD_Adder.vhd(18): used explicit default value for signal "dont_care" because signal was never assigned a value File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 18
 Warning (10492): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(23): signal "dont_care" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 23
 Warning (10631): VHDL Process Statement warning at Antoine_Phan_BCD_Adder.vhd(20): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
@@ -328,10 +329,10 @@ Info (10041): Inferred latch for "S[0]" at Antoine_Phan_BCD_Adder.vhd(20) File: 
 Info (10041): Inferred latch for "S[1]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
 Info (10041): Inferred latch for "S[2]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
 Info (10041): Inferred latch for "S[3]" at Antoine_Phan_BCD_Adder.vhd(20) File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (14026): LATCH primitive "bcd_adder:BCD|S[3]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (14026): LATCH primitive "bcd_adder:BCD|S[2]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (14026): LATCH primitive "bcd_adder:BCD|S[1]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
-Warning (14026): LATCH primitive "bcd_adder:BCD|S[0]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (14026): LATCH primitive "antoine_phan_bcd_adder:BCD|S[3]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (14026): LATCH primitive "antoine_phan_bcd_adder:BCD|S[2]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (14026): LATCH primitive "antoine_phan_bcd_adder:BCD|S[1]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
+Warning (14026): LATCH primitive "antoine_phan_bcd_adder:BCD|S[0]" is permanently enabled File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_BCD_Adder.vhd Line: 20
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "decoded_AplusB[8]" is stuck at GND File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 10
     Warning (13410): Pin "decoded_AplusB[9]" is stuck at GND File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 10
@@ -344,9 +345,9 @@ Info (21057): Implemented 71 device resources after synthesis - the final resour
     Info (21059): Implemented 28 output pins
     Info (21061): Implemented 35 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 504 megabytes
-    Info: Processing ended: Wed Oct 26 22:07:56 2022
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 517 megabytes
+    Info: Processing ended: Tue Nov  1 22:38:39 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:20
 
 

@@ -1,5 +1,5 @@
 Timing Analyzer report for VHDL4_Antoine_Phan
-Wed Oct 26 22:08:36 2022
+Tue Nov  1 22:39:20 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -101,14 +101,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.1%      ;
-;     Processor 3            ;   2.0%      ;
-;     Processor 4            ;   2.0%      ;
+;     Processor 2            ;   2.2%      ;
+;     Processor 3            ;   2.2%      ;
+;     Processor 4            ;   2.2%      ;
 +----------------------------+-------------+
 
 
@@ -117,7 +117,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------+--------------------------+
 ; SDC File Path        ; Status ; Read at                  ;
 +----------------------+--------+--------------------------+
-; Antoine_Phan_SDC.sdc ; OK     ; Wed Oct 26 22:08:33 2022 ;
+; Antoine_Phan_SDC.sdc ; OK     ; Tue Nov  1 22:39:17 2022 ;
 +----------------------+--------+--------------------------+
 
 
@@ -703,7 +703,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Wed Oct 26 22:08:32 2022
+    Info: Processing started: Tue Nov  1 22:39:16 2022
 Info: Command: quartus_sta VHDL4_Antoine_Phan -c VHDL4_Antoine_Phan
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -714,9 +714,9 @@ Warning (335093): The Timing Analyzer is analyzing 4 combinational loops as latc
 Info (332104): Reading SDC File: 'Antoine_Phan_SDC.sdc'
 Warning (332174): Ignored filter at Antoine_Phan_SDC.sdc(1): S[*] could not be matched with a port File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 1
 Warning (332049): Ignored set_max_delay at Antoine_Phan_SDC.sdc(1): Argument <to> is an empty collection File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 1
-    Info (332050): set_max_delay -from [get_ports A[*]] -to [get_ports S[*]] 12 File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 1
+    Info (332050): set_max_delay -from [get_ports A[*]] -to [get_ports S[*]] 5 File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 1
 Warning (332049): Ignored set_max_delay at Antoine_Phan_SDC.sdc(2): Argument <to> is an empty collection File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 2
-    Info (332050): set_max_delay -from [get_ports B[*]] -to [get_ports S[*]] 12 File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 2
+    Info (332050): set_max_delay -from [get_ports B[*]] -to [get_ports S[*]] 5 File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab4/VHDL4_Antoine_Phan/Antoine_Phan_SDC.sdc Line: 2
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name A[1] A[1]
@@ -801,8 +801,8 @@ Info (332146): Worst-case minimum pulse width slack is 0.046
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 847 megabytes
-    Info: Processing ended: Wed Oct 26 22:08:36 2022
+    Info: Peak virtual memory: 866 megabytes
+    Info: Processing ended: Tue Nov  1 22:39:20 2022
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
