@@ -58,10 +58,25 @@ set_global_assignment -name EDA_TEST_BENCH_NAME comparator_tb -section_id eda_si
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id comparator_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME comparator_tb -section_id comparator_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE comparator_tb.vhd -section_id comparator_tb
+set_location_assignment PIN_AE11 -to A[0]
+set_location_assignment PIN_AE12 -to A[3]
+set_location_assignment PIN_AD10 -to A[2]
+set_location_assignment PIN_AC9 -to A[1]
+set_location_assignment PIN_AF10 -to B[3]
+set_location_assignment PIN_AF9 -to B[2]
+set_location_assignment PIN_AC12 -to B[1]
+set_location_assignment PIN_AB12 -to B[0]
+set_global_assignment -name VHDL_FILE wrapper_design.vhd
 set_global_assignment -name VHDL_FILE comparator_tb.vhd
 set_global_assignment -name VHDL_FILE antoine_phan_comparator.vhd
+set_location_assignment PIN_AD27 -to is_eq
+set_location_assignment PIN_V25 -to is_gt
+set_location_assignment PIN_W25 -to is_gte
+set_location_assignment PIN_AC25 -to is_lt
+set_location_assignment PIN_AC30 -to is_lte
+set_location_assignment PIN_AE27 -to overflow
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SDC_FILE timing_constraints.sdc
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VHDL_FILE wrapper_design.vhd

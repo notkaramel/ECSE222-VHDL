@@ -25,13 +25,12 @@ dut: antoine_phan_comparator
     port map(A, B, AgtBplusOne, AgteBplusOne, AltBplusOne, AlteBplusOne, AeqBplusOne, overflow);
     sim: process
     begin
-        for i in 0 to 15 loop
-            A <= std_logic_vector(to_unsigned(i, 4));
-            for j in 0 to 15 loop
-                B <= std_logic_vector(to_unsigned(j, 4));
-                wait for 10 ns;
-            end loop;
-        end loop;
-		  wait;
+		-- Set A = 5 "0101"
+        A <= "0101";
+			for j in 0 to 15 loop
+				 B <= std_logic_vector(to_unsigned(j, 4));
+				 wait for 10 ns;
+			end loop;
+      wait;
     end process;
 end arch;

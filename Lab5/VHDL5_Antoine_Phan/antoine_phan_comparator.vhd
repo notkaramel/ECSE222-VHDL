@@ -18,7 +18,7 @@ begin
 	process(A, B, BplusOne)
 	begin
 		-- Add 1 to B, check overflow
-		BplusOne <= ('0' & B) + "00001";
+		BplusOne <= ('0' & B) + "0001";
 		
 		-- Comparing A and B
 		if (BplusOne(4) = '1') then -- addition produce overflow
@@ -30,24 +30,24 @@ begin
 			AlteBplusOne <= '0';
 		else
 			overflow <= '0'; -- no overflow, compare the two numbers
-			if (A > BplusOne) then -- A > B+1 -> 01100
-				AeqBplusOne <= '0';
-				AgtBplusOne <= '1';
+			if (A = BplusOne(3 downto 0)) then -- A == B+1 -> 10101
+				AeqBplusOne <= '1';
+				AgtBplusOne <= '0';
 				AgteBplusOne <= '1';
 				AltBplusOne <= '0';
-				AlteBplusOne <= '0';
+				AlteBplusOne <= '1';
 			elsif (A < BplusOne) then -- A < B+1 -> 00011
 				AeqBplusOne <= '0';
 				AgtBplusOne <= '0';
 				AgteBplusOne <= '0';
 				AltBplusOne <= '1';
 				AlteBplusOne <= '1';
-			elsif (A = BplusOne) then -- A == B+1 -> 10101
-				AeqBplusOne <= '1';
-				AgtBplusOne <= '0';
+			elsif (A > BplusOne) then -- A > B+1 -> 01100
+				AeqBplusOne <= '0';
+				AgtBplusOne <= '1';
 				AgteBplusOne <= '1';
 				AltBplusOne <= '0';
-				AlteBplusOne <= '1';
+				AlteBplusOne <= '0';
 			-- 2 numbers can't be equal and greater at the same time!?
 			-- elsif (A >= BplusOne) then -- A >= B+1 -> 11101???
 				-- AeqBplusOne <= '1';

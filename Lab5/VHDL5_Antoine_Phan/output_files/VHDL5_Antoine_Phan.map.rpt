@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VHDL5_Antoine_Phan
-Sat Nov  5 19:37:02 2022
+Tue Nov  8 15:06:29 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov  5 19:37:02 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov  8 15:06:29 2022       ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; VHDL5_Antoine_Phan                          ;
 ; Top-level Entity Name           ; antoine_phan_comparator                     ;
@@ -161,10 +161,12 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -182,14 +184,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Estimate of Logic utilization (ALMs needed) ; 14     ;
+; Estimate of Logic utilization (ALMs needed) ; 15     ;
 ;                                             ;        ;
-; Combinational ALUT usage for logic          ; 23     ;
+; Combinational ALUT usage for logic          ; 24     ;
 ;     -- 7 input functions                    ; 0      ;
-;     -- 6 input functions                    ; 4      ;
-;     -- 5 input functions                    ; 5      ;
-;     -- 4 input functions                    ; 7      ;
-;     -- <=3 input functions                  ; 7      ;
+;     -- 6 input functions                    ; 5      ;
+;     -- 5 input functions                    ; 4      ;
+;     -- 4 input functions                    ; 5      ;
+;     -- <=3 input functions                  ; 10     ;
 ;                                             ;        ;
 ; Dedicated logic registers                   ; 0      ;
 ;                                             ;        ;
@@ -198,9 +200,9 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 0      ;
 ;                                             ;        ;
 ; Maximum fan-out node                        ; Add0~0 ;
-; Maximum fan-out                             ; 11     ;
-; Total fan-out                               ; 118    ;
-; Average fan-out                             ; 2.31   ;
+; Maximum fan-out                             ; 8      ;
+; Total fan-out                               ; 119    ;
+; Average fan-out                             ; 2.29   ;
 +---------------------------------------------+--------+
 
 
@@ -209,7 +211,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name             ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------------------+--------------+
-; |antoine_phan_comparator   ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 14   ; 0            ; |antoine_phan_comparator ; antoine_phan_comparator ; work         ;
+; |antoine_phan_comparator   ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 14   ; 0            ; |antoine_phan_comparator ; antoine_phan_comparator ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -244,13 +246,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antoine_phan_comparator|AgteBplusOne ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antoine_phan_comparator|AgtBplusOne ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -258,16 +260,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 23                          ;
-;     normal            ; 23                          ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 7                           ;
-;         5 data inputs ; 5                           ;
-;         6 data inputs ; 4                           ;
+; arriav_lcell_comb     ; 24                          ;
+;     normal            ; 24                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 5                           ;
+;         5 data inputs ; 4                           ;
+;         6 data inputs ; 5                           ;
 ; boundary_port         ; 14                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.56                        ;
+; Average LUT depth     ; 3.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -286,16 +289,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Sat Nov  5 19:36:54 2022
+    Info: Processing started: Tue Nov  8 15:06:22 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL5_Antoine_Phan -c VHDL5_Antoine_Phan
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file wrapper_design.vhd
+    Info (12022): Found design unit 1: wrapper_design-arch File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/wrapper_design.vhd Line: 14
+    Info (12023): Found entity 1: wrapper_design File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/wrapper_design.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file comparator_tb.vhd
     Info (12022): Found design unit 1: comparator_tb-arch File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/comparator_tb.vhd Line: 11
     Info (12023): Found entity 1: comparator_tb File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/comparator_tb.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file antoine_phan_comparator.vhd
     Info (12022): Found design unit 1: antoine_phan_comparator-arch File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 15
     Info (12023): Found entity 1: antoine_phan_comparator File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file seven_segment_decoder.vhd
+    Info (12022): Found design unit 1: seven_segment_decoder-decoder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/seven_segment_decoder.vhd Line: 12
+    Info (12023): Found entity 1: seven_segment_decoder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/seven_segment_decoder.vhd Line: 5
 Info (12127): Elaborating entity "antoine_phan_comparator" for the top level hierarchy
 Warning (10631): VHDL Process Statement warning at antoine_phan_comparator.vhd(18): inferring latch(es) for signal or variable "AeqBplusOne", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 18
 Warning (10631): VHDL Process Statement warning at antoine_phan_comparator.vhd(18): inferring latch(es) for signal or variable "AgtBplusOne", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 18
@@ -310,14 +319,14 @@ Info (10041): Inferred latch for "AeqBplusOne" at antoine_phan_comparator.vhd(18
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 23 logic cells
+    Info (21061): Implemented 24 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 501 megabytes
-    Info: Processing ended: Sat Nov  5 19:37:02 2022
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 524 megabytes
+    Info: Processing ended: Tue Nov  8 15:06:29 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:20
 
 
