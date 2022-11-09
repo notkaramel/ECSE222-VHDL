@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VHDL5_Antoine_Phan
-Tue Nov  8 15:06:29 2022
+Tue Nov  8 20:00:26 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -45,10 +45,10 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov  8 15:06:29 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov  8 20:00:26 2022       ;
 ; Quartus Prime Version           ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                   ; VHDL5_Antoine_Phan                          ;
-; Top-level Entity Name           ; antoine_phan_comparator                     ;
+; Top-level Entity Name           ; wrapper_design                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
@@ -65,91 +65,91 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+---------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                                  ;
-+---------------------------------------------------------------------------------+-------------------------+--------------------+
-; Option                                                                          ; Setting                 ; Default Value      ;
-+---------------------------------------------------------------------------------+-------------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6            ;                    ;
-; Top-level entity name                                                           ; antoine_phan_comparator ; VHDL5_Antoine_Phan ;
-; Family name                                                                     ; Cyclone V               ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                     ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                      ; On                 ;
-; Enable compact report table                                                     ; Off                     ; Off                ;
-; Restructure Multiplexers                                                        ; Auto                    ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                     ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                     ; Off                ;
-; Preserve fewer node names                                                       ; On                      ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable                  ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001            ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993               ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto                    ; Auto               ;
-; Safe State Machine                                                              ; Off                     ; Off                ;
-; Extract Verilog State Machines                                                  ; On                      ; On                 ;
-; Extract VHDL State Machines                                                     ; On                      ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                     ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000                    ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                     ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                      ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                      ; On                 ;
-; Parallel Synthesis                                                              ; On                      ; On                 ;
-; DSP Block Balancing                                                             ; Auto                    ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                      ; On                 ;
-; Power-Up Don't Care                                                             ; On                      ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                     ; Off                ;
-; Remove Duplicate Registers                                                      ; On                      ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                     ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                     ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                     ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                     ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                     ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                      ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                     ; Off                ;
-; Optimization Technique                                                          ; Balanced                ; Balanced           ;
-; Carry Chain Length                                                              ; 70                      ; 70                 ;
-; Auto Carry Chains                                                               ; On                      ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                      ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                     ; Off                ;
-; Auto ROM Replacement                                                            ; On                      ; On                 ;
-; Auto RAM Replacement                                                            ; On                      ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                      ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto                    ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto                    ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                      ; On                 ;
-; Strict RAM Replacement                                                          ; Off                     ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                      ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                     ; Off                ;
-; Auto Resource Sharing                                                           ; Off                     ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                     ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                     ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                     ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                      ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                     ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                      ; On                 ;
-; Report Parameter Settings                                                       ; On                      ; On                 ;
-; Report Source Assignments                                                       ; On                      ; On                 ;
-; Report Connectivity Checks                                                      ; On                      ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                     ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                       ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation      ; Normal compilation ;
-; HDL message level                                                               ; Level2                  ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                     ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000                    ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                    ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                     ; 100                ;
-; Clock MUX Protection                                                            ; On                      ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                     ; Off                ;
-; Block Design Naming                                                             ; Auto                    ; Auto               ;
-; SDC constraint protection                                                       ; Off                     ; Off                ;
-; Synthesis Effort                                                                ; Auto                    ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                      ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                     ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium                  ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto                    ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                      ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                      ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                     ; Off                ;
-+---------------------------------------------------------------------------------+-------------------------+--------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; wrapper_design     ; VHDL5_Antoine_Phan ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -175,44 +175,46 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                       ; Library ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+---------+
+; wrapper_design.vhd               ; yes             ; User VHDL File  ; /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/wrapper_design.vhd          ;         ;
 ; antoine_phan_comparator.vhd      ; yes             ; User VHDL File  ; /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd ;         ;
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimate of Logic utilization (ALMs needed) ; 15     ;
-;                                             ;        ;
-; Combinational ALUT usage for logic          ; 24     ;
-;     -- 7 input functions                    ; 0      ;
-;     -- 6 input functions                    ; 5      ;
-;     -- 5 input functions                    ; 4      ;
-;     -- 4 input functions                    ; 5      ;
-;     -- <=3 input functions                  ; 10     ;
-;                                             ;        ;
-; Dedicated logic registers                   ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 14     ;
-;                                             ;        ;
-; Total DSP Blocks                            ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; Add0~0 ;
-; Maximum fan-out                             ; 8      ;
-; Total fan-out                               ; 119    ;
-; Average fan-out                             ; 2.29   ;
-+---------------------------------------------+--------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                       ;
++---------------------------------------------+-------------------------------------+
+; Resource                                    ; Usage                               ;
++---------------------------------------------+-------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 15                                  ;
+;                                             ;                                     ;
+; Combinational ALUT usage for logic          ; 24                                  ;
+;     -- 7 input functions                    ; 0                                   ;
+;     -- 6 input functions                    ; 5                                   ;
+;     -- 5 input functions                    ; 4                                   ;
+;     -- 4 input functions                    ; 5                                   ;
+;     -- <=3 input functions                  ; 10                                  ;
+;                                             ;                                     ;
+; Dedicated logic registers                   ; 0                                   ;
+;                                             ;                                     ;
+; I/O pins                                    ; 14                                  ;
+;                                             ;                                     ;
+; Total DSP Blocks                            ; 0                                   ;
+;                                             ;                                     ;
+; Maximum fan-out node                        ; antoine_phan_comparator:comp|Add0~0 ;
+; Maximum fan-out                             ; 8                                   ;
+; Total fan-out                               ; 119                                 ;
+; Average fan-out                             ; 2.29                                ;
++---------------------------------------------+-------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name             ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------------------+--------------+
-; |antoine_phan_comparator   ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 14   ; 0            ; |antoine_phan_comparator ; antoine_phan_comparator ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name             ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------------------+--------------+
+; |wrapper_design                   ; 24 (0)              ; 0 (0)                     ; 0                 ; 0          ; 14   ; 0            ; |wrapper_design                              ; wrapper_design          ; work         ;
+;    |antoine_phan_comparator:comp| ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |wrapper_design|antoine_phan_comparator:comp ; antoine_phan_comparator ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -221,11 +223,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
-; AgtBplusOne$latch                                  ; GND                 ; yes                    ;
-; AgteBplusOne$latch                                 ; GND                 ; yes                    ;
-; AltBplusOne$latch                                  ; GND                 ; yes                    ;
-; AlteBplusOne$latch                                 ; GND                 ; yes                    ;
-; AeqBplusOne$latch                                  ; GND                 ; yes                    ;
+; antoine_phan_comparator:comp|AgtBplusOne           ; GND                 ; yes                    ;
+; antoine_phan_comparator:comp|AgteBplusOne          ; GND                 ; yes                    ;
+; antoine_phan_comparator:comp|AltBplusOne           ; GND                 ; yes                    ;
+; antoine_phan_comparator:comp|AlteBplusOne          ; GND                 ; yes                    ;
+; antoine_phan_comparator:comp|AeqBplusOne           ; GND                 ; yes                    ;
 ; Number of user-specified and inferred latches = 5  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -246,13 +248,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antoine_phan_comparator|AgtBplusOne ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |wrapper_design|antoine_phan_comparator:comp|AgtBplusOne ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -289,7 +291,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Tue Nov  8 15:06:22 2022
+    Info: Processing started: Tue Nov  8 20:00:19 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL5_Antoine_Phan -c VHDL5_Antoine_Phan
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -302,10 +304,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
 Info (12021): Found 2 design units, including 1 entities, in source file antoine_phan_comparator.vhd
     Info (12022): Found design unit 1: antoine_phan_comparator-arch File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 15
     Info (12023): Found entity 1: antoine_phan_comparator File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file seven_segment_decoder.vhd
-    Info (12022): Found design unit 1: seven_segment_decoder-decoder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/seven_segment_decoder.vhd Line: 12
-    Info (12023): Found entity 1: seven_segment_decoder File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/seven_segment_decoder.vhd Line: 5
-Info (12127): Elaborating entity "antoine_phan_comparator" for the top level hierarchy
+Info (12127): Elaborating entity "wrapper_design" for the top level hierarchy
+Info (12128): Elaborating entity "antoine_phan_comparator" for hierarchy "antoine_phan_comparator:comp" File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/wrapper_design.vhd Line: 30
 Warning (10631): VHDL Process Statement warning at antoine_phan_comparator.vhd(18): inferring latch(es) for signal or variable "AeqBplusOne", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 18
 Warning (10631): VHDL Process Statement warning at antoine_phan_comparator.vhd(18): inferring latch(es) for signal or variable "AgtBplusOne", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 18
 Warning (10631): VHDL Process Statement warning at antoine_phan_comparator.vhd(18): inferring latch(es) for signal or variable "AgteBplusOne", which holds its previous value in one or more paths through the process File: /home/antoinephan/McGill/ECSE 222/ECSE222-VHDL/Lab5/VHDL5_Antoine_Phan/antoine_phan_comparator.vhd Line: 18
@@ -324,8 +324,8 @@ Info (21057): Implemented 38 device resources after synthesis - the final resour
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 24 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 524 megabytes
-    Info: Processing ended: Tue Nov  8 15:06:29 2022
+    Info: Peak virtual memory: 518 megabytes
+    Info: Processing ended: Tue Nov  8 20:00:26 2022
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:20
 

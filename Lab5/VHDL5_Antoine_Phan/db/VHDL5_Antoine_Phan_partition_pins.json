@@ -4,23 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "AgtBplusOne",
+					"name" : "is_gt",
 					"strict" : false
 				},
 				{
-					"name" : "AgteBplusOne",
+					"name" : "is_gte",
 					"strict" : false
 				},
 				{
-					"name" : "AltBplusOne",
+					"name" : "is_lt",
 					"strict" : false
 				},
 				{
-					"name" : "AlteBplusOne",
+					"name" : "is_lte",
 					"strict" : false
 				},
 				{
-					"name" : "AeqBplusOne",
+					"name" : "is_eq",
 					"strict" : false
 				},
 				{

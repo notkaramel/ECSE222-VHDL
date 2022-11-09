@@ -1,7 +1,7 @@
-Fitter Status : Successful - Tue Nov  8 15:06:59 2022
+Fitter Status : Successful - Tue Nov  8 20:13:09 2022
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : VHDL5_Antoine_Phan
-Top-level Entity Name : antoine_phan_comparator
+Top-level Entity Name : wrapper_design
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final

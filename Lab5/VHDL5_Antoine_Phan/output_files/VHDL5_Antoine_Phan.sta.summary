@@ -3,19 +3,19 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'n/a'
-Slack : -3.911
-TNS   : -3.911
+Slack : -4.912
+TNS   : -4.912
 
 Type  : Slow 1100mV 0C Model Setup 'n/a'
-Slack : -3.639
-TNS   : -3.639
+Slack : -4.607
+TNS   : -4.607
 
 Type  : Fast 1100mV 85C Model Setup 'n/a'
-Slack : -0.843
-TNS   : -0.843
+Slack : -1.363
+TNS   : -1.363
 
 Type  : Fast 1100mV 0C Model Setup 'n/a'
-Slack : -0.443
-TNS   : -0.443
+Slack : -1.006
+TNS   : -1.006
 
 ------------------------------------------------------------

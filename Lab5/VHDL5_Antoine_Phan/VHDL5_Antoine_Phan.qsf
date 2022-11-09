@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY antoine_phan_comparator
+set_global_assignment -name TOP_LEVEL_ENTITY wrapper_design
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:57:08  NOVEMBER 01, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Lite Edition"
@@ -69,14 +69,14 @@ set_location_assignment PIN_AB12 -to B[0]
 set_global_assignment -name VHDL_FILE wrapper_design.vhd
 set_global_assignment -name VHDL_FILE comparator_tb.vhd
 set_global_assignment -name VHDL_FILE antoine_phan_comparator.vhd
-set_location_assignment PIN_AD27 -to is_eq
-set_location_assignment PIN_V25 -to is_gt
-set_location_assignment PIN_W25 -to is_gte
-set_location_assignment PIN_AC25 -to is_lt
-set_location_assignment PIN_AC30 -to is_lte
-set_location_assignment PIN_AE27 -to overflow
+set_location_assignment PIN_Y21 -to is_eq
+set_location_assignment PIN_W21 -to is_gt
+set_location_assignment PIN_W20 -to is_gte
+set_location_assignment PIN_Y19 -to is_lt
+set_location_assignment PIN_W19 -to is_lte
+set_location_assignment PIN_W17 -to overflow
+set_global_assignment -name SDC_FILE timing_constraints.sdc
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SDC_FILE timing_constraints.sdc
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

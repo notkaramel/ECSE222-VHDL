@@ -1,4 +1,21 @@
-|antoine_phan_comparator
+|wrapper_design
+A[0] => antoine_phan_comparator:comp.A[0]
+A[1] => antoine_phan_comparator:comp.A[1]
+A[2] => antoine_phan_comparator:comp.A[2]
+A[3] => antoine_phan_comparator:comp.A[3]
+B[0] => antoine_phan_comparator:comp.B[0]
+B[1] => antoine_phan_comparator:comp.B[1]
+B[2] => antoine_phan_comparator:comp.B[2]
+B[3] => antoine_phan_comparator:comp.B[3]
+is_gt << antoine_phan_comparator:comp.AgtBplusOne
+is_gte << antoine_phan_comparator:comp.AgteBplusOne
+is_lt << antoine_phan_comparator:comp.AltBplusOne
+is_lte << antoine_phan_comparator:comp.AlteBplusOne
+is_eq << antoine_phan_comparator:comp.AeqBplusOne
+overflow << antoine_phan_comparator:comp.overflow
+
+
+|wrapper_design|antoine_phan_comparator:comp
 A[0] => Equal0.IN3
 A[0] => LessThan0.IN5
 A[0] => LessThan1.IN5
@@ -15,11 +32,11 @@ B[0] => Add0.IN8
 B[1] => Add0.IN7
 B[2] => Add0.IN6
 B[3] => Add0.IN5
-AgtBplusOne << AgtBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
-AgteBplusOne << AgteBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
-AltBplusOne << AltBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
-AlteBplusOne << AlteBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
-AeqBplusOne << AeqBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
-overflow << Add0.DB_MAX_OUTPUT_PORT_TYPE
+AgtBplusOne <= AgtBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
+AgteBplusOne <= AgteBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
+AltBplusOne <= AltBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
+AlteBplusOne <= AlteBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
+AeqBplusOne <= AeqBplusOne$latch.DB_MAX_OUTPUT_PORT_TYPE
+overflow <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
