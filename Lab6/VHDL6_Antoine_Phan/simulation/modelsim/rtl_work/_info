@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/simulation/modelsim
+Eantoine_phan_jkff
+Z1 w1669495761
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_JKFF.vhd
+Z6 FD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_JKFF.vhd
+l0
+L5
+VPblCB<129MYbcPRCDi=ji2
+!s100 cn41Q?:P21OeU2ZeV8@_D0
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1669497429
+!i10b 1
+Z9 !s108 1669497429.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_JKFF.vhd|
+Z11 !s107 D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_JKFF.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+DEx4 work 17 antoine_phan_jkff 0 22 PblCB<129MYbcPRCDi=ji2
+l16
+L13
+VK3l`k0KYGg>BUbM=4:n0d0
+!s100 BTHTV7dd7TPmRf@GH05Nd1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ejkff_testbench
+Z14 w1669497415
+R2
+R3
+R4
+R0
+Z15 8D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/JKFF_testbench.vhd
+Z16 FD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/JKFF_testbench.vhd
+l0
+L5
+V7T?T:T=gco=T26UckbUB70
+!s100 B8X;=ZV=iU9jPG6d>>9fJ2
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/JKFF_testbench.vhd|
+Z18 !s107 D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/JKFF_testbench.vhd|
+!i113 1
+R12
+R13
+Atb
+R2
+R3
+R4
+DEx4 work 14 jkff_testbench 0 22 7T?T:T=gco=T26UckbUB70
+l20
+L8
+V9aND8479>hiPAQM0OS]Jg0
+!s100 >J:U4o1o3ZTGJVnk5T@ij2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
