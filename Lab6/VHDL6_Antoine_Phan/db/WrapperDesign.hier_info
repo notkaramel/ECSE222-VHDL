@@ -1,13 +1,15 @@
-|Antoine_Phan_JKFF
-clk => temp.CLK
-J => process_0.IN0
-J => process_0.IN0
-J => process_0.IN0
-J => process_0.IN0
-K => process_0.IN1
-K => process_0.IN1
-K => process_0.IN1
-K => process_0.IN1
-Q << temp.DB_MAX_OUTPUT_PORT_TYPE
+|Antoine_Phan_Counter
+enable => count_temp[2].ENA
+enable => count_temp[1].ENA
+enable => count_temp[0].ENA
+reset => count_temp[0].ACLR
+reset => count_temp[1].ACLR
+reset => count_temp[2].ACLR
+clk => count_temp[0].CLK
+clk => count_temp[1].CLK
+clk => count_temp[2].CLK
+count[0] << count_temp[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] << count_temp[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] << count_temp[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
