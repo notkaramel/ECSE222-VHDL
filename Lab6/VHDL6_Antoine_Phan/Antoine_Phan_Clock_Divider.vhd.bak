@@ -21,11 +21,11 @@ begin
         if rising_edge(clk) then
             if count = times then
                 en_out <= '1';
-                count <= 1;
+                count <= '0';
             else
                 en_out <= '0';
-                count <= count + 1;
             end if;
+            count <= count + 1;
         end if;
     end process;
 end architecture arch;
