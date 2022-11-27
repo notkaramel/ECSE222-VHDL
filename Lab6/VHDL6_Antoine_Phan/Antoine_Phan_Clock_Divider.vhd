@@ -16,15 +16,21 @@ architecture arch of Antoine_Phan_Clock_Divider is
     signal count: integer := 1;
     constant times: integer := 50000000;
 begin
-    process(clk)
+    process(clk, enable, reset)
     begin
-        if rising_edge(clk) then
-            if count = times then
-                en_out <= '1';
+        if enable = '1' then
+            if reset = '0' then
                 count <= 1;
-            else
                 en_out <= '0';
-                count <= count + 1;
+
+            elsif rising_edge(clk) then
+                if count = times then
+                    en_out <= '1';
+                    count <= 1;
+                else
+                    en_out <= '0';
+                    count <= count + 1;
+                end if;
             end if;
         end if;
     end process;

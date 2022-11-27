@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sat Nov 26 18:31:32 2022
+Analysis & Synthesis Status : Successful - Sat Nov 26 20:54:41 2022
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : WrapperDesign
-Top-level Entity Name : Antoine_Phan_Counter
+Top-level Entity Name : Antoine_Phan_clock_divider
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 3
-Total pins : 6
+Total registers : 33
+Total pins : 4
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

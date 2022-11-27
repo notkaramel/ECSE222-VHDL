@@ -1,0 +1,38 @@
+# Loading project TimeSim
+vsim work.clock_divider_testbench
+# vsim work.clock_divider_testbench 
+# Start time: 21:26:14 on Nov 26,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.clock_divider_testbench(testbench)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.antoine_phan_clock_divider(arch)
+add wave -position end  sim:/clock_divider_testbench/enable
+add wave -position end  sim:/clock_divider_testbench/reset
+add wave -position end  sim:/clock_divider_testbench/en_out
+run -all
+# ** Note: Clock Divider Simulation
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider_testbench
+# ** Note: Simulation Complete! Look at the peaks
+#    Time: 3500000005 ns  Iteration: 0  Instance: /clock_divider_testbench
+# ** Note: Peaks should be at 1 sec, 2 sec, 3.5 sec (with 5 ns delay)
+#    Time: 3500000005 ns  Iteration: 0  Instance: /clock_divider_testbench
+# 1
+# Break in Process sim at D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd line 46
+# Compile of Clock_Divider_testbench.vhd was successful with warnings.
+restart
+# Loading work.clock_divider_testbench(testbench)
+run -all
+# ** Note: Clock Divider Simulation
+#    Time: 0 ps  Iteration: 0  Instance: /clock_divider_testbench
+# ** Note: Simulation Complete! Look at the peaks
+#    Time: 3500000005 ns  Iteration: 0  Instance: /clock_divider_testbench
+# ** Note: Peaks should be at 1 sec, 2 sec, 3.5 sec (with 5 ns delay)
+#    Time: 3500000005 ns  Iteration: 0  Instance: /clock_divider_testbench
+# Break in Process sim at D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd line 46
+# End time: 21:40:58 on Nov 26,2022, Elapsed time: 0:14:44
+# Errors: 0, Warnings: 0
