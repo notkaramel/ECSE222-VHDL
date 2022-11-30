@@ -1,12 +1,21 @@
-|Antoine_Phan_Clock_Divider
+|Antoine_Phan_Wrapper
+enable => Antoine_Phan_Clock_Divider:divider.enable
+reset => Antoine_Phan_Clock_Divider:divider.reset
+reset => Antoine_Phan_Counter:counter.reset
+clk => Antoine_Phan_Clock_Divider:divider.clk
+clk => Antoine_Phan_Counter:counter.clk
+HEX0[0] <= Seven_Segment_Decoder:decoder.segment_out[0]
+HEX0[1] <= Seven_Segment_Decoder:decoder.segment_out[1]
+HEX0[2] <= Seven_Segment_Decoder:decoder.segment_out[2]
+HEX0[3] <= Seven_Segment_Decoder:decoder.segment_out[3]
+HEX0[4] <= Seven_Segment_Decoder:decoder.segment_out[4]
+HEX0[5] <= Seven_Segment_Decoder:decoder.segment_out[5]
+HEX0[6] <= Seven_Segment_Decoder:decoder.segment_out[6]
+
+
+|Antoine_Phan_Wrapper|Antoine_Phan_Clock_Divider:divider
 enable => en_out.IN0
 enable => en_out~reg0.ENA
-enable => count[31].ENA
-enable => count[30].ENA
-enable => count[29].ENA
-enable => count[28].ENA
-enable => count[27].ENA
-enable => count[26].ENA
 enable => count[25].ENA
 enable => count[24].ENA
 enable => count[23].ENA
@@ -61,12 +70,59 @@ clk => count[22].CLK
 clk => count[23].CLK
 clk => count[24].CLK
 clk => count[25].CLK
-clk => count[26].CLK
-clk => count[27].CLK
-clk => count[28].CLK
-clk => count[29].CLK
-clk => count[30].CLK
-clk => count[31].CLK
 en_out <= en_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Antoine_Phan_Wrapper|Antoine_Phan_Counter:counter
+enable => count_temp[2].ENA
+enable => count_temp[1].ENA
+enable => count_temp[0].ENA
+reset => count_temp[0].ACLR
+reset => count_temp[1].ACLR
+reset => count_temp[2].ACLR
+clk => count_temp[0].CLK
+clk => count_temp[1].CLK
+clk => count_temp[2].CLK
+count[0] <= count_temp[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count_temp[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count_temp[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Antoine_Phan_Wrapper|Seven_Segment_Decoder:decoder
+code[0] => Mux0.IN19
+code[0] => Mux1.IN19
+code[0] => Mux2.IN19
+code[0] => Mux3.IN19
+code[0] => Mux4.IN19
+code[0] => Mux5.IN19
+code[0] => Mux6.IN19
+code[1] => Mux0.IN18
+code[1] => Mux1.IN18
+code[1] => Mux2.IN18
+code[1] => Mux3.IN18
+code[1] => Mux4.IN18
+code[1] => Mux5.IN18
+code[1] => Mux6.IN18
+code[2] => Mux0.IN17
+code[2] => Mux1.IN17
+code[2] => Mux2.IN17
+code[2] => Mux3.IN17
+code[2] => Mux4.IN17
+code[2] => Mux5.IN17
+code[2] => Mux6.IN17
+code[3] => Mux0.IN16
+code[3] => Mux1.IN16
+code[3] => Mux2.IN16
+code[3] => Mux3.IN16
+code[3] => Mux4.IN16
+code[3] => Mux5.IN16
+code[3] => Mux6.IN16
+segment_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

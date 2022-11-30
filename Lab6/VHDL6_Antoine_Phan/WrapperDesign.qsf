@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY Antoine_Phan_Clock_Divider
+set_global_assignment -name TOP_LEVEL_ENTITY Antoine_Phan_Wrapper
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:15:15  NOVEMBER 16, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -64,21 +64,33 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME JKFF_testbench -section_i
 set_global_assignment -name EDA_TEST_BENCH_NAME Counters_testbench -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Counters_testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Counters_testbench -section_id Counters_testbench
-set_global_assignment -name VHDL_FILE Antoine_Phan_JKFF.vhd
-set_global_assignment -name VHDL_FILE JKFF_testbench.vhd
-set_global_assignment -name VHDL_FILE Antoine_Phan_Counter.vhd
-set_global_assignment -name VHDL_FILE Counters_testbench.vhd
-set_global_assignment -name VHDL_FILE Antoine_Phan_Clock_Divider.vhd
-set_global_assignment -name VHDL_FILE Clock_Divider_testbench.vhd
-set_global_assignment -name SDC_FILE timing_constraints.sdc
-set_global_assignment -name VHDL_FILE ROM.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_NAME Clock_Divider_testbench -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Clock_Divider_testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Clock_Divider_testbench -section_id Clock_Divider_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE JKFF_testbench.vhd -section_id JKFF_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE Counters_testbench.vhd -section_id Counters_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE Clock_Divider_testbench.vhd -section_id Clock_Divider_testbench
+set_global_assignment -name VHDL_FILE Antoine_Phan_JKFF.vhd
+set_global_assignment -name VHDL_FILE JKFF_testbench.vhd
+set_global_assignment -name VHDL_FILE Antoine_Phan_Counter.vhd
+set_global_assignment -name VHDL_FILE Counters_testbench.vhd
+set_global_assignment -name VHDL_FILE Antoine_Phan_Clock_Divider.vhd
+set_global_assignment -name VHDL_FILE Clock_Divider_testbench.vhd
+set_global_assignment -name VHDL_FILE Seven_Segment_Decoder.vhd
+set_global_assignment -name VHDL_FILE Antoine_Phan_Wrapper.vhd
+set_global_assignment -name SDC_FILE timing_constraints.sdc
+set_global_assignment -name VHDL_FILE ROM.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_AA14 -to reset
+set_location_assignment PIN_AA15 -to enable
+set_location_assignment PIN_AH28 -to HEX0[6]
+set_location_assignment PIN_AG28 -to HEX0[5]
+set_location_assignment PIN_AF28 -to HEX0[4]
+set_location_assignment PIN_AG27 -to HEX0[3]
+set_location_assignment PIN_AE28 -to HEX0[2]
+set_location_assignment PIN_AE27 -to HEX0[1]
+set_location_assignment PIN_AE26 -to HEX0[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

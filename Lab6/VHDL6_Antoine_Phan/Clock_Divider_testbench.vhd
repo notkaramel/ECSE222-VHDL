@@ -1,7 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use std.env.stop;
 
 entity clock_divider_testbench is
 end clock_divider_testbench;
@@ -35,7 +34,9 @@ begin
         report "Clock Divider Simulation" severity note;
 		  enable <= '1';
 		  reset <= '1';
-        wait for 2 sec;
+        wait for 1 sec;
+        report "It has been 1 sec!";
+        wait for 1 sec;
         wait for 500 ms;
         reset <= '0';
         wait for 5 ns;
@@ -43,7 +44,6 @@ begin
         wait for 1 sec;
         report "Simulation Complete! Look at the peaks" severity note;
         report "Peaks should be at 1 sec, 2 sec, 3.5 sec (with 5 ns delay)";
-        stop;
     end process;
 end testbench;
 
