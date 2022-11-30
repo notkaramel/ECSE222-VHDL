@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WrapperDesign
-Tue Nov 29 19:56:26 2022
+Tue Nov 29 23:55:21 2022
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 29 19:56:26 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 29 23:55:21 2022       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; WrapperDesign                               ;
 ; Top-level Entity Name           ; Antoine_Phan_Wrapper                        ;
@@ -295,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -305,7 +305,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 29 19:56:11 2022
+    Info: Processing started: Tue Nov 29 23:55:06 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL6_Antoine_Phan -c WrapperDesign
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -333,13 +333,16 @@ Info (12021): Found 2 design units, including 1 entities, in source file seven_s
 Info (12021): Found 2 design units, including 1 entities, in source file antoine_phan_wrapper.vhd
     Info (12022): Found design unit 1: Antoine_Phan_Wrapper-arch File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 14
     Info (12023): Found entity 1: Antoine_Phan_Wrapper File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file wrapper_simulation.vhd
+    Info (12022): Found design unit 1: Wrapper_Simulation-tb File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Wrapper_Simulation.vhd Line: 8
+    Info (12023): Found entity 1: Wrapper_Simulation File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Wrapper_Simulation.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rom.vhd
     Info (12022): Found design unit 1: ROM-arch File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/ROM.vhd Line: 13
     Info (12023): Found entity 1: ROM File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/ROM.vhd Line: 5
 Info (12127): Elaborating entity "Antoine_Phan_Wrapper" for the top level hierarchy
-Info (12128): Elaborating entity "Antoine_Phan_Clock_Divider" for hierarchy "Antoine_Phan_Clock_Divider:divider" File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 41
-Info (12128): Elaborating entity "Antoine_Phan_Counter" for hierarchy "Antoine_Phan_Counter:counter" File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 45
-Info (12128): Elaborating entity "Seven_Segment_Decoder" for hierarchy "Seven_Segment_Decoder:decoder" File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 49
+Info (12128): Elaborating entity "Antoine_Phan_Clock_Divider" for hierarchy "Antoine_Phan_Clock_Divider:divider" File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 42
+Info (12128): Elaborating entity "Antoine_Phan_Counter" for hierarchy "Antoine_Phan_Counter:counter" File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 46
+Info (12128): Elaborating entity "Seven_Segment_Decoder" for hierarchy "Seven_Segment_Decoder:decoder" File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd Line: 51
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -348,9 +351,9 @@ Info (21057): Implemented 66 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 56 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Tue Nov 29 19:56:26 2022
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Tue Nov 29 23:55:21 2022
     Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Total CPU time (on all processors): 00:00:35
 
 

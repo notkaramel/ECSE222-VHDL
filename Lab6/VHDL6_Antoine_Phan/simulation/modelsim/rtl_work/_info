@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/simulation/modelsim
 Eantoine_phan_clock_divider
-Z1 w1669513951
+Z1 w1669768176
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
@@ -20,13 +20,13 @@ Z7 8D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Clock_Divider.vhd
 Z8 FD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Clock_Divider.vhd
 l0
 L6
-VGgbdDS?>MG4zaa_WYUZRb0
-!s100 _=Sg8^^M6D9VI3CVzlLEW3
+VcOnA4JG@I7W@DIj>BbS?n2
+!s100 f0kaeNmF3>l4m@C@[6zdE1
 Z9 OV;C;10.5b;63
 31
-Z10 !s110 1669515423
+Z10 !s110 1669783150
 !i10b 1
-Z11 !s108 1669515423.000000
+Z11 !s108 1669783150.000000
 Z12 !s90 -reportprogress|300|-93|-work|work|D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Clock_Divider.vhd|
 Z13 !s107 D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Clock_Divider.vhd|
 !i113 1
@@ -38,11 +38,11 @@ R3
 R4
 R5
 R6
-DEx4 work 26 antoine_phan_clock_divider 0 22 GgbdDS?>MG4zaa_WYUZRb0
+DEx4 work 26 antoine_phan_clock_divider 0 22 cOnA4JG@I7W@DIj>BbS?n2
 l18
 L13
-V]R4a>Y`a18V9RiQczlRW21
-!s100 FB<:IaUd8N79H7UVXTW7?2
+V;d[<`JeDXJeQi5G43D;l33
+!s100 ;2=1=@e9;L`@2YO37i;6X1
 R9
 31
 R10
@@ -53,14 +53,100 @@ R13
 !i113 1
 R14
 R15
-Eclock_divider_testbench
-Z16 w1669515415
+Eantoine_phan_counter
+Z16 w1669503767
+R2
+R3
 R4
 R5
 R6
 R0
-Z17 8D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd
-Z18 FD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd
+Z17 8D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Counter.vhd
+Z18 FD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Counter.vhd
+l0
+L6
+V9ZB;@RLG2mi_P>HmUICLz1
+!s100 hD9FXL946Xj<5ZjW<n?`[2
+R9
+31
+R10
+!i10b 1
+Z19 !s108 1669783149.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Counter.vhd|
+Z21 !s107 D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Counter.vhd|
+!i113 1
+R14
+R15
+Aarch
+R2
+R3
+R4
+R5
+R6
+DEx4 work 20 antoine_phan_counter 0 22 9ZB;@RLG2mi_P>HmUICLz1
+l15
+L13
+VF>A^X40]NA<jbCa]76b2E0
+!s100 ZSel7`?7j7<<4fTaI[WQR0
+R9
+31
+R10
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R14
+R15
+Eantoine_phan_wrapper
+Z22 w1669777525
+R4
+R5
+R6
+R0
+Z23 8D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd
+Z24 FD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd
+l0
+L5
+V2KV^Fe>@S4O7MgMckX>3k3
+!s100 664c8?Re0F^>aHQVJP7]L0
+R9
+31
+R10
+!i10b 1
+R11
+Z25 !s90 -reportprogress|300|-93|-work|work|D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd|
+Z26 !s107 D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd|
+!i113 1
+R14
+R15
+Aarch
+R4
+R5
+R6
+DEx4 work 20 antoine_phan_wrapper 0 22 2KV^Fe>@S4O7MgMckX>3k3
+l40
+L14
+VnG]1WDDJdZ4La2i=^cMn:2
+!s100 z>;6K5]Ig8_L8nlY?Qz_O3
+R9
+31
+R10
+!i10b 1
+R11
+R25
+R26
+!i113 1
+R14
+R15
+Eclock_divider_testbench
+Z27 w1669775588
+R4
+R5
+R6
+R0
+Z28 8D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd
+Z29 FD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd
 l0
 L5
 VoS:9TB7=4XY@95<Slih`c3
@@ -70,8 +156,8 @@ R9
 R10
 !i10b 1
 R11
-Z19 !s90 -reportprogress|300|-93|-work|work|D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd|
-Z20 !s107 D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd|
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd|
+Z31 !s107 D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd|
 !i113 1
 R14
 R15
@@ -82,15 +168,56 @@ R6
 DEx4 work 23 clock_divider_testbench 0 22 oS:9TB7=4XY@95<Slih`c3
 l20
 L8
-VDB90_`mLflB74ihZBiFFc1
-!s100 o8A><X8O6f6b=U^PXQz_>0
+V[MDBj2M1Z=?4Xoh6QI>7A3
+!s100 Cd<dVijen;bl>DzNkJAi51
 R9
 31
 R10
 !i10b 1
 R11
-R19
-R20
+R30
+R31
+!i113 1
+R14
+R15
+Eseven_segment_decoder
+Z32 w1669768594
+R4
+R5
+R6
+R0
+Z33 8D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Seven_Segment_Decoder.vhd
+Z34 FD:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Seven_Segment_Decoder.vhd
+l0
+L5
+V@K]DB^aIYfDW^E7DbNKWF1
+!s100 o`cN??PCcPOXLI]TOT<iD2
+R9
+31
+R10
+!i10b 1
+R11
+Z35 !s90 -reportprogress|300|-93|-work|work|D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Seven_Segment_Decoder.vhd|
+Z36 !s107 D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Seven_Segment_Decoder.vhd|
+!i113 1
+R14
+R15
+Aarch
+R4
+R5
+R6
+DEx4 work 21 seven_segment_decoder 0 22 @K]DB^aIYfDW^E7DbNKWF1
+l13
+L12
+V8hWbY1]V8;8@>i4HifTkk1
+!s100 C<a9PIKX>A4G6o=Q282lC0
+R9
+31
+R10
+!i10b 1
+R11
+R35
+R36
 !i113 1
 R14
 R15

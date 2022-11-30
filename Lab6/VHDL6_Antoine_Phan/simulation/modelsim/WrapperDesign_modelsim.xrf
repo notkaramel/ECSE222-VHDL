@@ -7,6 +7,7 @@ source_file = 1, D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Clock_Divi
 source_file = 1, D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd
 source_file = 1, D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Seven_Segment_Decoder.vhd
 source_file = 1, D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd
+source_file = 1, D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Wrapper_Simulation.vhd
 source_file = 1, D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/timing_constraints.sdc
 source_file = 1, D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/ROM.vhd
 source_file = 1, d:/programs/intelfpga/quartus/libraries/vhdl/ieee/prmtvs_b.vhd

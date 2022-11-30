@@ -5,7 +5,10 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vcom -93 -work work {D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Counter.vhd}
 vcom -93 -work work {D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Clock_Divider.vhd}
+vcom -93 -work work {D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Seven_Segment_Decoder.vhd}
+vcom -93 -work work {D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Antoine_Phan_Wrapper.vhd}
 
 vcom -93 -work work {D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/Clock_Divider_testbench.vhd}
 

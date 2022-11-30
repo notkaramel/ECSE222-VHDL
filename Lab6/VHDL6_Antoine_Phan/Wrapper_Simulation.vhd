@@ -15,11 +15,17 @@ architecture tb of Wrapper_Simulation is
         );
     end component;
 
-    signal enable, reset, clk : std_logic;
-    signal HEX0 : std_logic_vector(6 downto 0);
+    constant clock_period : time := 20 ns;
+    signal enable, reset, clk : std_logic; -- input
+    signal HEX0 : std_logic_vector(6 downto 0); -- output
 begin
     -- Device Under Test
-    dut: Antoine_Phan_Wrapper port map(enable, reset, clk, HEX0);
+    dut: Antoine_Phan_Wrapper
+        port map(
+			enable => enable,
+            reset => reset, 
+            clk => clk, 
+            HEX0 => HEX0);
 
     -- Clock
     clock_generation : process
@@ -35,25 +41,23 @@ begin
     begin
         report "Simulation started" severity note;
         enable <= '1';
-        reset <= '0';
+        reset <= '1';
 
         report "Counter starts!" severity note;
-        wait for 8 sec;
-        report "Counted to 7!" severity note;
-        wait for 2 sec;
-        
-        report "Counted to 2!, now turn 'enable' off to remain state" severity note;
+        wait for 3 sec;
+        report "Counted to 3!" severity note;        
+        report "Turn 'enable' off to remain state" severity note;
         enable <= '0';
         wait for 1 sec;
         report "Async Reset!" severity note;
-        reset <= '1';
+        reset <= '0';
         wait for 1 sec;
         report "Done resetting!" severity note;
-        reset <= '0';
+        reset <= '1';
         wait for 1 sec;
         report "Turn 'enable' back on to continue counting" severity note;
         enable <= '1';
-        wait for 3 sec;
+        wait for 2 sec;
         report "FINISHED SIMULATION" severity note;
-    
+    end process;
 end architecture tb;
