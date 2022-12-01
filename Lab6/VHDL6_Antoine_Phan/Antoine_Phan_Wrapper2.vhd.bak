@@ -1,0 +1,89 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Antoine_Phan_Wrapper2 is
+    port(
+        reset: in std_logic;
+        clk: in std_logic;
+        HEX0, HEX5: out std_logic_vector(6 downto 0)
+    );
+end Antoine_Phan_Wrapper2;
+
+architecture arch of Antoine_Phan_Wrapper2 is
+    component Seven_Segment_Decoder
+        port ( 
+            code        : in std_logic_vector(3 downto 0);
+            segment_out : out std_logic_vector(6 downto 0)
+        );
+    end component;
+
+    component Antoine_Phan_Sequence_Detector
+        port(
+            seq: in std_logic;
+            enable, reset, clk: in std_logic;
+            cnt_1, cnt_2: out std_logic_vector(2 downto 0)
+        );
+    end component;
+
+    component ROM
+        port(
+            clk : in std_logic;
+            reset : in std_logic;
+            data : out std_logic
+        );
+    end component;
+
+    component Antoine_Phan_Clock_Divider is
+        port(
+            enable, reset, clk: in std_logic;
+            en_out: out std_logic
+        );
+    end component;
+
+    signal HEX0_code, HEX5_code: std_logic_vector(3 downto 0) := "0000";
+    signal en_out: std_logic := '0';
+
+begin
+    -- Instantiate Clock Divider
+    CLK_DIV: Antoine_Phan_Clock_Divider
+        port map(
+            enable => '1',
+            reset => reset,
+            clk => clk,
+            en_out => en_out
+        );
+    
+    -- Instantiate ROM
+    ROM: ROM
+        port map(
+            clk => en_out,
+            reset => reset,
+            data => ROM_data
+        );
+    
+    -- Instantiate Sequence Detector/Counter
+    SEQ_CNT: Antoine_Phan_Sequence_Detector
+        port map(
+            seq => ROM_data,
+            enable => '1',
+            reset => reset,
+            clk => en_out,
+            cnt_1 => cnt_1,
+            cnt_2 => cnt_2
+        );
+
+    -- Instantiate Seven Segment Decoder for cnt_1 -> HEX 5
+    HEX5_DEC: Seven_Segment_Decoder
+        port map(
+            code => cnt_1,
+            segment_out => HEX0_code
+        );
+    
+    -- Instantiate Seven Segment Decoder for cnt_2 -> HEX 0
+    HEX0_DEC: Seven_Segment_Decoder
+        port map(
+            code => cnt_2,
+            segment_out => HEX5_code
+        );
+end architecture arch;

@@ -1,19 +1,25 @@
-|Antoine_Phan_Wrapper
-enable => Antoine_Phan_Clock_Divider:divider.enable
-reset => Antoine_Phan_Clock_Divider:divider.reset
-reset => Antoine_Phan_Counter:counter.reset
-clk => Antoine_Phan_Clock_Divider:divider.clk
-clk => Antoine_Phan_Counter:counter.clk
-HEX0[0] << Seven_Segment_Decoder:decoder.segment_out[0]
-HEX0[1] << Seven_Segment_Decoder:decoder.segment_out[1]
-HEX0[2] << Seven_Segment_Decoder:decoder.segment_out[2]
-HEX0[3] << Seven_Segment_Decoder:decoder.segment_out[3]
-HEX0[4] << Seven_Segment_Decoder:decoder.segment_out[4]
-HEX0[5] << Seven_Segment_Decoder:decoder.segment_out[5]
-HEX0[6] << Seven_Segment_Decoder:decoder.segment_out[6]
+|Antoine_Phan_Wrapper2
+reset => Antoine_Phan_Clock_Divider:CLK_DIV.reset
+reset => ROM:ROM_thing.reset
+reset => Antoine_Phan_Sequence_Detector:SEQ_CNT.reset
+clk => Antoine_Phan_Clock_Divider:CLK_DIV.clk
+HEX0[0] <= Seven_Segment_Decoder:HEX0_DEC.segment_out[0]
+HEX0[1] <= Seven_Segment_Decoder:HEX0_DEC.segment_out[1]
+HEX0[2] <= Seven_Segment_Decoder:HEX0_DEC.segment_out[2]
+HEX0[3] <= Seven_Segment_Decoder:HEX0_DEC.segment_out[3]
+HEX0[4] <= Seven_Segment_Decoder:HEX0_DEC.segment_out[4]
+HEX0[5] <= Seven_Segment_Decoder:HEX0_DEC.segment_out[5]
+HEX0[6] <= Seven_Segment_Decoder:HEX0_DEC.segment_out[6]
+HEX5[0] <= Seven_Segment_Decoder:HEX5_DEC.segment_out[0]
+HEX5[1] <= Seven_Segment_Decoder:HEX5_DEC.segment_out[1]
+HEX5[2] <= Seven_Segment_Decoder:HEX5_DEC.segment_out[2]
+HEX5[3] <= Seven_Segment_Decoder:HEX5_DEC.segment_out[3]
+HEX5[4] <= Seven_Segment_Decoder:HEX5_DEC.segment_out[4]
+HEX5[5] <= Seven_Segment_Decoder:HEX5_DEC.segment_out[5]
+HEX5[6] <= Seven_Segment_Decoder:HEX5_DEC.segment_out[6]
 
 
-|Antoine_Phan_Wrapper|Antoine_Phan_Clock_Divider:divider
+|Antoine_Phan_Wrapper2|Antoine_Phan_Clock_Divider:CLK_DIV
 enable => en_out.IN0
 enable => en_out~reg0.ENA
 enable => count[25].ENA
@@ -73,7 +79,114 @@ clk => count[25].CLK
 en_out <= en_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Antoine_Phan_Wrapper|Antoine_Phan_Counter:counter
+|Antoine_Phan_Wrapper2|ROM:ROM_thing
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+reset => cnt[0].ACLR
+reset => cnt[1].ACLR
+reset => cnt[2].ACLR
+reset => cnt[3].ACLR
+reset => cnt[4].ACLR
+reset => cnt[5].ACLR
+reset => cnt[6].ACLR
+reset => cnt[7].ACLR
+data <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Antoine_Phan_Wrapper2|Antoine_Phan_Sequence_Detector:SEQ_CNT
+seq => Antoine_Phan_FSM:FSM.seq
+enable => Antoine_Phan_FSM:FSM.enable
+reset => Antoine_Phan_FSM:FSM.reset
+reset => Antoine_Phan_Counter:CNT1.reset
+reset => Antoine_Phan_Counter:CNT2.reset
+clk => Antoine_Phan_FSM:FSM.clk
+clk => Antoine_Phan_Counter:CNT1.clk
+clk => Antoine_Phan_Counter:CNT2.clk
+cnt_1[0] <= Antoine_Phan_Counter:CNT1.count[0]
+cnt_1[1] <= Antoine_Phan_Counter:CNT1.count[1]
+cnt_1[2] <= Antoine_Phan_Counter:CNT1.count[2]
+cnt_2[0] <= Antoine_Phan_Counter:CNT2.count[0]
+cnt_2[1] <= Antoine_Phan_Counter:CNT2.count[1]
+cnt_2[2] <= Antoine_Phan_Counter:CNT2.count[2]
+
+
+|Antoine_Phan_Wrapper2|Antoine_Phan_Sequence_Detector:SEQ_CNT|Antoine_Phan_FSM:FSM
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => Selector5.IN4
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => state2.OUTPUTSELECT
+seq => Selector9.IN0
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+seq => state1.OUTPUTSELECT
+enable => state2.E2.OUTPUTSELECT
+enable => state2.D2.OUTPUTSELECT
+enable => state2.C2.OUTPUTSELECT
+enable => state2.B2.OUTPUTSELECT
+enable => state2.A2.OUTPUTSELECT
+enable => state1.E1.OUTPUTSELECT
+enable => state1.D1.OUTPUTSELECT
+enable => state1.C1.OUTPUTSELECT
+enable => state1.B1.OUTPUTSELECT
+enable => state1.A1.OUTPUTSELECT
+enable => out_2~reg0.ENA
+enable => out_1~reg0.ENA
+reset => state1.E1.OUTPUTSELECT
+reset => state1.D1.OUTPUTSELECT
+reset => state1.C1.OUTPUTSELECT
+reset => state1.B1.OUTPUTSELECT
+reset => state1.A1.OUTPUTSELECT
+reset => out_1~reg0.ACLR
+reset => state2.E2.OUTPUTSELECT
+reset => state2.D2.OUTPUTSELECT
+reset => state2.C2.OUTPUTSELECT
+reset => state2.B2.OUTPUTSELECT
+reset => state2.A2.OUTPUTSELECT
+reset => out_2~reg0.ACLR
+clk => out_2~reg0.CLK
+clk => out_1~reg0.CLK
+clk => state2~6.DATAIN
+clk => state1~6.DATAIN
+out_1 <= out_1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_2 <= out_2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Antoine_Phan_Wrapper2|Antoine_Phan_Sequence_Detector:SEQ_CNT|Antoine_Phan_Counter:CNT1
 enable => count_temp[2].ENA
 enable => count_temp[1].ENA
 enable => count_temp[0].ENA
@@ -88,7 +201,60 @@ count[1] <= count_temp[1].DB_MAX_OUTPUT_PORT_TYPE
 count[2] <= count_temp[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Antoine_Phan_Wrapper|Seven_Segment_Decoder:decoder
+|Antoine_Phan_Wrapper2|Antoine_Phan_Sequence_Detector:SEQ_CNT|Antoine_Phan_Counter:CNT2
+enable => count_temp[2].ENA
+enable => count_temp[1].ENA
+enable => count_temp[0].ENA
+reset => count_temp[0].ACLR
+reset => count_temp[1].ACLR
+reset => count_temp[2].ACLR
+clk => count_temp[0].CLK
+clk => count_temp[1].CLK
+clk => count_temp[2].CLK
+count[0] <= count_temp[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count_temp[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count_temp[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Antoine_Phan_Wrapper2|Seven_Segment_Decoder:HEX5_DEC
+code[0] => Mux0.IN19
+code[0] => Mux1.IN19
+code[0] => Mux2.IN19
+code[0] => Mux3.IN19
+code[0] => Mux4.IN19
+code[0] => Mux5.IN19
+code[0] => Mux6.IN19
+code[1] => Mux0.IN18
+code[1] => Mux1.IN18
+code[1] => Mux2.IN18
+code[1] => Mux3.IN18
+code[1] => Mux4.IN18
+code[1] => Mux5.IN18
+code[1] => Mux6.IN18
+code[2] => Mux0.IN17
+code[2] => Mux1.IN17
+code[2] => Mux2.IN17
+code[2] => Mux3.IN17
+code[2] => Mux4.IN17
+code[2] => Mux5.IN17
+code[2] => Mux6.IN17
+code[3] => Mux0.IN16
+code[3] => Mux1.IN16
+code[3] => Mux2.IN16
+code[3] => Mux3.IN16
+code[3] => Mux4.IN16
+code[3] => Mux5.IN16
+code[3] => Mux6.IN16
+segment_out[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segment_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Antoine_Phan_Wrapper2|Seven_Segment_Decoder:HEX0_DEC
 code[0] => Mux0.IN19
 code[0] => Mux1.IN19
 code[0] => Mux2.IN19
