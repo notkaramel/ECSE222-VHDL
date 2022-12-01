@@ -17,10 +17,8 @@ begin
     begin
         if (reset = '0') then -- active low 
             count_temp <= "000"; -- async reset (ignore enable & clk)
-        elsif (rising_edge(clk)) then
-            if (enable = '1') then
-                count_temp <= count_temp + 1;
-            end if;
+        elsif (enable = '1' and rising_edge(clk)) then
+            count_temp <= count_temp + 1;
         end if;
     end process;
     count <= count_temp;
