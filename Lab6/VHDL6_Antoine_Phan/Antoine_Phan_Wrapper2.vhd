@@ -75,7 +75,7 @@ begin
             cnt_1 => cnt_1,
             cnt_2 => cnt_2
         );
-	 HEX5_code <= '0' & cnt_1;
+	HEX5_code <= '0' & cnt_1;
     -- Instantiate Seven Segment Decoder for cnt_1 -> HEX 5
     HEX5_DEC: Seven_Segment_Decoder
         port map(
