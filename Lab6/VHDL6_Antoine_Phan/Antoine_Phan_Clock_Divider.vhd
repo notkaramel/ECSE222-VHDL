@@ -18,19 +18,16 @@ architecture arch of Antoine_Phan_Clock_Divider is
 begin
     process(clk, enable, reset)
     begin
-        if enable = '1' then
-            if reset = '0' then
-                count <= times;
+        if reset = '0' then -- asynchronous reset
+            count <= times;
+            en_out <= '0';
+        elsif (enable = '1' and rising_edge(clk)) then            
+            if count = 1 then
+                en_out <= '1';
+                count <= times; -- reset counter
+            else
                 en_out <= '0';
-
-            elsif rising_edge(clk) then
-                if count = 1 then
-                    en_out <= '1';
-                    count <= times;
-                else
-                    en_out <= '0';
-                    count <= count - 1;
-                end if;
+                count <= count - 1;
             end if;
         end if;
     end process;

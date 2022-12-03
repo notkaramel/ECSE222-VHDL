@@ -275,7 +275,7 @@ architecture arch of ROM is
 );
 begin
     process (clk, reset) begin
-        if (reset = '1') then
+        if (reset = '0') then
             cnt <= (others=>'0');
         elsif (rising_edge(clk)) then
             cnt <= std_logic_vector(unsigned(cnt) + 1);

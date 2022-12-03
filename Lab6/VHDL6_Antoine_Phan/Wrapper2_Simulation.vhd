@@ -14,6 +14,7 @@ architecture simulate of Wrapper2_Simulation is
         );
     end component;
     constant clock_period: time := 20 ns;
+	signal clk: std_logic;
     signal reset: std_logic := '1';
     signal HEX0, HEX5: std_logic_vector(6 downto 0);
 begin
@@ -26,13 +27,12 @@ begin
         wait for clock_period/2;
     end process;
     
-    -- Simulation of the Wrapper2
+    -- Wrapper2 instantiation
     Wrapper2 : Antoine_Phan_Wrapper2
         port map(
             reset => reset,
             clk => clk,
             HEX0 => HEX0,
-            HEX5 => HEX5
-        );
+            HEX5 => HEX5);
     
 end architecture simulate;

@@ -1,5 +1,5 @@
 Flow report for WrapperDesign
-Wed Nov 30 21:40:42 2022
+Fri Dec 02 20:51:36 2022
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov 30 21:40:42 2022       ;
+; Flow Status                     ; Successful - Fri Dec 02 20:51:36 2022       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; WrapperDesign                               ;
 ; Top-level Entity Name           ; Antoine_Phan_Wrapper2                       ;
@@ -48,7 +48,7 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 49 / 32,070 ( < 1 % )                       ;
-; Total registers                 ; 69                                          ;
+; Total registers                 ; 70                                          ;
 ; Total pins                      ; 16 / 457 ( 4 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2022 21:39:45 ;
+; Start date & time ; 12/02/2022 20:50:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; WrapperDesign       ;
 +-------------------+---------------------+
@@ -78,10 +78,11 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-----------------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name           ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-----------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 256017921607661.166986238503748        ; --            ; --                    ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 256017921607661.167003223403936        ; --            ; --                    ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; Wrapper_Simulation                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; JKFF_testbench                    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; Sequence_Detector_Testbench       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; Wrapper2_Simulation               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; Clock_Divider_testbench           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; FSM_Testbench                     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --                    ; Counters_testbench                ;
@@ -89,19 +90,21 @@ refer to the applicable agreement for further details.
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                    ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                    ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --                    ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Sequence_Detector_Testbench            ; --            ; --                    ; eda_simulation                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Wrapper2_Simulation                    ; --            ; --                    ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --                    ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --                    ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --                    ; eda_simulation                    ;
 ; EDA_TEST_BENCH_FILE                  ; Wrapper_Simulation.vhd                 ; --            ; --                    ; Wrapper_Simulation                ;
 ; EDA_TEST_BENCH_FILE                  ; JKFF_testbench.vhd                     ; --            ; --                    ; JKFF_testbench                    ;
 ; EDA_TEST_BENCH_FILE                  ; Sequence_Detector_testbench.vhd        ; --            ; --                    ; Sequence_Detector_Testbench       ;
+; EDA_TEST_BENCH_FILE                  ; Wrapper2_Simulation.vhd                ; --            ; --                    ; Wrapper2_Simulation               ;
 ; EDA_TEST_BENCH_FILE                  ; Clock_Divider_testbench.vhd            ; --            ; --                    ; Clock_Divider_testbench           ;
 ; EDA_TEST_BENCH_FILE                  ; FSM_testbench.vhd                      ; --            ; --                    ; FSM_Testbench                     ;
 ; EDA_TEST_BENCH_FILE                  ; Counters_testbench.vhd                 ; --            ; --                    ; Counters_testbench                ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; Wrapper_Simulation                     ; --            ; --                    ; Wrapper_Simulation                ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; JKFF_testbench                         ; --            ; --                    ; JKFF_testbench                    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; Sequence_Detector_Testbench            ; --            ; --                    ; Sequence_Detector_Testbench       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Wrapper2_Simulation                    ; --            ; --                    ; Wrapper2_Simulation               ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; Clock_Divider_testbench                ; --            ; --                    ; Clock_Divider_testbench           ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; FSM_Testbench                          ; --            ; --                    ; FSM_Testbench                     ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; Counters_testbench                     ; --            ; --                    ; Counters_testbench                ;
@@ -111,6 +114,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; Wrapper_Simulation                     ; --            ; --                    ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; FSM_Testbench                          ; --            ; --                    ; eda_simulation                    ;
 ; EDA_TEST_BENCH_NAME                  ; Sequence_Detector_Testbench            ; --            ; --                    ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; Wrapper2_Simulation                    ; --            ; --                    ; eda_simulation                    ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --                    ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --                    ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --                    ; --                                ;
@@ -129,12 +133,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4849 MB             ; 00:00:24                           ;
-; Fitter               ; 00:00:30     ; 1.0                     ; 6546 MB             ; 00:00:56                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4831 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.1                     ; 5130 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4732 MB             ; 00:00:01                           ;
-; Total                ; 00:00:52     ; --                      ; --                  ; 00:01:32                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4853 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:37     ; 1.0                     ; 6612 MB             ; 00:01:14                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4826 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 5132 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4736 MB             ; 00:00:01                           ;
+; Total                ; 00:00:58     ; --                      ; --                  ; 00:01:49                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

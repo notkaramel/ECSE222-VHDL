@@ -3,99 +3,99 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -2.800
-TNS   : -78.889
+Slack : -3.008
+TNS   : -86.497
 
 Type  : Slow 1100mV 85C Model Setup 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : -2.322
-TNS   : -59.814
+Slack : -2.426
+TNS   : -62.329
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : 0.381
+Slack : 0.382
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : 0.736
+Slack : 0.707
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.444
-TNS   : -18.460
+Slack : -0.470
+TNS   : -19.004
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
 Slack : -0.394
-TNS   : -19.217
+TNS   : -20.484
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -2.952
-TNS   : -79.143
+Slack : -3.193
+TNS   : -87.081
 
 Type  : Slow 1100mV 0C Model Setup 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : -2.365
-TNS   : -61.207
+Slack : -2.483
+TNS   : -63.524
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : 0.381
+Slack : 0.380
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : 0.731
+Slack : 0.683
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.424
-TNS   : -19.940
+Slack : -0.451
+TNS   : -20.608
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
 Slack : -0.394
-TNS   : -19.170
+TNS   : -21.236
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -1.291
-TNS   : -32.723
+Slack : -1.403
+TNS   : -36.643
 
 Type  : Fast 1100mV 85C Model Setup 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : -0.981
-TNS   : -23.945
+Slack : -1.045
+TNS   : -25.656
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : 0.205
+Slack : 0.204
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : 0.336
+Slack : 0.357
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.420
-TNS   : -3.421
+Slack : -0.436
+TNS   : -3.573
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : 0.028
-TNS   : 0.000
+Slack : -0.097
+TNS   : -1.350
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -1.214
-TNS   : -28.396
+Slack : -1.330
+TNS   : -31.871
 
 Type  : Fast 1100mV 0C Model Setup 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : -0.875
-TNS   : -21.333
+Slack : -0.921
+TNS   : -22.830
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : 0.192
+Slack : 0.193
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : 0.310
+Slack : 0.321
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.402
-TNS   : -3.409
+Slack : -0.418
+TNS   : -3.555
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Antoine_Phan_Clock_Divider:CLK_DIV|en_out'
-Slack : 0.054
-TNS   : 0.000
+Slack : -0.076
+TNS   : -0.974
 
 ------------------------------------------------------------

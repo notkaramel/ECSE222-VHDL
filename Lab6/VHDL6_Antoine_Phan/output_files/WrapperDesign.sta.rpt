@@ -1,5 +1,5 @@
 Timing Analyzer report for WrapperDesign
-Wed Nov 30 21:40:40 2022
+Fri Dec 02 20:51:34 2022
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -105,9 +105,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.3%      ;
-;     Processor 3            ;   3.1%      ;
-;     Processor 4            ;   3.1%      ;
+;     Processor 2            ;   3.2%      ;
+;     Processor 3            ;   3.0%      ;
+;     Processor 4            ;   3.0%      ;
 +----------------------------+-------------+
 
 
@@ -116,7 +116,7 @@ refer to the applicable agreement for further details.
 +------------------------+--------+--------------------------+
 ; SDC File Path          ; Status ; Read at                  ;
 +------------------------+--------+--------------------------+
-; timing_constraints.sdc ; OK     ; Wed Nov 30 21:40:36 2022 ;
+; timing_constraints.sdc ; OK     ; Fri Dec 02 20:51:31 2022 ;
 +------------------------+--------+--------------------------+
 
 
@@ -135,8 +135,8 @@ refer to the applicable agreement for further details.
 +------------+-----------------+-------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                ; Note ;
 +------------+-----------------+-------------------------------------------+------+
-; 263.16 MHz ; 263.16 MHz      ; clk                                       ;      ;
-; 301.02 MHz ; 301.02 MHz      ; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ;      ;
+; 249.5 MHz  ; 249.5 MHz       ; clk                                       ;      ;
+; 291.89 MHz ; 291.89 MHz      ; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ;      ;
 +------------+-----------------+-------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -152,8 +152,8 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------+--------+---------------+
 ; Clock                                     ; Slack  ; End Point TNS ;
 +-------------------------------------------+--------+---------------+
-; clk                                       ; -2.800 ; -78.889       ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -2.322 ; -59.814       ;
+; clk                                       ; -3.008 ; -86.497       ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -2.426 ; -62.329       ;
 +-------------------------------------------+--------+---------------+
 
 
@@ -162,8 +162,8 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------+-------+---------------+
 ; Clock                                     ; Slack ; End Point TNS ;
 +-------------------------------------------+-------+---------------+
-; clk                                       ; 0.381 ; 0.000         ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.736 ; 0.000         ;
+; clk                                       ; 0.382 ; 0.000         ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.707 ; 0.000         ;
 +-------------------------------------------+-------+---------------+
 
 
@@ -184,8 +184,8 @@ No paths to report.
 +-------------------------------------------+--------+---------------+
 ; Clock                                     ; Slack  ; End Point TNS ;
 +-------------------------------------------+--------+---------------+
-; clk                                       ; -0.444 ; -18.460       ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.394 ; -19.217       ;
+; clk                                       ; -0.470 ; -19.004       ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.394 ; -20.484       ;
 +-------------------------------------------+--------+---------------+
 
 
@@ -200,8 +200,8 @@ No synchronizer chains to report.
 +------------+-----------------+-------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                ; Note ;
 +------------+-----------------+-------------------------------------------+------+
-; 253.04 MHz ; 253.04 MHz      ; clk                                       ;      ;
-; 297.18 MHz ; 297.18 MHz      ; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ;      ;
+; 238.49 MHz ; 238.49 MHz      ; clk                                       ;      ;
+; 287.11 MHz ; 287.11 MHz      ; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ;      ;
 +------------+-----------------+-------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -211,8 +211,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------+--------+---------------+
 ; Clock                                     ; Slack  ; End Point TNS ;
 +-------------------------------------------+--------+---------------+
-; clk                                       ; -2.952 ; -79.143       ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -2.365 ; -61.207       ;
+; clk                                       ; -3.193 ; -87.081       ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -2.483 ; -63.524       ;
 +-------------------------------------------+--------+---------------+
 
 
@@ -221,8 +221,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------+-------+---------------+
 ; Clock                                     ; Slack ; End Point TNS ;
 +-------------------------------------------+-------+---------------+
-; clk                                       ; 0.381 ; 0.000         ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.731 ; 0.000         ;
+; clk                                       ; 0.380 ; 0.000         ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.683 ; 0.000         ;
 +-------------------------------------------+-------+---------------+
 
 
@@ -243,8 +243,8 @@ No paths to report.
 +-------------------------------------------+--------+---------------+
 ; Clock                                     ; Slack  ; End Point TNS ;
 +-------------------------------------------+--------+---------------+
-; clk                                       ; -0.424 ; -19.940       ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.394 ; -19.170       ;
+; clk                                       ; -0.451 ; -20.608       ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.394 ; -21.236       ;
 +-------------------------------------------+--------+---------------+
 
 
@@ -259,8 +259,8 @@ No synchronizer chains to report.
 +-------------------------------------------+--------+---------------+
 ; Clock                                     ; Slack  ; End Point TNS ;
 +-------------------------------------------+--------+---------------+
-; clk                                       ; -1.291 ; -32.723       ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.981 ; -23.945       ;
+; clk                                       ; -1.403 ; -36.643       ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -1.045 ; -25.656       ;
 +-------------------------------------------+--------+---------------+
 
 
@@ -269,8 +269,8 @@ No synchronizer chains to report.
 +-------------------------------------------+-------+---------------+
 ; Clock                                     ; Slack ; End Point TNS ;
 +-------------------------------------------+-------+---------------+
-; clk                                       ; 0.205 ; 0.000         ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.336 ; 0.000         ;
+; clk                                       ; 0.204 ; 0.000         ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.357 ; 0.000         ;
 +-------------------------------------------+-------+---------------+
 
 
@@ -291,8 +291,8 @@ No paths to report.
 +-------------------------------------------+--------+---------------+
 ; Clock                                     ; Slack  ; End Point TNS ;
 +-------------------------------------------+--------+---------------+
-; clk                                       ; -0.420 ; -3.421        ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.028  ; 0.000         ;
+; clk                                       ; -0.436 ; -3.573        ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.097 ; -1.350        ;
 +-------------------------------------------+--------+---------------+
 
 
@@ -307,8 +307,8 @@ No synchronizer chains to report.
 +-------------------------------------------+--------+---------------+
 ; Clock                                     ; Slack  ; End Point TNS ;
 +-------------------------------------------+--------+---------------+
-; clk                                       ; -1.214 ; -28.396       ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.875 ; -21.333       ;
+; clk                                       ; -1.330 ; -31.871       ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.921 ; -22.830       ;
 +-------------------------------------------+--------+---------------+
 
 
@@ -317,8 +317,8 @@ No synchronizer chains to report.
 +-------------------------------------------+-------+---------------+
 ; Clock                                     ; Slack ; End Point TNS ;
 +-------------------------------------------+-------+---------------+
-; clk                                       ; 0.192 ; 0.000         ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.310 ; 0.000         ;
+; clk                                       ; 0.193 ; 0.000         ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.321 ; 0.000         ;
 +-------------------------------------------+-------+---------------+
 
 
@@ -339,8 +339,8 @@ No paths to report.
 +-------------------------------------------+--------+---------------+
 ; Clock                                     ; Slack  ; End Point TNS ;
 +-------------------------------------------+--------+---------------+
-; clk                                       ; -0.402 ; -3.409        ;
-; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 0.054  ; 0.000         ;
+; clk                                       ; -0.418 ; -3.555        ;
+; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -0.076 ; -0.974        ;
 +-------------------------------------------+--------+---------------+
 
 
@@ -350,18 +350,18 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                     ;
-+--------------------------------------------+---------+-------+----------+---------+---------------------+
-; Clock                                      ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+--------------------------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack                           ; -2.952  ; 0.192 ; N/A      ; N/A     ; -0.444              ;
-;  Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -2.365  ; 0.310 ; N/A      ; N/A     ; -0.394              ;
-;  clk                                       ; -2.952  ; 0.192 ; N/A      ; N/A     ; -0.444              ;
-; Design-wide TNS                            ; -140.35 ; 0.0   ; 0.0      ; 0.0     ; -39.11              ;
-;  Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -61.207 ; 0.000 ; N/A      ; N/A     ; -19.217             ;
-;  clk                                       ; -79.143 ; 0.000 ; N/A      ; N/A     ; -19.940             ;
-+--------------------------------------------+---------+-------+----------+---------+---------------------+
++----------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                      ;
++--------------------------------------------+----------+-------+----------+---------+---------------------+
+; Clock                                      ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack                           ; -3.193   ; 0.193 ; N/A      ; N/A     ; -0.470              ;
+;  Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -2.483   ; 0.321 ; N/A      ; N/A     ; -0.394              ;
+;  clk                                       ; -3.193   ; 0.193 ; N/A      ; N/A     ; -0.470              ;
+; Design-wide TNS                            ; -150.605 ; 0.0   ; 0.0      ; 0.0     ; -41.844             ;
+;  Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; -63.524  ; 0.000 ; N/A      ; N/A     ; -21.236             ;
+;  clk                                       ; -87.081  ; 0.000 ; N/A      ; N/A     ; -20.608             ;
++--------------------------------------------+----------+-------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -490,7 +490,7 @@ No synchronizer chains to report.
 ; From Clock                                ; To Clock                                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
 ; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 369      ; 0        ; 0        ; 0        ;
-; clk                                       ; clk                                       ; 1365     ; 0        ; 0        ; 0        ;
+; clk                                       ; clk                                       ; 1423     ; 0        ; 0        ; 0        ;
 +-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -501,7 +501,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; From Clock                                ; To Clock                                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
 ; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; Antoine_Phan_Clock_Divider:CLK_DIV|en_out ; 369      ; 0        ; 0        ; 0        ;
-; clk                                       ; clk                                       ; 1365     ; 0        ; 0        ; 0        ;
+; clk                                       ; clk                                       ; 1423     ; 0        ; 0        ; 0        ;
 +-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -526,7 +526,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 69    ; 69   ;
+; Unconstrained Input Port Paths  ; 70    ; 70   ;
 ; Unconstrained Output Ports      ; 14    ; 14   ;
 ; Unconstrained Output Port Paths ; 42    ; 42   ;
 +---------------------------------+-------+------+
@@ -610,7 +610,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 30 21:40:35 2022
+    Info: Processing started: Fri Dec 02 20:51:30 2022
 Info: Command: quartus_sta VHDL6_Antoine_Phan -c WrapperDesign
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -621,6 +621,8 @@ Info (332104): Reading SDC File: 'timing_constraints.sdc'
 Warning (332174): Ignored filter at timing_constraints.sdc(2): enable could not be matched with a port File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/timing_constraints.sdc Line: 2
 Warning (332049): Ignored set_max_delay at timing_constraints.sdc(2): Argument <from> is an empty collection File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/timing_constraints.sdc Line: 2
     Info (332050): set_max_delay -from [get_ports enable] -to [get_ports HEX0[*]] 1 File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/timing_constraints.sdc Line: 2
+Warning (332049): Ignored set_max_delay at timing_constraints.sdc(6): Argument <from> is an empty collection File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/timing_constraints.sdc Line: 6
+    Info (332050): set_max_delay -from [get_ports enable] -to [get_ports HEX5[*]] 1 File: D:/ECSE222-VHDL/Lab6/VHDL6_Antoine_Phan/timing_constraints.sdc Line: 6
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clk clk
@@ -631,96 +633,96 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.800
+Info (332146): Worst-case setup slack is -3.008
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.800             -78.889 clk 
-    Info (332119):    -2.322             -59.814 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
-Info (332146): Worst-case hold slack is 0.381
+    Info (332119):    -3.008             -86.497 clk 
+    Info (332119):    -2.426             -62.329 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+Info (332146): Worst-case hold slack is 0.382
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.381               0.000 clk 
-    Info (332119):     0.736               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+    Info (332119):     0.382               0.000 clk 
+    Info (332119):     0.707               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.444
+Info (332146): Worst-case minimum pulse width slack is -0.470
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.444             -18.460 clk 
-    Info (332119):    -0.394             -19.217 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+    Info (332119):    -0.470             -19.004 clk 
+    Info (332119):    -0.394             -20.484 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.952
+Info (332146): Worst-case setup slack is -3.193
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.952             -79.143 clk 
-    Info (332119):    -2.365             -61.207 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
-Info (332146): Worst-case hold slack is 0.381
+    Info (332119):    -3.193             -87.081 clk 
+    Info (332119):    -2.483             -63.524 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+Info (332146): Worst-case hold slack is 0.380
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.381               0.000 clk 
-    Info (332119):     0.731               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+    Info (332119):     0.380               0.000 clk 
+    Info (332119):     0.683               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.424
+Info (332146): Worst-case minimum pulse width slack is -0.451
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.424             -19.940 clk 
-    Info (332119):    -0.394             -19.170 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+    Info (332119):    -0.451             -20.608 clk 
+    Info (332119):    -0.394             -21.236 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.291
+Info (332146): Worst-case setup slack is -1.403
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.291             -32.723 clk 
-    Info (332119):    -0.981             -23.945 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
-Info (332146): Worst-case hold slack is 0.205
+    Info (332119):    -1.403             -36.643 clk 
+    Info (332119):    -1.045             -25.656 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+Info (332146): Worst-case hold slack is 0.204
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.205               0.000 clk 
-    Info (332119):     0.336               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+    Info (332119):     0.204               0.000 clk 
+    Info (332119):     0.357               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.420
+Info (332146): Worst-case minimum pulse width slack is -0.436
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.420              -3.421 clk 
-    Info (332119):     0.028               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+    Info (332119):    -0.436              -3.573 clk 
+    Info (332119):    -0.097              -1.350 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.214
+Info (332146): Worst-case setup slack is -1.330
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.214             -28.396 clk 
-    Info (332119):    -0.875             -21.333 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
-Info (332146): Worst-case hold slack is 0.192
+    Info (332119):    -1.330             -31.871 clk 
+    Info (332119):    -0.921             -22.830 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+Info (332146): Worst-case hold slack is 0.193
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.192               0.000 clk 
-    Info (332119):     0.310               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+    Info (332119):     0.193               0.000 clk 
+    Info (332119):     0.321               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.402
+Info (332146): Worst-case minimum pulse width slack is -0.418
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.402              -3.409 clk 
-    Info (332119):     0.054               0.000 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
+    Info (332119):    -0.418              -3.555 clk 
+    Info (332119):    -0.076              -0.974 Antoine_Phan_Clock_Divider:CLK_DIV|en_out 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5130 megabytes
-    Info: Processing ended: Wed Nov 30 21:40:40 2022
-    Info: Elapsed time: 00:00:05
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 5132 megabytes
+    Info: Processing ended: Fri Dec 02 20:51:34 2022
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:05
 
 
