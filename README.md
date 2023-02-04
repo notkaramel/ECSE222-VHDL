@@ -41,7 +41,7 @@
 - *Double-click* or *Simulate* the testbench file
 - ```run -all``` to run all processes in testbench
 - ```restart``` if want to restart simulation
-- 
+
 2. Working with Quartus Prime
 - Open Quartus Prime
 - Add/Remove/Reorder files to project
