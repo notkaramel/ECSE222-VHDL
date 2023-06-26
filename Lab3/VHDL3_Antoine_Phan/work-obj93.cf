@@ -1,4 +1,0 @@
-v 4
-file . "Antoine_Phan_barrel_shifter_behavioral.vhd" "27a784bc4cc2738f480a29fcc0111ad556f73b1b" "20221005140228.820":
-  entity antoine_phan_barrel_shifter_behavioral at 1( 0) + 0 on 11;
-  architecture behavioral of antoine_phan_barrel_shifter_behavioral at 13( 293) + 0 on 12;

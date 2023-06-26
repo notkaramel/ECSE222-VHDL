@@ -12,3 +12,11 @@ Lab6/work/_lib1_2.qdb
 Lab6/work/_lib1_2.qpg
 Lab6/work/_lib1_2.qtl
 Lab6/transcript
+
+*.bak
+db/
+incremental_db/
+simulation/
+*.zip
+output_files/
+work/

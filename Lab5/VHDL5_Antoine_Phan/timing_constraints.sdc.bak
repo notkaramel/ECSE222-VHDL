@@ -1,6 +1,0 @@
-set_max_delay -from [get_ports A[*]] -to [get_ports AgtBplusOne] 5
-set_max_delay -from [get_ports B[*]] -to [get_ports S[*]] 5
-
-, AgteBplusOne, -- greater & greater or equal
-		AltBplusOne, AlteBplusOne, -- less & less or equal
-		AeqBplusOne, overflow
